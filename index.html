@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ADEC Sénégal</title>
+<meta property="og:title" content="ADEC-Sénégal, Association pour la Défense de l'Environnement et des Consommateurs">
+<meta property="og:description" content="Informer, éduquer et défendre les consommateurs sénégalais depuis 1990.">
+<meta property="og:locale" content="fr_SN">
+<meta name="theme-color" content="#0f4a2c">
+<meta name="description" content="ADEC-Sénégal, Association pour la Défense de l'Environnement et des Consommateurs. Association agréée par le ministère du Commerce. Information, éducation et défense des consommateurs depuis 1990.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;700;800&family=Archivo:wdth,wght@75..100,500..900&family=Source+Sans+3:wght@400;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Modèle A « Institutionnel lisible » (par défaut) : vert profond, vert feuille et bleu du logo,
+     une seule famille très lisible (Atkinson Hyperlegible Next), rayons sobres. */
+  --bg:#ffffff;
+  --alt:#f2f5f2;
+  --ink:#17221d;
+  --muted:#4f5d56;
+  --line:#dbe3de;
+  --green:#0f4a2c;
+  --green-2:#1a6638;
+  --gold:#2f8526;
+  --on-gold:#ffffff;
+  --gold-hover:#276f20;
+  --blue:#2463ad;
+  --display:"Atkinson Hyperlegible Next","Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible Next","Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+  --h-weight:800;
+  --h-tracking:-0.015em;
+  --h-transform:none;
+  --h1-size:clamp(34px,4.2vw,54px);
+  --h2-size:clamp(28px,3vw,40px);
+  --h-color:var(--green);
+  --kicker-transform:none;
+  --kicker-tracking:0;
+  --kicker-size:15px;
+  --kicker-color:var(--gold);
+  --kicker-line:none;
+  --kicker-bg:transparent;
+  --kicker-pad:0;
+  --r-sm:6px;
+  --r-btn:6px;
+  --r-lg:10px;
+  --hero-bg:var(--green);
+  --hero-ink:#ffffff;
+  --hero-muted:rgba(255,255,255,.86);
+  --hero-kicker:#a8dc98;
+  --hero-ghost:#ffffff;
+  --footer-bg:#0a2f21;
+  --wrap:1200px;
+  color-scheme:light;
+}
+/* Modèle B « Campagne » : bleu nuit et jaune, titres condensés en capitales façon affiche, angles vifs. */
+:root[data-model="b"]{
+  --bg:#ffffff;--alt:#f1f4f9;--ink:#0f1b2d;--muted:#475467;--line:#d6deea;
+  --green:#12355b;--green-2:#1b4b80;--gold:#f2b705;--on-gold:#13202f;--gold-hover:#dca603;--blue:#2f8526;
+  --display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --h-weight:800;--h-tracking:0;--h-transform:uppercase;
+  --h1-size:clamp(36px,4.8vw,62px);--h2-size:clamp(28px,3.2vw,42px);--h-color:#12355b;
+  --kicker-transform:uppercase;--kicker-tracking:.12em;--kicker-size:13px;--kicker-color:#2f8526;--kicker-line:block;
+  --r-sm:2px;--r-btn:2px;--r-lg:2px;
+  --hero-bg:#12355b;--hero-ink:#fff;--hero-muted:rgba(255,255,255,.85);--hero-kicker:#f2b705;--hero-ghost:#fff;
+  --footer-bg:#0b2440;
+}
+/* Modèle C « Moderne et doux » : fonds menthe, formes arrondies, boutons pilules, une famille géométrique (Manrope). */
+:root[data-model="c"]{
+  --bg:#ffffff;--alt:#eef6f1;--ink:#1c2b24;--muted:#56675f;--line:#dbe8e0;
+  --green:#1f6b45;--green-2:#26875a;--gold:#1f7a4c;--on-gold:#fff;--gold-hover:#186139;--blue:#2f6fbf;
+  --display:"Manrope","Segoe UI",system-ui,sans-serif;
+  --body:"Manrope","Segoe UI",system-ui,sans-serif;
+  --h-weight:800;--h-tracking:-0.025em;--h-transform:none;
+  --h1-size:clamp(34px,4.4vw,56px);--h2-size:clamp(28px,3vw,40px);--h-color:#17402b;
+  --kicker-transform:none;--kicker-tracking:0;--kicker-size:14px;--kicker-color:#1f6b45;--kicker-line:none;--kicker-bg:#dff0e6;--kicker-pad:5px 12px;
+  --r-sm:10px;--r-btn:999px;--r-lg:18px;
+  --hero-bg:#eef6f1;--hero-ink:#17402b;--hero-muted:#3f5348;--hero-kicker:#1f6b45;--hero-ghost:#1f6b45;
+  --footer-bg:#123a26;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.65}
+img{max-width:100%;display:block}
+a{color:var(--green-2)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+h1,h2,h3{margin:0;line-height:1.2;text-wrap:balance}
+h1,h2{font-family:var(--display);font-weight:var(--h-weight);letter-spacing:var(--h-tracking);text-transform:var(--h-transform);font-stretch:85%}
+h3{font-family:var(--display)}
+h2{font-size:var(--h2-size);color:var(--h-color)}
+h3{font-size:18px;font-weight:700}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(16px,4vw,32px)}
+section{scroll-margin-top:90px;padding:clamp(56px,7vw,88px) 0}
+.kicker{display:inline-flex;align-items:center;gap:12px;font-size:var(--kicker-size);font-weight:700;letter-spacing:var(--kicker-tracking);text-transform:var(--kicker-transform);color:var(--kicker-color);background:var(--kicker-bg);padding:var(--kicker-pad);border-radius:999px;margin-bottom:14px}
+.kicker::before{content:"";display:var(--kicker-line);width:28px;height:2px;background:currentColor}
+.intro{color:var(--muted);max-width:64ch;margin-top:14px;font-size:17px}
+.head{margin-bottom:40px}
+.head.split{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+
+/* Photos : cadre avec repli propre si l'image manque */
+.ph{position:relative;overflow:hidden;background:linear-gradient(135deg,#dfe9e3,#c9d9cf)}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph.missing img{display:none}
+.ph.missing::after{content:"Photo ADEC";position:absolute;inset:0;display:grid;place-items:center;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#6d8579;font-weight:600}
+
+/* Barre utilitaire */
+.util{background:var(--green);color:#e3ede7;font-size:14px}
+.util .wrap{display:flex;gap:24px;align-items:center;min-height:40px;flex-wrap:wrap}
+.util a{color:#fff;text-decoration:none}
+.util .right{margin-left:auto}
+@media (max-width:1000px){.util .hide-s{display:none}.util .right{margin-left:0}}
+
+/* En-tête */
+header.top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30}
+header.top .wrap{display:flex;align-items:center;gap:28px;min-height:84px;position:relative}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink)}
+.brand .logo{width:72px;height:auto}
+.brand b{white-space:nowrap;display:block;font-family:var(--display);font-size:22px;color:var(--green);line-height:1.1}
+@media (max-width:1240px){.brand small{display:none!important}}
+.brand small{display:block;font-size:12px;color:var(--muted);line-height:1.3;max-width:26ch}
+nav.menu{display:flex;gap:2px;margin-left:auto}
+nav.menu a{white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:600;font-size:15px;padding:10px 10px;border-bottom:2px solid transparent}
+nav.menu a:hover{color:var(--green);border-bottom-color:var(--gold)}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 15.5px var(--body);padding:13px 22px;border-radius:var(--r-btn);text-decoration:none;border:1.5px solid transparent;cursor:pointer;letter-spacing:.01em}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:var(--green-2)}
+.btn-gold{background:var(--gold);color:var(--on-gold)}
+.btn-gold:hover{background:var(--gold-hover)}
+.btn-line{border-color:var(--hero-ghost);color:var(--hero-ghost)}
+.btn-line:hover{background:rgba(255,255,255,.1)}
+.burger{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:4px;padding:9px 14px;font:600 15px var(--body);color:var(--ink)}
+@media (max-width:1180px){
+  nav.menu{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:8px 16px 16px;border-bottom:1px solid var(--line)}
+  nav.menu.open{display:flex}
+  .burger{display:block}
+  header.top .cta{display:none}
+}
+
+/* Hero : texte sur vert, photo à droite */
+.hero{background:var(--hero-bg);color:var(--hero-ink)}
+.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch;max-width:1440px;margin:0 auto}
+.hero .txt{padding:clamp(56px,7vw,104px) clamp(20px,5vw,72px) clamp(56px,7vw,104px) max(clamp(16px,4vw,32px),calc((100vw - var(--wrap))/2 + 32px))}
+.hero .ph{min-height:420px}
+.hero .kicker{color:var(--hero-kicker)}
+:root[data-model="c"] .hero .kicker{background:#d3eadc}
+:root[data-model="c"] .hero .ph{margin:28px 28px 28px 0;border-radius:var(--r-lg);overflow:hidden}
+@media (max-width:900px){:root[data-model="c"] .hero .ph{margin:16px}}
+.hero h1{font-size:var(--h1-size);max-width:17ch;line-height:1.08}
+.hero p{max-width:52ch;margin-top:20px;font-size:18px;color:var(--hero-muted)}
+.hero .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.hero .cap{position:absolute;left:16px;bottom:14px;background:rgba(10,40,25,.78);color:#fff;font-size:13px;padding:6px 10px;border-radius:var(--r-sm)}
+@media (max-width:900px){.hero .grid{grid-template-columns:1fr}.hero .ph{min-height:300px;order:-1}}
+
+/* Repères */
+.marks{border-bottom:1px solid var(--line)}
+.marks .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.mark{padding:30px 24px;border-left:1px solid var(--line)}
+.mark:first-child{border-left:0;padding-left:0}
+.mark b{display:block;font-family:var(--display);font-size:36px;color:var(--blue);line-height:1;font-variant-numeric:tabular-nums}
+.mark span{display:block;margin-top:8px;color:var(--muted);font-size:14.5px}
+@media (max-width:760px){.marks .wrap{grid-template-columns:1fr 1fr}.mark{padding:22px 16px;border-top:1px solid var(--line)}.mark:nth-child(odd){border-left:0;padding-left:0}}
+
+/* Présentation */
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(36px,6vw,80px);align-items:center}
+@media (max-width:900px){.about{grid-template-columns:1fr}}
+.about .text p+p{margin-top:16px}
+.about .text p{color:var(--muted)}
+.mv{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px;padding-top:28px;border-top:1px solid var(--line)}
+@media (max-width:520px){.mv{grid-template-columns:1fr}}
+.mv h3{font-family:var(--display);font-size:20px;color:var(--green);margin-bottom:8px}
+.mv p{font-size:15.5px}
+.about-photos{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:240px 200px;gap:12px}
+.about-photos .ph:first-child{grid-column:1/-1}
+
+/* Domaines */
+.alt{background:var(--alt)}
+.domains{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+@media (max-width:960px){.domains{grid-template-columns:1fr 1fr}}
+@media (max-width:540px){.domains{grid-template-columns:1fr}}
+.domain{background:#fff;padding:32px 28px;display:grid;gap:12px;align-content:start}
+.domain .num{font-family:var(--display);font-size:15px;color:var(--blue);font-weight:700;letter-spacing:.06em}
+.domain h3{font-family:var(--display);font-size:21px;color:var(--green)}
+.domain p{color:var(--muted);font-size:15.5px}
+
+/* Réalisations */
+.feature{display:grid;grid-template-columns:1.1fr 1fr;border:1px solid var(--line);background:#fff}
+@media (max-width:900px){.feature{grid-template-columns:1fr}}
+.feature .ph{min-height:380px}
+.feature .body{padding:clamp(28px,4vw,48px);display:grid;gap:16px;align-content:center}
+.meta{display:flex;gap:10px;flex-wrap:wrap}
+.meta span{font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);background:var(--alt);padding:4px 10px;border-radius:var(--r-sm)}
+.feature h3{font-family:var(--display);font-size:clamp(22px,2.4vw,28px);color:var(--green)}
+.feature p{color:var(--muted)}
+.feature ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.feature li{padding-left:22px;position:relative;font-size:15.5px}
+.feature li::before{content:"";position:absolute;left:0;top:10px;width:10px;height:2px;background:var(--gold)}
+.second{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}
+@media (max-width:760px){.second{grid-template-columns:1fr}}
+.mini{display:grid;grid-template-columns:160px 1fr;border:1px solid var(--line);background:#fff}
+.mini .ph{min-height:160px}
+.mini .body{padding:22px;display:grid;gap:8px;align-content:center}
+.mini h3{font-family:var(--display);font-size:19px;color:var(--green)}
+.mini p{color:var(--muted);font-size:15px}
+@media (max-width:440px){.mini{grid-template-columns:1fr}}
+
+/* Galerie */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:10px}
+.gallery .ph:nth-child(1){grid-column:span 2;grid-row:span 2}
+@media (max-width:860px){.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:170px}}
+.gallery .ph img{transition:transform .4s}
+.gallery .ph:hover img{transform:scale(1.04)}
+
+/* Actualités */
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+@media (max-width:900px){.news{grid-template-columns:1fr}}
+.post{display:grid;gap:14px;text-decoration:none;color:var(--ink);align-content:start}
+.post .ph{aspect-ratio:4/3}
+.post time{font-size:13.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.post h3{font-family:var(--display);font-size:21px;color:var(--green)}
+.post:hover h3{text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px}
+.post p{color:var(--muted);font-size:15.5px}
+.more{font-weight:700;font-size:14.5px;color:var(--green)}
+
+/* Ressources */
+.res{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,64px)}
+@media (max-width:900px){.res{grid-template-columns:1fr}}
+.doclist{border-top:2px solid var(--green)}
+.doc{display:grid;grid-template-columns:1fr auto;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:center}
+.doc h3{font-size:16px}
+.doc p{color:var(--muted);font-size:14.5px}
+.doc .tag{font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+.rights{display:grid;gap:0;border-top:2px solid var(--green)}
+.rights.two-col{display:grid}
+.rights div{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.rights b{font-family:var(--display);color:var(--blue);font-size:18px}
+.rights h3{font-size:16px}
+.rights p{color:var(--muted);font-size:14.5px}
+
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+button:disabled{opacity:.35;cursor:not-allowed}
+/* Centre de ressources */
+.rc-top{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+.rc-search{flex:1 1 280px;position:relative}
+.rc-search input{width:100%;font:inherit;font-size:16px;padding:12px 14px 12px 42px;border:1px solid #c6d1ca;border-radius:var(--r-sm);background:#fff;color:var(--ink)}
+.rc-search svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--muted)}
+.rc-top select{font:inherit;font-size:15px;padding:11px 12px;border:1px solid #c6d1ca;border-radius:var(--r-sm);background:#fff;color:var(--ink)}
+.rc-admin{display:flex;gap:8px;flex-wrap:wrap}
+.btn-sm{padding:10px 14px;font-size:14.5px}
+.btn-outline{border-color:var(--green);color:var(--green);background:#fff}
+.btn-outline:hover{background:var(--alt)}
+.rc{display:grid;grid-template-columns:260px 1fr;gap:28px;align-items:start}
+@media (max-width:860px){.rc{grid-template-columns:1fr}}
+.rc-cats{background:#fff;border:1px solid var(--line);position:sticky;top:100px}
+@media (max-width:860px){.rc-cats{position:static;display:flex;overflow-x:auto}}
+.rc-cats h3{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:16px 18px 8px}
+@media (max-width:860px){.rc-cats h3{display:none}}
+.rc-cat{display:flex;justify-content:space-between;gap:10px;width:100%;text-align:left;font:inherit;font-size:15px;padding:11px 18px;border:0;border-left:3px solid transparent;background:none;color:var(--ink);cursor:pointer}
+@media (max-width:860px){.rc-cat{width:auto;white-space:nowrap;border-left:0;border-bottom:3px solid transparent}}
+.rc-cat:hover{background:var(--alt)}
+.rc-cat[aria-pressed="true"]{border-left-color:var(--gold);background:var(--alt);font-weight:700;color:var(--green)}
+@media (max-width:860px){.rc-cat[aria-pressed="true"]{border-bottom-color:var(--gold)}}
+.rc-cat span:last-child{color:var(--muted);font-size:13.5px;font-variant-numeric:tabular-nums}
+.rc-list{background:#fff;border:1px solid var(--line)}
+.rc-head{display:flex;justify-content:space-between;gap:12px;padding:14px 20px;border-bottom:2px solid var(--green);font-size:14px;color:var(--muted)}
+.rc-head b{color:var(--ink);font-size:16px}
+.rc-row{display:grid;grid-template-columns:46px 1fr auto;gap:16px;padding:16px 20px;border-bottom:1px solid var(--line);align-items:center}
+.rc-row:last-child{border-bottom:0}
+.ficon{width:40px;height:48px;border-radius:var(--r-sm);display:grid;place-items:end center;padding-bottom:6px;font-size:10.5px;font-weight:800;letter-spacing:.04em;color:#fff;background:#7a8a82;position:relative}
+.ficon::before{content:"";position:absolute;top:0;right:0;border-style:solid;border-width:0 12px 12px 0;border-color:transparent #fff transparent transparent;opacity:.6}
+.ficon.pdf{background:#b3261e}.ficon.doc{background:#2463ad}.ficon.xls{background:#1d7a3e}.ficon.ppt{background:#c4572c}.ficon.img{background:#6b4fa3}.ficon.none{background:#c9d3cd;color:#55625c}
+.rc-row h4{margin:0;font-size:16px;font-weight:700;line-height:1.35}
+.rc-row p{color:var(--muted);font-size:14.5px;margin-top:2px}
+.rc-meta{display:flex;gap:6px 14px;align-items:center;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-top:6px;font-variant-numeric:tabular-nums}
+.rc-meta .cat{color:var(--green);font-weight:600}
+.rc-actions{display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.rc-open{font-weight:700;font-size:14.5px;color:var(--green);text-decoration:none;padding:8px 12px;border:1px solid var(--line);border-radius:var(--r-sm);white-space:nowrap}
+.rc-open:hover{border-color:var(--green)}
+.rc-soon{font-size:13px;color:var(--muted);white-space:nowrap}
+.icon-btn{background:none;border:1px solid transparent;border-radius:var(--r-sm);padding:7px;cursor:pointer;color:var(--muted);line-height:0}
+.icon-btn:hover{border-color:var(--line);color:var(--green)}
+.icon-btn.danger:hover{color:#a3261c}
+.icon-btn svg{width:17px;height:17px}
+@media (max-width:600px){.rc-row{grid-template-columns:40px 1fr}.rc-actions{grid-column:2;justify-content:flex-start}}
+.rc-more{padding:16px 20px;text-align:center;border-top:1px solid var(--line)}
+.rc-empty{padding:40px 20px;text-align:center;color:var(--muted)}
+.rc-status{font-size:14px;color:var(--muted);margin-bottom:12px;min-height:1em}
+dialog{border:0;padding:0;border-radius:6px;width:min(560px,calc(100vw - 32px));box-shadow:0 24px 60px rgba(0,0,0,.25);color:var(--ink)}
+dialog::backdrop{background:rgba(10,30,20,.45)}
+.dlg-h{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid var(--line)}
+.dlg-h h3{font-family:var(--display);font-size:21px;color:var(--green)}
+.dlg-b{padding:20px 22px;display:grid;gap:14px;max-height:70vh;overflow:auto}
+.dlg-f{display:flex;justify-content:flex-end;gap:10px;padding:14px 22px;border-top:1px solid var(--line);background:var(--alt)}
+.dlg-b form,.dlg-b .stack{display:grid;gap:14px;background:none;border:0;padding:0}
+.hint{font-size:13px;color:var(--muted)}
+.err-line{color:#a3261c;font-size:14px}
+.cat-row{display:grid;grid-template-columns:1fr auto auto auto auto;gap:6px;align-items:center}
+.cat-row input{font:inherit;font-size:15px;padding:9px 10px;border:1px solid #c6d1ca;border-radius:var(--r-sm)}
+.cat-row .n{font-size:13px;color:var(--muted);min-width:70px;text-align:right}
+
+/* Thèmes */
+.rc-themes{display:flex;gap:8px;flex-wrap:wrap;margin:-8px 0 22px}
+.chip{font:600 14px var(--body);padding:7px 14px;border-radius:var(--r-btn);border:1px solid #c6d1ca;background:#fff;color:var(--ink);cursor:pointer}
+.chip:hover{border-color:var(--green)}
+.chip[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
+.chip span{opacity:.7;font-weight:500;margin-left:4px;font-variant-numeric:tabular-nums}
+.tagm{display:inline-block;font-size:12px;font-weight:600;color:var(--blue);background:#eef3fa;padding:1px 8px;border-radius:99px}
+.themes-box{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;border:1px solid var(--line);border-radius:var(--r-sm);padding:12px 14px;margin:0}
+.themes-box legend{font-weight:600;font-size:14.5px;padding:0 4px}
+.themes-box label{display:flex;gap:8px;align-items:center;font-size:14.5px}
+@media (max-width:520px){.themes-box{grid-template-columns:1fr}}
+
+/* Vitrine publications */
+.pubs{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+@media (max-width:1000px){.pubs{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.pubs{grid-template-columns:1fr}}
+.pub{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);text-decoration:none;color:var(--ink);transition:border-color .2s,transform .2s}
+.pub:hover{border-color:var(--green);transform:translateY(-2px)}
+@media (prefers-reduced-motion: reduce){.pub:hover{transform:none}}
+.pub .cover{aspect-ratio:3/4;background:#eef2ef;display:grid;place-items:center;overflow:hidden;border-bottom:1px solid var(--line);padding:14px}
+.pub .cover img{max-width:100%;max-height:100%;box-shadow:0 6px 18px rgba(0,0,0,.18);background:#fff}
+.pub .body{padding:18px 18px 20px;display:grid;gap:8px;align-content:start;flex:1}
+.pub time{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.pub h3{font-family:var(--display);font-size:18px;color:var(--green);line-height:1.3}
+.pub p{font-size:14.5px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.pub .more{margin-top:auto;padding-top:6px}
+.pubs-empty{color:var(--muted)}
+
+/* Rayons des grands blocs, selon le modèle */
+.feature,.mini,.rc-list,.rc-cats,.pub,form,.domains,.about-photos .ph,.gallery .ph,.post .ph,.feature .ph,.mini .ph{border-radius:var(--r-lg);overflow:hidden}
+.feature .ph,.mini .ph{border-radius:0}
+.domain .ic{width:40px;height:40px;color:var(--blue)}
+
+/* Sélecteur de modèle (aperçu) */
+.model-switch{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:50;display:flex;gap:6px;align-items:center;background:#111c17;color:#fff;padding:8px 8px 8px 16px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.3);font:600 14px "Segoe UI",system-ui,sans-serif;max-width:calc(100vw - 24px);flex-wrap:wrap;justify-content:center}
+.model-switch span{opacity:.75;margin-right:4px}
+.model-switch button{font:600 14px "Segoe UI",system-ui,sans-serif;border:0;border-radius:999px;padding:8px 14px;background:rgba(255,255,255,.12);color:#fff;cursor:pointer}
+.model-switch button[aria-pressed="true"]{background:#fff;color:#111c17}
+.model-switch button:focus-visible{outline:3px solid #f2b705;outline-offset:2px}
+@media (max-width:900px){.model-switch{flex-wrap:nowrap;gap:4px;padding:5px;bottom:10px;left:auto;right:10px;transform:none;max-width:calc(100vw - 20px)}.model-switch span{display:none}.model-switch button{padding:7px 10px;font-size:12.5px}}
+
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--green);color:#fff;padding:10px 16px;border-radius:var(--r-btn);font-weight:700;text-decoration:none}
+.skip:focus{top:12px}
+.partners{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+@media (max-width:1000px){.partners{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:600px){.partners{grid-template-columns:1fr 1fr}}
+.partners li{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-lg);padding:20px;display:grid;gap:6px;align-content:start}
+.partners b{font-family:var(--display);font-size:17px;color:var(--h-color)}
+.partners span{font-size:14px;color:var(--muted);line-height:1.45}
+footer .fcontact li{color:rgba(255,255,255,.85)}
+.totop{font-weight:700}
+/* ===== Pages ===== */
+.view[hidden]{display:none!important}
+.menu a[aria-current="page"]{color:var(--green);border-bottom-color:var(--gold)}
+.page-head{background:var(--hero-bg);color:var(--hero-ink);padding:clamp(40px,6vw,72px) 0 clamp(36px,5vw,56px)}
+.page-head h1{font-size:clamp(32px,4vw,50px);line-height:1.1;max-width:22ch;color:inherit}
+.page-head p{color:var(--hero-muted);max-width:60ch;margin-top:14px;font-size:18px}
+.crumbs{display:flex;gap:8px;flex-wrap:wrap;font-size:14px;margin-bottom:18px;color:var(--hero-muted)}
+.crumbs a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.crumbs a:hover{color:var(--hero-ink)}
+.wrap.narrow{max-width:860px}
+
+/* Cartes actualités */
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+@media (max-width:980px){.news-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.news-grid{grid-template-columns:1fr}}
+.ncard{display:flex;flex-direction:column;background:var(--bg);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;text-decoration:none;color:var(--ink);transition:border-color .2s,box-shadow .2s}
+.ncard:hover{border-color:var(--green);box-shadow:0 10px 28px rgba(15,40,28,.10)}
+.ncard .ph{aspect-ratio:16/10}
+.ncard .ph img{transition:transform .5s}
+.ncard:hover .ph img{transform:scale(1.03)}
+@media (prefers-reduced-motion: reduce){.ncard:hover .ph img{transform:none}}
+.ncard .body{padding:20px 22px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.nmeta{display:flex;gap:6px 16px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+.nmeta span{display:inline-flex;align-items:center;gap:6px}
+.nmeta svg{width:15px;height:15px;flex:none}
+.ncard h3{font-size:20px;line-height:1.3;color:var(--h-color)}
+.ncard p{color:var(--muted);font-size:15.5px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.ncard .more{margin-top:auto;padding-top:4px;font-weight:700;color:var(--green);font-size:15px}
+.ncard:hover .more{text-decoration:underline;text-underline-offset:4px}
+.nfeat{display:grid;grid-template-columns:1.25fr 1fr;margin-bottom:32px}
+.nfeat .ph{aspect-ratio:auto;min-height:340px}
+.nfeat .body{padding:clamp(24px,3.5vw,44px);justify-content:center}
+.nfeat h3{font-size:clamp(22px,2.4vw,30px)}
+.nfeat p{-webkit-line-clamp:5;font-size:16.5px}
+@media (max-width:800px){.nfeat{grid-template-columns:1fr}.nfeat .ph{min-height:0;aspect-ratio:16/10}}
+.news-tools{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+.badge-new{display:inline-block;align-self:flex-start;font-size:12.5px;font-weight:700;color:var(--on-gold);background:var(--gold);padding:3px 10px;border-radius:999px}
+
+/* Article */
+.art-head h1{max-width:26ch}
+.art-meta{display:flex;gap:6px 18px;flex-wrap:wrap;color:var(--hero-muted);font-size:16px}
+.art-meta span{display:inline-flex;align-items:center;gap:7px}
+.art-meta svg{width:17px;height:17px;flex:none}
+.art-cover{margin:-28px 0 0;aspect-ratio:16/9;border-radius:var(--r-lg);overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.14);position:relative;z-index:1}
+.art-body{margin-top:40px;font-size:18px;line-height:1.75;max-width:68ch}
+.art-body p+p{margin-top:18px}
+.art-body p:first-child{font-size:20px;line-height:1.6;color:var(--ink)}
+.art-doc{display:flex;gap:16px;align-items:center;margin-top:32px;padding:18px 20px;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--alt);text-decoration:none;color:var(--ink)}
+.art-doc:hover{border-color:var(--green)}
+.art-doc b{display:block;font-size:16px}
+.art-doc span{color:var(--muted);font-size:14.5px}
+.art-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:40px}
+@media (max-width:600px){.art-gallery{grid-template-columns:1fr 1fr}}
+.art-gallery button{padding:0;border:0;background:none;cursor:zoom-in;aspect-ratio:4/3;border-radius:var(--r-sm);overflow:hidden}
+.art-gallery img{width:100%;height:100%;object-fit:cover;display:block}
+.art-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:40px;padding-top:24px;border-top:1px solid var(--line)}
+.art-admin{display:inline-flex;gap:10px;margin-left:auto}
+.btn-danger{background:#a3261c;color:#fff}
+#lightbox{width:min(1100px,calc(100vw - 24px));background:#0c120f;color:#fff}
+#lightbox img{width:100%;max-height:78vh;object-fit:contain;display:block}
+#lightbox .lb-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;gap:10px}
+#lightbox button{background:rgba(255,255,255,.12);color:#fff;border:0;border-radius:999px;padding:8px 14px;font:600 14px var(--body);cursor:pointer}
+
+/* Contact */
+.contact-page{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(32px,5vw,64px);align-items:start}
+@media (max-width:900px){.contact-page{grid-template-columns:1fr}}
+.ccards{display:grid;gap:14px}
+.ccard{display:flex;gap:16px;padding:20px;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--bg)}
+.ccard>svg{width:26px;height:26px;color:var(--green);flex:none;margin-top:2px}
+.ccard h3{font-size:16px;margin-bottom:4px}
+.ccard p{color:var(--muted);font-size:15.5px}
+.ccard p a{color:var(--ink);text-decoration:none}
+.ccard>div>a{display:inline-block;margin-top:8px;font-weight:700;font-size:14.5px}
+.steps3{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media (max-width:800px){.steps3{grid-template-columns:1fr}}
+.steps3 li{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-lg);padding:24px;display:grid;gap:10px;align-content:start}
+.steps3 b{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;font-family:var(--display);font-size:18px}
+.steps3 p{color:var(--muted);font-size:15.5px}
+
+/* Droits */
+.rights-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,5vw,64px);align-items:start}
+@media (max-width:900px){.rights-wrap{grid-template-columns:1fr}}
+.rights.two-col{grid-template-columns:1fr 1fr;column-gap:32px}
+@media (max-width:600px){.rights.two-col{grid-template-columns:1fr}}
+
+/* Bandeau action */
+.cta-band{background:var(--green);color:#fff}
+.cta-band .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:center}
+@media (max-width:860px){.cta-band .wrap{grid-template-columns:1fr}}
+.cta-band h2{color:#fff}
+.cta-band p{color:rgba(255,255,255,.85);margin-top:12px;max-width:56ch}
+.cta-band .actions{display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end}
+@media (max-width:860px){.cta-band .actions{justify-content:flex-start}}
+
+/* Contact */
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,5vw,64px)}
+@media (max-width:900px){.contact{grid-template-columns:1fr}}
+.coords{display:grid;gap:22px;margin-top:8px}
+.coords div{border-left:2px solid var(--gold);padding-left:16px}
+.coords h3{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.coords p,.coords a{font-size:16px;color:var(--ink);text-decoration:none}
+form{display:grid;gap:16px;background:var(--alt);padding:clamp(22px,3vw,36px);border:1px solid var(--line)}
+.f{display:grid;gap:6px}
+.f label{font-weight:600;font-size:14.5px}
+.f input,.f select,.f textarea{font:inherit;font-size:16px;padding:11px 12px;border:1px solid #c6d1ca;border-radius:var(--r-sm);background:#fff;color:var(--ink);width:100%}
+.f textarea{min-height:130px;resize:vertical}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:520px){.two{grid-template-columns:1fr}}
+.msg{display:none;padding:12px 14px;border-left:3px solid var(--green);background:#fff;font-size:15px}
+.msg.show{display:block}
+.msg.err{border-left-color:#a3261c}
+
+footer{background:var(--footer-bg);color:rgba(255,255,255,.75);font-size:14.5px;padding:56px 0 28px}
+footer .wrap{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px}
+@media (max-width:860px){footer .wrap{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){footer .wrap{grid-template-columns:1fr}}
+footer h3{color:#fff;font-size:14px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+footer a{color:#fff;text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer .fbrand b{display:block;font-family:var(--display);font-size:22px;color:#fff;margin-bottom:10px}
+footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);padding-top:22px;margin-top:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13.5px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<div class="util">
+  <div class="wrap">
+    <span class="hide-s">Association agréée · Arrêté n°003865 du 13/04/2011, ministère du Commerce</span>
+    <span class="right"><a href="tel:+221775516171">+221 77 551 61 71</a></span>
+    <span><a href="mailto:adec_cons@yahoo.fr">adec_cons@yahoo.fr</a></span>
+    <span class="hide-s"><a href="https://www.facebook.com/ADECSenegal">Facebook</a></span>
+  </div>
+</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#accueil">
+      <img class="logo" src="img/logo-embleme.png" alt="Logo ADEC-Sénégal" width="72" height="53">
+      <span><b>ADEC-Sénégal</b><small>Association pour la Défense de l'Environnement et des Consommateurs</small></span>
+    </a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="menu" id="menu" aria-label="Navigation principale">
+      <a href="#accueil" data-nav="home">Accueil</a>
+      <a href="#presentation" data-nav="home-presentation">L'association</a>
+      <a href="#realisations" data-nav="home-realisations">Nos actions</a>
+      <a href="#actualites" data-nav="actualites">Actualités</a>
+      <a href="#ressources" data-nav="ressources">Centre de ressources</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+    </nav>
+    <a class="btn btn-green cta" href="#contact">Nous contacter</a>
+  </div>
+</header>
+
+<main id="main">
+<div class="view" id="view-home">
+<section class="hero" style="padding:0" aria-labelledby="h1">
+  <div class="grid">
+    <div class="txt">
+      <div class="kicker">Depuis 1990 au service des consommateurs</div>
+      <h1 id="h1">Informer, éduquer et défendre les consommateurs sénégalais</h1>
+      <p>L'ADEC-Sénégal protège les consommateurs contre les produits de mauvaise qualité, périmés ou impropres à la consommation, et contribue à la préservation d'un environnement sain.</p>
+      <div class="actions">
+        <a class="btn btn-gold" href="#contact" data-objet="Plainte consommateur">Déposer une plainte</a>
+        <a class="btn btn-line" href="#presentation">Découvrir l'association</a>
+      </div>
+    </div>
+    <div class="ph"><img src="img/hero-plantation.jpg" alt="Enfants et bénévoles plantant un arbre avec l'ADEC-Sénégal"><span class="cap">Action environnement : plantation d'arbres</span></div>
+  </div>
+</section>
+
+<div class="marks">
+  <div class="wrap">
+    <div class="mark"><b>1990</b><span>Création de l'association</span></div>
+    <div class="mark"><b>1994</b><span>Enregistrement au ministère de l'Intérieur</span></div>
+    <div class="mark"><b>2011</b><span>Agrément du ministère du Commerce</span></div>
+    <div class="mark"><b>2030</b><span>Horizon de notre vision</span></div>
+  </div>
+</div>
+
+
+
+<section id="presentation" aria-labelledby="t-pres">
+  <div class="wrap about">
+    <div class="text">
+      <div class="kicker">L'association</div>
+      <h2 id="t-pres">Une organisation nationale de défense des consommateurs</h2>
+      <p class="intro">Créée en 1990 et officiellement enregistrée en 1994, l'ADEC-Sénégal est agréée comme association de consommateurs par arrêté du ministère du Commerce depuis 2011.</p>
+      <p style="margin-top:16px">Elle agit pour la protection et la promotion des droits des consommateurs, et mène des actions concrètes pour améliorer la qualité de vie des communautés locales.</p>
+      <div class="mv">
+        <div>
+          <h3>Mission</h3>
+          <p>Protéger les consommateurs par l'information et l'éducation, et participer à la gestion et à la préservation d'un environnement sain.</p>
+        </div>
+        <div>
+          <h3>Vision 2030</h3>
+          <p>Un Sénégal où les consommateurs exercent leurs droits individuels et collectifs et accèdent à des biens et services sains, sûrs et durables.</p>
+        </div>
+      </div>
+    </div>
+    <div class="about-photos">
+      <div class="ph"><img src="img/formation-merci.jpg" alt="Participantes à une formation de l'ADEC-Sénégal"></div>
+      <div class="ph"><img src="img/remise-attestation.jpg" alt="Remise d'attestation de formation"></div>
+      <div class="ph"><img src="img/atelier-cuisine.jpg" alt="Atelier pratique avec des femmes"></div>
+    </div>
+  </div>
+</section>
+
+<section id="dernieres-actualites" class="alt" aria-labelledby="t-news">
+  <div class="wrap">
+    <div class="head split">
+      <div>
+        <h2 id="t-news">Dernières actualités</h2>
+        <p class="intro">Formations, ateliers et prises de position de l'ADEC-Sénégal sur le terrain.</p>
+      </div>
+      <a class="btn btn-outline btn-sm" href="#actualites">Voir toutes les actualités</a>
+    </div>
+    <div class="news-grid" id="homeNews"><p class="pubs-empty">Chargement des actualités…</p></div>
+  </div>
+</section>
+
+<section id="domaines" aria-labelledby="t-dom">
+  <div class="wrap">
+    <div class="head">
+      <div class="kicker">Nos actions</div>
+      <h2 id="t-dom">Domaines d'intervention</h2>
+    </div>
+    <div class="domains">
+      <div class="domain"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><h3>Protection des consommateurs</h3><p>Veille sur la qualité des produits, lutte contre les produits périmés et impropres, accompagnement des plaintes.</p></div>
+      <div class="domain"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5L2 9z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg><h3>Information et éducation</h3><p>Sensibilisation des citoyens à leurs droits et à une consommation responsable.</p></div>
+      <div class="domain"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 19c0-9 6-14 15-14 0 9-5 15-12 15"/><path d="M5 19l7-7"/></svg><h3>Environnement</h3><p>Gestion et préservation d'un environnement sain, promotion de pratiques durables.</p></div>
+      <div class="domain"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6"/><path d="M15 15.5c2.8 0 5 1.8 5 4.5"/></svg><h3>Renforcement des capacités</h3><p>Formation des femmes et des jeunes, appui aux activités génératrices de revenus.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="realisations" class="alt" aria-labelledby="t-rea">
+  <div class="wrap">
+    <div class="head">
+      <div class="kicker">Réalisations</div>
+      <h2 id="t-rea">Des actions concrètes sur le terrain</h2>
+      <p class="intro">Formations, ateliers, rencontres et ouverture d'une boutique communautaire au profit des femmes d'une association de Yeumbeul, pour soutenir leur activité et promouvoir les produits locaux.</p>
+    </div>
+    <article class="feature">
+      <div class="ph"><img src="img/formation-savon-thies.jpg" alt="Formation à la fabrication de savons à Thiès"></div>
+      <div class="body">
+        <div class="meta"><span>Green Action Week 2025</span><span>Thiès</span></div>
+        <h3>Formation de l'Entente des femmes pour le Progrès à la fabrication de savons</h3>
+        <p>Au quartier Bayal Khoudia Badiane, commune de Thiès, l'ADEC-Sénégal a formé des femmes et des jeunes filles à la fabrication de savon liquide, de savon de lessive et de savon de toilette.</p>
+        <ul>
+          <li>Renforcement des capacités des femmes et des jeunes filles</li>
+          <li>Promotion de l'hygiène dans les ménages</li>
+          <li>Protection de l'environnement</li>
+        </ul>
+      </div>
+    </article>
+    <div class="second">
+      <article class="mini">
+        <div class="ph"><img src="img/atelier-jeunes.jpg" alt="Atelier pratique avec des jeunes"></div>
+        <div class="body"><h3>Ateliers pratiques</h3><p>Apprendre par la pratique : des ateliers ouverts aux femmes et aux jeunes des quartiers.</p></div>
+      </article>
+      <article class="mini">
+        <div class="ph"><img src="img/reunion-communautaire.jpg" alt="Réunion communautaire"></div>
+        <div class="body"><h3>Rencontres communautaires</h3><p>Échanges avec les habitants sur la qualité des produits, l'hygiène et les droits du consommateur.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="galerie" aria-labelledby="t-gal">
+  <div class="wrap">
+    <div class="head split">
+      <div>
+        <div class="kicker">En images</div>
+        <h2 id="t-gal">L'ADEC-Sénégal sur le terrain</h2>
+      </div>
+      <a class="more" href="https://www.facebook.com/ADECSenegal">Plus de photos sur Facebook</a>
+    </div>
+    <div class="gallery">
+      <div class="ph"><img src="img/fabrication-savon.jpg" alt="Fabrication de savon par des femmes"></div>
+      <div class="ph"><img src="img/savon-liquide.jpg" alt="Préparation de savon liquide"></div>
+      <div class="ph"><img src="img/savons.jpg" alt="Savons fabriqués pendant la formation"></div>
+      <div class="ph"><img src="img/hero-plantation.jpg" alt="Plantation d'arbres"></div>
+      <div class="ph"><img src="img/reunion-communautaire.jpg" alt="Réunion communautaire"></div>
+    </div>
+  </div>
+</section>
+
+<section id="publications" class="alt" aria-labelledby="t-pub">
+  <div class="wrap">
+    <div class="head split">
+      <div>
+        <div class="kicker">Publications de l'ADEC</div>
+        <h2 id="t-pub">Nos études, enquêtes et déclarations</h2>
+        <p class="intro">Les travaux de l'ADEC-Sénégal sur la protection du consommateur, la santé, l'alimentation et l'environnement.</p>
+      </div>
+      <button type="button" class="btn btn-outline btn-sm" id="pubAll">Voir toutes les publications</button>
+    </div>
+    <div class="pubs" id="pubGrid"><p class="pubs-empty">Chargement des publications…</p></div>
+  </div>
+</section>
+
+<section id="droits" aria-labelledby="t-droits">
+  <div class="wrap rights-wrap">
+    <div>
+      <div class="kicker">Vos droits</div>
+      <h2 id="t-droits">Les 8 droits du consommateur</h2>
+      <p class="intro">Reconnus par les Principes directeurs des Nations Unies pour la protection du consommateur, ils fondent l'action de l'ADEC-Sénégal.</p>
+    </div>
+    <div class="rights two-col">
+          <div><b>1</b><span><h3>Satisfaction des besoins essentiels</h3><p>Alimentation, eau, logement, santé, éducation.</p></span></div>
+          <div><b>2</b><span><h3>Sécurité</h3><p>Protection contre les produits dangereux.</p></span></div>
+          <div><b>3</b><span><h3>Information</h3><p>Étiquetage, prix et composition clairs.</p></span></div>
+          <div><b>4</b><span><h3>Choix</h3><p>Des produits variés à des prix justes.</p></span></div>
+          <div><b>5</b><span><h3>Représentation</h3><p>Être entendu dans les politiques publiques.</p></span></div>
+          <div><b>6</b><span><h3>Réparation</h3><p>Un règlement juste en cas de préjudice.</p></span></div>
+          <div><b>7</b><span><h3>Éducation</h3><p>Devenir un consommateur averti.</p></span></div>
+          <div><b>8</b><span><h3>Environnement sain</h3><p>Pour les générations actuelles et futures.</p></span></div>
+        </div>
+  </div>
+</section>
+
+<section id="partenaires" class="alt" aria-labelledby="t-part">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="t-part">Ils ont accompagné nos projets</h2>
+      <p class="intro">L'ADEC-Sénégal travaille avec des réseaux et des organisations reconnus, au Sénégal et à l'international.</p>
+    </div>
+    <ul class="partners">
+      <li><b>Consumers International</b><span>Fédération mondiale des associations de consommateurs</span></li>
+      <li><b>OSIWA</b><span>Open Society Initiative for West Africa</span></li>
+      <li><b>IPEN</b><span>Réseau international pour l'élimination des polluants (projet IPEP)</span></li>
+      <li><b>Green Action Week</b><span>Campagne internationale pour la consommation durable</span></li>
+      <li><b>Ministère du Commerce</b><span>Agrément d'association de consommateurs depuis 2011</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="cta-band" aria-labelledby="t-cta">
+  <div class="wrap">
+    <div>
+      <h2 id="t-cta">Rejoignez l'ADEC-Sénégal</h2>
+      <p>Membres, bénévoles, partenaires techniques et financiers : ensemble, renforçons la protection des consommateurs au Sénégal.</p>
+    </div>
+    <div class="actions">
+      <a class="btn btn-gold" href="#contact" data-objet="Adhésion">Devenir membre</a>
+      <a class="btn btn-line" href="#contact" data-objet="Partenariat">Devenir partenaire</a>
+    </div>
+  </div>
+</section>
+</div>
+<div class="view" id="view-actualites" hidden>
+<header class="page-head">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Fil d'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><span>Actualités</span></nav>
+    <h1>Actualités</h1>
+    <p>Les activités de l'ADEC-Sénégal : formations, ateliers, campagnes et déclarations.</p>
+  </div>
+</header>
+<section style="padding-top:40px" aria-label="Liste des actualités">
+  <div class="wrap">
+    <div class="news-tools">
+      <div class="rc-themes" id="newsYears" role="group" aria-label="Filtrer par année" style="margin:0"></div>
+      <button class="btn btn-green btn-sm" type="button" id="newsAdd" hidden>+ Publier une actualité</button>
+    </div>
+    <div id="newsFeatured"></div>
+    <div class="news-grid" id="newsList"></div>
+    <p class="pubs-empty" id="newsStatus">Chargement des actualités…</p>
+  </div>
+</section>
+</div>
+<div class="view" id="view-article" hidden>
+<article class="article" aria-labelledby="artTitle">
+  <header class="page-head art-head">
+    <div class="wrap narrow">
+      <nav class="crumbs" aria-label="Fil d'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><a href="#actualites">Actualités</a></nav>
+      <h1 id="artTitle"></h1>
+      <p class="art-meta" id="artMeta"></p>
+    </div>
+  </header>
+  <div class="wrap narrow">
+    <figure class="art-cover ph" id="artCover"></figure>
+    <div class="art-body" id="artBody"></div>
+    <div id="artDoc"></div>
+    <div class="art-gallery" id="artGallery"></div>
+    <div class="art-actions">
+      <a class="btn btn-outline btn-sm" href="#actualites">Toutes les actualités</a>
+      <a class="btn btn-outline btn-sm" id="artWa" href="#" target="_blank" rel="noopener">Partager sur WhatsApp</a>
+      <a class="btn btn-outline btn-sm" id="artFb" href="#" target="_blank" rel="noopener">Partager sur Facebook</a>
+      <button class="btn btn-outline btn-sm" type="button" id="artShare">Copier le lien</button>
+      <span class="hint" id="artShareMsg" role="status" aria-live="polite"></span>
+      <span class="art-admin" id="artAdmin" hidden>
+        <button class="btn btn-green btn-sm" type="button" id="artEdit">Modifier</button>
+        <button class="btn btn-sm btn-danger" type="button" id="artDel">Supprimer</button>
+      </span>
+    </div>
+  </div>
+  <section class="alt" aria-labelledby="t-more" style="margin-top:64px">
+    <div class="wrap">
+      <h2 id="t-more" style="margin-bottom:28px">Autres actualités</h2>
+      <div class="news-grid" id="artMore"></div>
+    </div>
+  </section>
+</article>
+</div>
+<div class="view" id="view-ressources" hidden>
+<header class="page-head">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Fil d'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><span>Centre de ressources</span></nav>
+    <h1>Centre de ressources</h1>
+    <p>Chartes, conventions, textes juridiques, études et publications de l'ADEC-Sénégal, classés par catégorie et par thème.</p>
+  </div>
+</header>
+<section aria-labelledby="t-res" style="padding-top:40px">
+  <div class="wrap">
+    <div class="rc-top">
+      <label class="rc-search" for="rcQ"><span class="sr">Rechercher un document</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <input id="rcQ" type="search" placeholder="Rechercher un document, un mot-clé…">
+      </label>
+      <label for="rcSort" class="sr">Trier</label>
+      <select id="rcSort"><option value="recent">Plus récents d'abord</option><option value="old">Plus anciens d'abord</option><option value="az">Titre A → Z</option></select>
+      <div class="rc-admin" id="rcAdmin" hidden>
+        <button class="btn btn-green btn-sm" type="button" id="rcAdd">+ Ajouter un document</button>
+        <button class="btn btn-outline btn-sm" type="button" id="rcCatsBtn">Gérer les catégories</button>
+      </div>
+    </div>
+    <div class="rc-themes" id="rcThemes" role="group" aria-label="Filtrer par thème"></div>
+    <div class="rc-status" id="rcStatus" role="status" aria-live="polite">Chargement des documents…</div>
+    <div class="rc">
+      <nav class="rc-cats" id="rcCats" aria-label="Catégories de documents"><h3>Catégories</h3></nav>
+      <div class="rc-list">
+        <div class="rc-head"><b id="rcTitle">Tous les documents</b><span id="rcCount"></span></div>
+        <div id="rcRows"></div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+<div class="view" id="view-contact" hidden>
+<header class="page-head">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Fil d'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><span>Contact</span></nav>
+    <h1>Contact</h1>
+    <p>Une plainte, une question sur vos droits, une demande de partenariat ? Écrivez-nous ou passez nous voir.</p>
+  </div>
+</header>
+<section style="padding-top:40px" aria-label="Coordonnées et formulaire">
+  <div class="wrap contact-page">
+    <div class="ccards">
+      <div class="ccard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        <div><h3>Siège</h3><p>Kër FAFS, Cité Bakary II, 1er étage<br>Sacré-Cœur 3 VDN, à côté du terrain de football<br>Boulevard du Koweït, Dakar</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Sacr%C3%A9-C%C5%93ur%203%20VDN%20Dakar">Ouvrir dans Google Maps</a></div>
+      </div>
+      <div class="ccard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+        <div><h3>Téléphone</h3><p><a href="tel:+221775516171">+221 77 551 61 71</a><br><a href="tel:+221776368703">+221 77 636 87 03</a></p></div>
+      </div>
+      <div class="ccard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 20 12z"/></svg>
+        <div><h3>WhatsApp</h3><p><a href="https://wa.me/221775516171">+221 77 551 61 71</a></p></div>
+      </div>
+      <div class="ccard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        <div><h3>E-mail</h3><p><a href="mailto:adec_cons@yahoo.fr">adec_cons@yahoo.fr</a></p></div>
+      </div>
+      <div class="ccard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M15 3h-2a4 4 0 0 0-4 4v3H7v4h2v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h2z"/></svg>
+        <div><h3>Facebook</h3><p><a href="https://www.facebook.com/ADECSenegal">facebook.com/ADECSenegal</a></p></div>
+      </div>
+    </div>
+    <div>
+      <h2 style="margin-bottom:8px">Écrivez-nous</h2>
+      <p class="intro" style="margin:0 0 20px">Nous répondons sous 72 heures ouvrées.</p>
+      <form id="form" novalidate>
+      <div class="two">
+        <div class="f"><label for="nom">Nom et prénom</label><input id="nom" autocomplete="name"></div>
+        <div class="f"><label for="tel">Téléphone</label><input id="tel" type="tel" autocomplete="tel"></div>
+      </div>
+      <div class="two">
+        <div class="f"><label for="mail">E-mail</label><input id="mail" type="email" autocomplete="email"></div>
+        <div class="f"><label for="objet">Objet</label>
+          <select id="objet">
+            <option>Plainte consommateur</option>
+            <option>Signalement de produit</option>
+            <option>Demande d'information</option>
+            <option>Adhésion</option>
+            <option>Partenariat</option>
+          </select>
+        </div>
+      </div>
+      <div class="f"><label for="message">Message</label><textarea id="message"></textarea></div>
+      <button class="btn btn-green" type="submit" style="justify-self:start">Envoyer</button>
+      <div class="msg" id="msg" role="status" aria-live="polite"></div>
+    </form>
+    </div>
+  </div>
+</section>
+<section class="alt" aria-labelledby="t-steps">
+  <div class="wrap">
+    <h2 id="t-steps" style="margin-bottom:28px">Déposer une plainte en 3 étapes</h2>
+    <ol class="steps3">
+      <li><b>1</b><h3>Gardez les preuves</h3><p>Le produit, son emballage, le ticket de caisse ou la facture. Une photo de l'étiquette aide beaucoup.</p></li>
+      <li><b>2</b><h3>Contactez-nous</h3><p>Par le formulaire, par téléphone ou sur WhatsApp. Indiquez le lieu d'achat et la date.</p></li>
+      <li><b>3</b><h3>Nous vous accompagnons</h3><p>Un conseiller étudie votre dossier, vous rappelle et vous aide dans vos démarches auprès du vendeur ou des autorités.</p></li>
+    </ol>
+  </div>
+</section>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fbrand">
+      <img src="img/logo-adec.png" alt="" width="120" style="background:#fff;padding:10px;border-radius:6px;margin-bottom:16px"><b>ADEC-Sénégal</b>
+      <p>Association pour la Défense de l'Environnement et des Consommateurs. Créée en 1990, récépissé n°8017/MINT/DAGAT/DEL, agréée par le ministère du Commerce (arrêté n°003865 du 13 avril 2011).</p>
+    </div>
+    <div>
+      <h3>Le site</h3>
+      <ul><li><a href="#accueil">Accueil</a></li><li><a href="#presentation">L'association</a></li><li><a href="#realisations">Nos actions</a></li><li><a href="#actualites">Actualités</a></li><li><a href="#ressources">Centre de ressources</a></li><li><a href="#droits">Vos droits</a></li></ul>
+    </div>
+    <div>
+      <h3>Nous joindre</h3>
+      <ul class="fcontact"><li>Sacré-Cœur 3 VDN, Dakar</li><li><a href="tel:+221775516171">+221 77 551 61 71</a></li><li><a href="tel:+221776368703">+221 77 636 87 03</a></li><li><a href="mailto:adec_cons@yahoo.fr">adec_cons@yahoo.fr</a></li></ul>
+    </div>
+    <div>
+      <h3>Agir avec nous</h3>
+      <ul><li><a href="#contact" data-objet="Plainte consommateur">Déposer une plainte</a></li><li><a href="#contact" data-objet="Adhésion">Devenir membre</a></li><li><a href="#contact" data-objet="Partenariat">Devenir partenaire</a></li><li><a href="https://www.facebook.com/ADECSenegal">Facebook</a></li><li><a href="https://wa.me/221775516171">WhatsApp</a></li></ul>
+    </div>
+    <div class="legal"><span>© 2026 ADEC-Sénégal. Tous droits réservés.</span><a href="#accueil" class="totop">Haut de page</a></div>
+  </div>
+</footer>
+
+<div class="model-switch" role="group" aria-label="Choisir un modèle de design">
+  <span>Modèle :</span>
+  <button type="button" data-model="a" aria-pressed="true">Institutionnel</button>
+  <button type="button" data-model="b" aria-pressed="false">Campagne</button>
+  <button type="button" data-model="c" aria-pressed="false">Moderne</button>
+</div>
+
+<dialog id="newsDlg" aria-labelledby="newsDlgT">
+  <form id="newsForm" method="dialog" novalidate>
+    <div class="dlg-h"><h3 id="newsDlgT">Publier une actualité</h3><button type="button" class="icon-btn" data-close aria-label="Fermer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="dlg-b">
+      <div class="f"><label for="nTitle">Titre</label><input id="nTitle" maxlength="200" placeholder="Ex. Formation des femmes de Thiès à la fabrication de savons"></div>
+      <div class="two">
+        <div class="f"><label for="nDate">Date</label><input id="nDate" placeholder="2026-02-19" maxlength="10"></div>
+        <div class="f"><label for="nPlace">Lieu</label><input id="nPlace" maxlength="80" placeholder="Ex. Thiès"></div>
+      </div>
+      <div class="f"><label for="nSummary">Résumé (affiché sur l'accueil)</label><textarea id="nSummary" maxlength="320" style="min-height:70px"></textarea></div>
+      <div class="f"><label for="nBody">Texte de l'article</label><textarea id="nBody" style="min-height:180px" placeholder="Laissez une ligne vide entre deux paragraphes."></textarea></div>
+      <div class="f"><label for="nCover">Photo principale</label><input id="nCover" type="file" accept="image/*"><span class="hint" id="nCoverHint">JPG ou PNG, de préférence en paysage.</span></div>
+      <div class="f"><label for="nPhotos">Autres photos (galerie)</label><input id="nPhotos" type="file" accept="image/*" multiple><span class="hint" id="nPhotosHint">Vous pouvez en choisir plusieurs.</span></div>
+      <div class="err-line" id="nErr" role="alert"></div>
+    </div>
+    <div class="dlg-f"><button type="button" class="btn btn-outline btn-sm" data-close>Annuler</button><button type="submit" class="btn btn-green btn-sm" id="nSave">Publier</button></div>
+  </form>
+</dialog>
+
+<dialog id="lightbox" aria-label="Photo agrandie">
+  <img id="lbImg" alt="">
+  <div class="lb-bar"><button type="button" id="lbPrev">Précédente</button><span id="lbCount"></span><button type="button" id="lbNext">Suivante</button><button type="button" data-close>Fermer</button></div>
+</dialog>
+
+<dialog id="docDlg" aria-labelledby="docDlgT">
+  <form id="docForm" method="dialog" novalidate>
+    <div class="dlg-h"><h3 id="docDlgT">Ajouter un document</h3><button type="button" class="icon-btn" data-close aria-label="Fermer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="dlg-b">
+      <div class="f"><label for="dTitle">Titre du document</label><input id="dTitle" required maxlength="200" placeholder="Ex. Convention de partenariat avec…"></div>
+      <div class="two">
+        <div class="f"><label for="dCat">Catégorie</label><select id="dCat"></select></div>
+        <div class="f"><label for="dDate">Date du document</label><input id="dDate" placeholder="Ex. 2013, 2013-10 ou 2013-10-15" maxlength="10"></div>
+      </div>
+      <fieldset class="themes-box" id="dThemes"><legend>Thèmes</legend></fieldset>
+      <div class="f"><label for="dDesc">Description (facultatif)</label><textarea id="dDesc" maxlength="600" style="min-height:80px" placeholder="Une phrase pour dire de quoi il s'agit"></textarea></div>
+      <div class="f"><label for="dFile">Fichier</label><input id="dFile" type="file" accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.odt,.ods,.txt,.csv,.jpg,.jpeg,.png"><span class="hint" id="dFileHint">PDF, Word, Excel, PowerPoint ou image, 20 Mo maximum.</span></div>
+      <div class="err-line" id="dErr" role="alert"></div>
+    </div>
+    <div class="dlg-f"><button type="button" class="btn btn-outline btn-sm" data-close>Annuler</button><button type="submit" class="btn btn-green btn-sm" id="dSave">Enregistrer</button></div>
+  </form>
+</dialog>
+
+<dialog id="catDlg" aria-labelledby="catDlgT">
+  <div class="dlg-h"><h3 id="catDlgT">Gérer les catégories</h3><button type="button" class="icon-btn" data-close aria-label="Fermer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="dlg-b">
+    <p class="hint">Renommez une catégorie en modifiant son nom. Les flèches changent l'ordre d'affichage. Une catégorie ne peut être supprimée que si elle est vide.</p>
+    <div class="stack" id="catList"></div>
+    <form id="catForm" class="two" style="grid-template-columns:1fr auto;align-items:end" novalidate>
+      <div class="f"><label for="newCat">Nouvelle catégorie</label><input id="newCat" maxlength="60" placeholder="Ex. Rapports d'activité"></div>
+      <button class="btn btn-green btn-sm" type="submit">Ajouter</button>
+    </form>
+    <div class="err-line" id="cErr" role="alert"></div>
+  </div>
+  <div class="dlg-f"><button type="button" class="btn btn-outline btn-sm" data-close>Fermer</button></div>
+</dialog>
+
+<dialog id="delDlg" aria-labelledby="delDlgT">
+  <div class="dlg-h"><h3 id="delDlgT">Supprimer ce document ?</h3></div>
+  <div class="dlg-b"><p id="delTxt"></p><p class="hint">Le document et son fichier seront supprimés définitivement.</p><div class="err-line" id="delErr" role="alert"></div></div>
+  <div class="dlg-f"><button type="button" class="btn btn-outline btn-sm" data-close>Annuler</button><button type="button" class="btn btn-sm" style="background:#a3261c;color:#fff" id="delOk">Supprimer</button></div>
+</dialog>
+
+<script>
+(function(){
+  document.querySelectorAll('.ph img').forEach(function(img){
+    function miss(){img.parentElement.classList.add('missing');}
+    if(img.complete && img.naturalWidth===0) miss();
+    img.addEventListener('error',miss);
+  });
+  var b=document.getElementById('burger'),m=document.getElementById('menu');
+  b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);});
+  m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');b.setAttribute('aria-expanded',false);});});
+  var f=document.getElementById('form'),msg=document.getElementById('msg');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var ok=f.nom.value.trim()&&f.message.value.trim();
+    msg.className='msg show'+(ok?'':' err');
+    msg.textContent=ok?'Version de démonstration : une fois le site en ligne, ce message sera transmis à l\'ADEC-Sénégal.':'Merci d\'indiquer votre nom et votre message.';
+  });
+})();
+</script>
+
+<script>
+(function(){
+  var $=function(q){return document.querySelector(q)};
+  var THEMES=[['conso','Consommation'],['env','Environnement et déchets'],['alim','Alimentation, agriculture et pêche'],['sante','Santé'],['gouv','Gouvernance et droits'],['eco','Économie et développement'],['terr','Ville et territoires']];
+  function themeName(id){for(var i=0;i<THEMES.length;i++)if(THEMES[i][0]===id)return THEMES[i][1];return ''}
+  var st={theme:'all',limit:20,cats:[],docs:[],cat:'all',q:'',sort:'recent',canEdit:false,db:null,assets:null,editing:null,deleting:null,ready:false};
+  var MONTHS=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+  var SVG_EDIT='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h4L19 9l-4-4L4 16v4z"/></svg>';
+  var SVG_DEL='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 7h14M10 7V4h4v3M7 7l1 13h8l1-13"/></svg>';
+
+  function el(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e}
+  function norm(t){return String(t||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')}
+  function fmtDate(d){if(!d)return '';var p=String(d).split('-');if(p.length===1)return p[0];if(p.length===2)return MONTHS[(+p[1])-1]+' '+p[0];return (+p[2]===1?'1er':(+p[2]))+' '+MONTHS[(+p[1])-1]+' '+p[0]}
+  function fmtSize(n){if(!n)return '';if(n<1024*1024)return Math.max(1,Math.round(n/1024))+' Ko';return (n/1048576).toFixed(1).replace('.',',')+' Mo'}
+  function kind(d){var n=norm(d.fileName||''),t=d.contentType||'';
+    if(!d.url)return['none','—'];
+    if(/\.pdf$/.test(n)||t.indexOf('pdf')>-1)return['pdf','PDF'];
+    if(/\.(docx?|odt)$/.test(n)||t.indexOf('word')>-1)return['doc','DOC'];
+    if(/\.(xlsx?|ods|csv)$/.test(n)||t.indexOf('sheet')>-1||t.indexOf('excel')>-1)return['xls','XLS'];
+    if(/\.(pptx?)$/.test(n)||t.indexOf('presentation')>-1)return['ppt','PPT'];
+    if(/^image\//.test(t)||/\.(jpe?g|png)$/.test(n))return['img','IMG'];
+    return['', (n.split('.').pop()||'FIC').slice(0,4).toUpperCase()]}
+  function catName(id){for(var i=0;i<st.cats.length;i++)if(st.cats[i].id===id)return st.cats[i].name||'Sans nom';return 'Non classé'}
+  function setStatus(t){$('#rcStatus').textContent=t||''}
+
+  function renderThemes(){
+    var box=$('#rcThemes');box.textContent='';
+    var counts={};st.docs.forEach(function(d){(d.themes||[]).forEach(function(t){counts[t]=(counts[t]||0)+1})});
+    [['all','Tous les thèmes']].concat(THEMES).forEach(function(t){
+      if(t[0]!=='all'&&!counts[t[0]])return;
+      var b=el('button','chip',t[1]);b.type='button';b.setAttribute('aria-pressed',st.theme===t[0]);
+      if(t[0]!=='all'){var n=el('span',null,String(counts[t[0]]));b.appendChild(n)}
+      b.addEventListener('click',function(){st.theme=t[0];st.limit=20;render()});box.appendChild(b)});
+  }
+  function renderPubs(){
+    var g=$('#pubGrid');if(!st.ready&&!st.docs.length)return;g.textContent='';
+    var pubs=st.docs.filter(function(d){return d.categoryId==='adec'}).sort(function(a,b){return String(b.date||'').localeCompare(String(a.date||''))});
+    $('#pubAll').textContent='Voir les '+pubs.length+' publications';
+    if(!pubs.length){g.appendChild(el('p','pubs-empty','Les publications de l\'ADEC apparaîtront ici.'));return}
+    pubs.slice(0,4).forEach(function(d){
+      var a=el(d.url?'a':'div','pub');if(d.url){a.href=d.url;a.target='_blank';a.rel='noopener'}
+      var c=el('div','cover');
+      if(d.thumbUrl){var im=el('img');im.src=d.thumbUrl;im.alt='';im.loading='lazy';c.appendChild(im)}
+      else{var k=kind(d);c.appendChild(el('span','ficon '+k[0],k[1]))}
+      a.appendChild(c);var b=el('div','body');
+      if(d.date)b.appendChild(el('time',null,fmtDate(d.date)));
+      b.appendChild(el('h3',null,d.title||''));if(d.description)b.appendChild(el('p',null,d.description));
+      b.appendChild(el('span','more',d.url?'Lire la publication':'Fichier à venir'));a.appendChild(b);g.appendChild(a)});
+  }
+  $('#pubAll').addEventListener('click',function(){st.cat='adec';st.theme='all';st.q='';$('#rcQ').value='';st.limit=20;render();location.hash='ressources'});
+
+  function render(){
+    renderThemes();renderPubs();
+    // catégories
+    var nav=$('#rcCats');nav.querySelectorAll('.rc-cat').forEach(function(b){b.remove()});
+    var counts={};st.docs.forEach(function(d){counts[d.categoryId]=(counts[d.categoryId]||0)+1});
+    var items=[{id:'all',name:'Tous les documents',n:st.docs.length}].concat(st.cats.map(function(c){return{id:c.id,name:c.name||'Sans nom',n:counts[c.id]||0}}));
+    var orphan=st.docs.filter(function(d){return !st.cats.some(function(c){return c.id===d.categoryId})}).length;
+    if(orphan)items.push({id:'none',name:'Non classé',n:orphan});
+    if(st.cat!=='all'&&!items.some(function(i){return i.id===st.cat}))st.cat='all';
+    items.forEach(function(it){var b=el('button','rc-cat');b.type='button';b.setAttribute('aria-pressed',st.cat===it.id);
+      b.appendChild(el('span',null,it.name));b.appendChild(el('span',null,String(it.n)));
+      b.addEventListener('click',function(){st.cat=it.id;st.limit=20;render()});nav.appendChild(b)});
+    // liste
+    var q=norm(st.q);
+    var list=st.docs.filter(function(d){
+      if(st.cat==='none'){if(st.cats.some(function(c){return c.id===d.categoryId}))return false}
+      else if(st.cat!=='all'&&d.categoryId!==st.cat)return false;
+      if(st.theme!=='all'&&!((d.themes||[]).indexOf(st.theme)>-1))return false;
+      if(q&&norm([d.title,d.description,d.fileName,catName(d.categoryId),(d.themes||[]).map(themeName).join(' ')].join(' ')).indexOf(q)<0)return false;return true});
+    list.sort(function(a,b){
+      if(st.sort==='az')return norm(a.title).localeCompare(norm(b.title));
+      var ka=(a.date||'')+'|'+(a.createdAt||''),kb=(b.date||'')+'|'+(b.createdAt||'');
+      return st.sort==='old'?ka.localeCompare(kb):kb.localeCompare(ka)});
+    $('#rcTitle').textContent=st.cat==='all'?'Tous les documents':(st.cat==='none'?'Non classé':catName(st.cat));if(st.theme!=='all')$('#rcTitle').textContent=(st.cat==='all'?'Thème : ':$('#rcTitle').textContent+', thème : ')+themeName(st.theme);
+    $('#rcCount').textContent=list.length+' document'+(list.length>1?'s':'');
+    var rows=$('#rcRows');rows.textContent='';
+    if(!list.length){var em=el('div','rc-empty',st.ready?(st.docs.length?'Aucun document ne correspond à votre recherche.':'Aucun document pour le moment.'):'');rows.appendChild(em);return}
+    var total=list.length;list=list.slice(0,st.limit);
+    list.forEach(function(d){
+      var r=el('div','rc-row');var k=kind(d);var ic=el('span','ficon '+k[0],k[1]);ic.setAttribute('aria-hidden','true');r.appendChild(ic);
+      var mid=el('div');mid.appendChild(el('h4',null,d.title||'Sans titre'));if(d.description)mid.appendChild(el('p',null,d.description));
+      var meta=el('div','rc-meta');meta.appendChild(el('span','cat',catName(d.categoryId)));if(d.date)meta.appendChild(el('span',null,fmtDate(d.date)));if(d.sizeBytes)meta.appendChild(el('span',null,fmtSize(d.sizeBytes)));(d.themes||[]).forEach(function(t){var n=themeName(t);if(n)meta.appendChild(el('span','tagm',n))});
+      mid.appendChild(meta);r.appendChild(mid);
+      var act=el('div','rc-actions');
+      if(d.url){var a=el('a','rc-open','Consulter');a.href=d.url;a.target='_blank';a.rel='noopener';a.setAttribute('aria-label','Consulter : '+(d.title||'document'));act.appendChild(a)}
+      else act.appendChild(el('span','rc-soon','Fichier à venir'));
+      if(st.canEdit){
+        var e=el('button','icon-btn');e.type='button';e.innerHTML=SVG_EDIT;e.title='Modifier';e.setAttribute('aria-label','Modifier '+(d.title||''));e.addEventListener('click',function(){openDoc(d)});act.appendChild(e);
+        var x=el('button','icon-btn danger');x.type='button';x.innerHTML=SVG_DEL;x.title='Supprimer';x.setAttribute('aria-label','Supprimer '+(d.title||''));x.addEventListener('click',function(){openDel(d)});act.appendChild(x)}
+      r.appendChild(act);rows.appendChild(r)});
+    if(total>list.length){var m=el('div','rc-more');var mb=el('button','btn btn-outline btn-sm','Afficher plus ('+(total-list.length)+' restants)');mb.type='button';mb.addEventListener('click',function(){st.limit+=20;render()});m.appendChild(mb);rows.appendChild(m)}
+  }
+
+  $('#rcQ').addEventListener('input',function(e){st.q=e.target.value;st.limit=20;render()});
+  $('#rcSort').addEventListener('change',function(e){st.sort=e.target.value;render()});
+  document.querySelectorAll('dialog [data-close]').forEach(function(b){b.addEventListener('click',function(){b.closest('dialog').close()})});
+
+  // ---- document : ajout / modification
+  function fillCatSelect(sel,val){sel.textContent='';st.cats.forEach(function(c){var o=el('option',null,c.name||'Sans nom');o.value=c.id;sel.appendChild(o)});if(val)sel.value=val}
+  function openDoc(d){
+    if(!st.cats.length){openCats();$('#cErr').textContent='Créez d\'abord une catégorie.';return}
+    st.editing=d||null;$('#docDlgT').textContent=d?'Modifier le document':'Ajouter un document';
+    $('#dTitle').value=d?d.title||'':'';fillCatSelect($('#dCat'),d?d.categoryId:(st.cat!=='all'&&st.cat!=='none'?st.cat:''));
+    var tb=$('#dThemes');tb.querySelectorAll('label').forEach(function(l){l.remove()});
+    THEMES.forEach(function(t){var l=el('label');var cb=el('input');cb.type='checkbox';cb.value=t[0];cb.checked=!!(d&&(d.themes||[]).indexOf(t[0])>-1);l.appendChild(cb);l.appendChild(document.createTextNode(t[1]));tb.appendChild(l)});
+    $('#dDate').value=d?d.date||'':'';$('#dDesc').value=d?d.description||'':'';$('#dFile').value='';
+    $('#dFileHint').textContent=d&&d.fileName?'Fichier actuel : '+d.fileName+'. Choisissez un fichier seulement pour le remplacer.':'PDF, Word, Excel, PowerPoint ou image, 20 Mo maximum.';
+    $('#dErr').textContent='';$('#docDlg').showModal();$('#dTitle').focus()}
+  $('#rcAdd').addEventListener('click',function(){openDoc(null)});
+  $('#docForm').addEventListener('submit',async function(e){
+    e.preventDefault();var err=$('#dErr');err.textContent='';
+    var title=$('#dTitle').value.trim();if(!title){err.textContent='Indiquez le titre du document.';return}
+    var dv=$('#dDate').value.trim();if(dv&&!/^\d{4}(-(0[1-9]|1[0-2])(-(0[1-9]|[12]\d|3[01]))?)?$/.test(dv)){err.textContent='Date au format 2013, 2013-10 ou 2013-10-15.';return}
+    var file=$('#dFile').files[0];
+    if(file&&file.size>20*1024*1024){err.textContent='Ce fichier dépasse 20 Mo. Compressez-le puis réessayez.';return}
+    var btn=$('#dSave');btn.disabled=true;btn.textContent=file?'Envoi du fichier…':'Enregistrement…';
+    try{
+      var body={title:title,categoryId:$('#dCat').value,date:dv,description:$('#dDesc').value.trim(),themes:Array.prototype.map.call(document.querySelectorAll('#dThemes input:checked'),function(i){return i.value})};
+      var oldAsset=null;
+      if(file){
+        if(!st.assets)throw new Error('upload');
+        var up=await st.assets.upload(file);
+        body.assetId=up.id;body.url=up.url;body.fileName=file.name;body.sizeBytes=up.sizeBytes||file.size;body.contentType=up.contentType||file.type||'';
+        if(st.editing&&st.editing.assetId)oldAsset=st.editing.assetId}
+      if(st.editing){await st.db.doc('documents/'+st.editing.id).update(body)}
+      else{body.createdAt=new Date().toISOString();if(!file){body.url='';body.fileName=''};await st.db.collection('documents').add(body)}
+      if(oldAsset){try{await st.assets.delete(oldAsset)}catch(_){}}
+      $('#docDlg').close()
+    }catch(x){
+      err.textContent=(x&&x.code==='quota_exceeded')?'L\'espace de stockage est plein. Supprimez d\'anciens documents puis réessayez.':
+        (x&&x.message==='upload')?'L\'envoi de fichiers n\'est pas disponible pour votre compte.':'L\'enregistrement a échoué. Vérifiez votre connexion et réessayez.'}
+    finally{btn.disabled=false;btn.textContent='Enregistrer'}
+  });
+
+  // ---- suppression
+  function openDel(d){st.delAction=null;$('#delDlgT').textContent='Supprimer ce document ?';st.deleting=d;$('#delTxt').textContent='« '+(d.title||'Sans titre')+' »';$('#delErr').textContent='';$('#delDlg').showModal()}
+  $('#delOk').addEventListener('click',async function(){
+    if(st.delAction){var b0=this;b0.disabled=true;try{await st.delAction();$('#delDlg').close()}catch(x){$('#delErr').textContent='La suppression a échoué. Réessayez.'}finally{b0.disabled=false;st.delAction=null}return}
+    var d=st.deleting;if(!d)return;var b=this;b.disabled=true;
+    try{await st.db.doc('documents/'+d.id).delete();if(d.assetId&&st.assets){try{await st.assets.delete(d.assetId)}catch(_){}}$('#delDlg').close()}
+    catch(x){$('#delErr').textContent='La suppression a échoué. Réessayez.'}
+    finally{b.disabled=false}
+  });
+
+  // ---- catégories
+  function renderCats(){
+    var box=$('#catList');box.textContent='';
+    var counts={};st.docs.forEach(function(d){counts[d.categoryId]=(counts[d.categoryId]||0)+1});
+    if(!st.cats.length)box.appendChild(el('p','hint','Aucune catégorie pour le moment.'));
+    st.cats.forEach(function(c,i){
+      var row=el('div','cat-row');var inp=el('input');inp.value=c.name||'';inp.setAttribute('aria-label','Nom de la catégorie');
+      inp.addEventListener('change',async function(){var v=inp.value.trim();if(!v||v===c.name){inp.value=c.name||'';return}
+        try{await st.db.doc('categories/'+c.id).update({name:v})}catch(_){$('#cErr').textContent='Le renommage a échoué.'}});
+      row.appendChild(inp);
+      var n=counts[c.id]||0;row.appendChild(el('span','n',n+' doc.'));
+      function mv(dir){return async function(){var j=i+dir;if(j<0||j>=st.cats.length)return;var o=st.cats[j];
+        try{await st.db.doc('categories/'+c.id).update({order:o.order});await st.db.doc('categories/'+o.id).update({order:c.order})}catch(_){$('#cErr').textContent='Le déplacement a échoué.'}}}
+      var up=el('button','icon-btn','↑');up.type='button';up.style.lineHeight='1';up.setAttribute('aria-label','Monter '+c.name);up.disabled=i===0;up.addEventListener('click',mv(-1));row.appendChild(up);
+      var dn=el('button','icon-btn','↓');dn.type='button';dn.style.lineHeight='1';dn.setAttribute('aria-label','Descendre '+c.name);dn.disabled=i===st.cats.length-1;dn.addEventListener('click',mv(1));row.appendChild(dn);
+      var del=el('button','icon-btn danger');del.type='button';del.innerHTML=SVG_DEL;del.setAttribute('aria-label','Supprimer '+c.name);
+      del.title=n?'Déplacez d\'abord ses documents vers une autre catégorie':'Supprimer';del.disabled=n>0;
+      del.addEventListener('click',async function(){try{await st.db.doc('categories/'+c.id).delete()}catch(_){$('#cErr').textContent='La suppression a échoué.'}});
+      row.appendChild(del);box.appendChild(row)});
+  }
+  function openCats(){$('#cErr').textContent='';renderCats();if(!$('#catDlg').open)$('#catDlg').showModal()}
+  $('#rcCatsBtn').addEventListener('click',openCats);
+  $('#catForm').addEventListener('submit',async function(e){e.preventDefault();var v=$('#newCat').value.trim();$('#cErr').textContent='';
+    if(!v){$('#cErr').textContent='Indiquez un nom de catégorie.';return}
+    if(st.cats.some(function(c){return norm(c.name)===norm(v)})){$('#cErr').textContent='Cette catégorie existe déjà.';return}
+    var max=st.cats.reduce(function(m,c){return Math.max(m,+c.order||0)},0);
+    try{await st.db.collection('categories').add({name:v,order:max+1});$('#newCat').value=''}catch(_){$('#cErr').textContent='L\'ajout a échoué.'}});
+
+
+  // ===== Actualités et navigation =====
+  st.news=[];st.newsReady=false;st.year='all';st.editingNews=null;
+  var PIN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>';
+  var CAL='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>';
+  function newsSorted(){return st.news.slice().sort(function(a,b){return String(b.date||'').localeCompare(String(a.date||''))})}
+  function photo(url,alt){var f=el('div','ph');if(url){var im=el('img');im.src=url;im.alt=alt||'';im.loading='lazy';im.addEventListener('error',function(){f.classList.add('missing')});f.appendChild(im)}else f.classList.add('missing');return f}
+  function meta(n){var m=el('div','nmeta');if(n.date){var a=el('span');a.innerHTML=CAL;a.appendChild(document.createTextNode(fmtDate(n.date)));m.appendChild(a)}
+    if(n.place){var b=el('span');b.innerHTML=PIN;b.appendChild(document.createTextNode(n.place));m.appendChild(b)}return m}
+  function isRecent(n){if(!n.date||String(n.date).length<10)return false;return (Date.now()-new Date(n.date+'T00:00:00').getTime())<1000*60*60*24*45}
+  function card(n,feat){
+    var a=el('a','ncard'+(feat?' nfeat':''));a.href='#actualite-'+n.id;
+    a.appendChild(photo(n.cover,''));var b=el('div','body');
+    if(feat&&isRecent(n))b.appendChild(el('span','badge-new','Nouveau'));
+    b.appendChild(meta(n));b.appendChild(el('h3',null,n.title||'Sans titre'));
+    if(n.summary)b.appendChild(el('p',null,n.summary));
+    b.appendChild(el('span','more','Lire la suite'));a.appendChild(b);return a}
+  function renderHomeNews(){var g=$('#homeNews');var list=newsSorted();if(!st.newsReady&&!list.length)return;g.textContent='';
+    if(!list.length){g.appendChild(el('p','pubs-empty','Les actualités de l\'ADEC apparaîtront ici.'));return}
+    list.slice(0,3).forEach(function(n){g.appendChild(card(n))})}
+  function renderNewsPage(){
+    var list=newsSorted();var years={};list.forEach(function(n){var y=String(n.date||'').slice(0,4);if(y)years[y]=(years[y]||0)+1});
+    var yb=$('#newsYears');yb.textContent='';var ys=Object.keys(years).sort().reverse();
+    if(ys.length>1){[['all','Toutes']].concat(ys.map(function(y){return[y,y]})).forEach(function(y){var b=el('button','chip',y[1]);b.type='button';b.setAttribute('aria-pressed',st.year===y[0]);if(y[0]!=='all')b.appendChild(el('span',null,String(years[y[0]])));b.addEventListener('click',function(){st.year=y[0];renderNewsPage()});yb.appendChild(b)})}
+    if(st.year!=='all')list=list.filter(function(n){return String(n.date||'').slice(0,4)===st.year});
+    var f=$('#newsFeatured'),g=$('#newsList');f.textContent='';g.textContent='';
+    $('#newsStatus').textContent=st.newsReady||list.length?(list.length?'':'Aucune actualité pour le moment.'):'Chargement des actualités…';
+    if(list.length){f.appendChild(card(list[0],true));list.slice(1).forEach(function(n){g.appendChild(card(n))})}
+  }
+  var gallery=[],gi=0;
+  function openLb(i){gi=i;$('#lbImg').src=gallery[gi];$('#lbCount').textContent=(gi+1)+' / '+gallery.length;if(!$('#lightbox').open)$('#lightbox').showModal()}
+  $('#lbPrev').addEventListener('click',function(){openLb((gi-1+gallery.length)%gallery.length)});
+  $('#lbNext').addEventListener('click',function(){openLb((gi+1)%gallery.length)});
+  $('#lightbox').addEventListener('keydown',function(e){if(e.key==='ArrowLeft')$('#lbPrev').click();if(e.key==='ArrowRight')$('#lbNext').click()});
+  function renderArticle(id){
+    var n=null;st.news.forEach(function(x){if(x.id===id)n=x});
+    if(!n){$('#artTitle').textContent=st.newsReady?'Actualité introuvable':'Chargement…';$('#artMeta').textContent='';$('#artBody').textContent='';$('#artCover').textContent='';$('#artGallery').textContent='';$('#artDoc').textContent='';$('#artAdmin').hidden=true;return}
+    document.title=(n.title||'Actualité')+' | ADEC Sénégal';
+    $('#artTitle').textContent=n.title||'';var m=$('#artMeta');m.textContent='';var mm=meta(n);while(mm.firstChild)m.appendChild(mm.firstChild);
+    var c=$('#artCover');c.textContent='';c.classList.remove('missing');if(n.cover){var im=el('img');im.src=n.cover;im.alt='';c.appendChild(im)}else c.classList.add('missing');
+    var body=$('#artBody');body.textContent='';String(n.body||n.summary||'').split(/\n\s*\n/).forEach(function(p){p=p.trim();if(p)body.appendChild(el('p',null,p))});
+    var d=$('#artDoc');d.textContent='';if(n.docUrl){var a=el('a','art-doc');a.href=n.docUrl;a.target='_blank';a.rel='noopener';var ic=el('span','ficon pdf','PDF');a.appendChild(ic);var t=el('div');t.appendChild(el('b',null,n.docTitle||'Lire le document'));t.appendChild(el('span',null,'Document PDF, s\'ouvre dans un nouvel onglet'));a.appendChild(t);d.appendChild(a)}
+    gallery=(n.photos||[]).slice();var g=$('#artGallery');g.textContent='';
+    gallery.forEach(function(u,i){var b=el('button');b.type='button';b.setAttribute('aria-label','Agrandir la photo '+(i+1));var im=el('img');im.src=u;im.alt='';im.loading='lazy';b.appendChild(im);b.addEventListener('click',function(){openLb(i)});g.appendChild(b)});
+    var more=$('#artMore');more.textContent='';newsSorted().filter(function(x){return x.id!==id}).slice(0,3).forEach(function(x){more.appendChild(card(x))});
+    var u=location.href;$('#artWa').href='https://wa.me/?text='+encodeURIComponent((n.title||'')+' '+u);$('#artFb').href='https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u);
+    $('#artAdmin').hidden=!st.canEdit;st.current=n;
+  }
+  $('#artShare').addEventListener('click',async function(){var msg=$('#artShareMsg');try{await navigator.clipboard.writeText(location.href);msg.textContent='Lien copié.'}catch(e){msg.textContent='Copiez le lien depuis la barre d\'adresse.'}});
+
+  // formulaire actualité
+  function openNews(n){st.editingNews=n||null;$('#newsDlgT').textContent=n?'Modifier l\'actualité':'Publier une actualité';$('#nSave').textContent=n?'Enregistrer':'Publier';
+    $('#nTitle').value=n?n.title||'':'';$('#nDate').value=n?n.date||'':new Date().toISOString().slice(0,10);$('#nPlace').value=n?n.place||'':'';$('#nSummary').value=n?n.summary||'':'';$('#nBody').value=n?n.body||'':'';
+    $('#nCover').value='';$('#nPhotos').value='';$('#nCoverHint').textContent=n&&n.cover?'Une photo est déjà en place. Choisissez-en une seulement pour la remplacer.':'JPG ou PNG, de préférence en paysage.';
+    $('#nPhotosHint').textContent=n&&(n.photos||[]).length?(n.photos.length+' photo(s) déjà dans la galerie. Les nouvelles s\'ajoutent à la suite.'):'Vous pouvez en choisir plusieurs.';
+    $('#nErr').textContent='';$('#newsDlg').showModal();$('#nTitle').focus()}
+  $('#newsAdd').addEventListener('click',function(){openNews(null)});
+  $('#artEdit').addEventListener('click',function(){if(st.current)openNews(st.current)});
+  $('#artDel').addEventListener('click',function(){var n=st.current;if(!n)return;st.delAction=async function(){await st.db.doc('news/'+n.id).delete();location.hash='actualites'};
+    $('#delDlgT').textContent='Supprimer cette actualité ?';$('#delTxt').textContent='« '+(n.title||'')+' »';$('#delErr').textContent='';$('#delDlg').showModal()});
+  $('#newsForm').addEventListener('submit',async function(e){e.preventDefault();var err=$('#nErr');err.textContent='';
+    var title=$('#nTitle').value.trim(),date=$('#nDate').value.trim();
+    if(!title){err.textContent='Indiquez le titre.';return}
+    if(!/^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/.test(date)){err.textContent='Date au format 2026-02-19.';return}
+    var cover=$('#nCover').files[0],photos=Array.prototype.slice.call($('#nPhotos').files);
+    var big=[cover].concat(photos).filter(function(f){return f&&f.size>20*1024*1024});if(big.length){err.textContent='Une photo dépasse 20 Mo. Réduisez-la puis réessayez.';return}
+    var btn=$('#nSave');btn.disabled=true;btn.textContent=(cover||photos.length)?'Envoi des photos…':'Enregistrement…';
+    try{
+      var body={title:title,date:date,place:$('#nPlace').value.trim(),summary:$('#nSummary').value.trim(),body:$('#nBody').value.trim()};
+      if(cover||photos.length){if(!st.assets)throw new Error('upload')}
+      if(cover){body.cover=(await st.assets.upload(cover)).url}
+      if(photos.length){var urls=(st.editingNews&&st.editingNews.photos||[]).slice();for(var i=0;i<photos.length;i++){urls.push((await st.assets.upload(photos[i])).url)}body.photos=urls}
+      if(!st.editingNews&&!body.photos&&body.cover)body.photos=[body.cover];
+      if(st.editingNews){await st.db.doc('news/'+st.editingNews.id).update(body)}
+      else{body.createdAt=new Date().toISOString();var ref=await st.db.collection('news').add(body);$('#newsDlg').close();location.hash='actualite-'+ref.id;return}
+      $('#newsDlg').close()
+    }catch(x){err.textContent=(x&&x.message==='upload')?'L\'envoi de photos n\'est pas disponible pour votre compte.':'La publication a échoué. Vérifiez votre connexion et réessayez.'}
+    finally{btn.disabled=false;btn.textContent=st.editingNews?'Enregistrer':'Publier'}
+  });
+
+  // routeur
+  var TITLES={home:'ADEC Sénégal',actualites:'Actualités | ADEC Sénégal',ressources:'Centre de ressources | ADEC Sénégal',contact:'Contact | ADEC Sénégal'};
+  function show(v){['home','actualites','article','ressources','contact'].forEach(function(k){document.getElementById('view-'+k).hidden=(k!==v)})}
+  function route(){
+    var h=decodeURIComponent(location.hash.slice(1))||'accueil',nav='home';
+    if(h==='actualites'||h==='ressources'||h==='contact'){show(h);nav=h;document.title=TITLES[h];window.scrollTo(0,0);if(h==='actualites')renderNewsPage()}
+    else if(h.indexOf('actualite-')===0){show('article');nav='actualites';renderArticle(h.slice(10));window.scrollTo(0,0)}
+    else{show('home');document.title=TITLES.home;var t=h!=='accueil'&&document.getElementById(h);
+      if(t&&document.getElementById('view-home').contains(t)){nav='home-'+h;setTimeout(function(){t.scrollIntoView()},0)}else window.scrollTo(0,0)}
+    document.querySelectorAll('.menu a').forEach(function(a){var on=a.dataset.nav===nav||(nav.indexOf('home')===0&&a.dataset.nav==='home'&&nav==='home');if(on)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+  }
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-objet]');if(a){st.objet=a.dataset.objet}});
+  window.addEventListener('hashchange',function(){route();if(location.hash==='#contact'&&st.objet){var o=document.getElementById('objet');if(o){o.value=st.objet}st.objet=null}});route();
+
+  // ---- démarrage
+  render();
+  if(!window.claude||!window.claude.use){setStatus('Les documents seront consultables sur le site en ligne.');$('#pubGrid').textContent='';$('#homeNews').textContent='';$('#newsStatus').textContent='';return}
+  (async function(){
+    var db=null;try{db=await window.claude.use('db')}catch(_){}
+    if(!db){setStatus('Connectez-vous à Claude pour consulter les documents de cette maquette.');$('#pubGrid').textContent='';$('#homeNews').textContent='';$('#newsStatus').textContent='';return}
+    st.db=db;
+    var user=null;try{user=await window.claude.use('user')}catch(_){}
+    try{st.canEdit=!!(user&&(await user.canEdit()))}catch(_){}
+    if(st.canEdit){try{st.assets=await window.claude.use('assets')}catch(_){}$('#rcAdmin').hidden=false;$('#newsAdd').hidden=false}
+    var got={c:false,d:false};
+    var timer=setTimeout(function(){if(!(got.c&&got.d))setStatus('Les documents mettent du temps à arriver. Vérifiez votre connexion.')},10000);
+    function check(){if(got.c&&got.d){clearTimeout(timer);st.ready=true;setStatus('')}}
+    function fail(){clearTimeout(timer);setStatus('Les documents ne peuvent pas être chargés pour le moment.')}
+    db.collection('categories').orderBy('order').onSnapshot(function(s){
+      st.cats=s.docs.map(function(d){var o=Object.assign({},d.data());o.id=d.id;return o});
+      if(!s.metadata.fromCache)got.c=true;check();render();if($('#catDlg').open)renderCats()},fail);
+    db.collection('news').onSnapshot(function(s){
+      st.news=s.docs.map(function(d){var o=Object.assign({},d.data());o.id=d.id;return o});
+      if(!s.metadata.fromCache)st.newsReady=true;renderHomeNews();
+      var h=decodeURIComponent(location.hash.slice(1));if(h==='actualites')renderNewsPage();else if(h.indexOf('actualite-')===0)renderArticle(h.slice(10))},function(){st.newsReady=true;renderHomeNews()});
+    db.collection('documents').onSnapshot(function(s){
+      st.docs=s.docs.map(function(d){var o=Object.assign({},d.data());o.id=d.id;return o});
+      if(!s.metadata.fromCache)got.d=true;check();render();if($('#catDlg').open)renderCats()},fail);
+  })();
+})();
+</script>
+<script>
+(function(){
+  var btns=document.querySelectorAll('.model-switch button');
+  function apply(m){
+    if(m==='a')document.documentElement.removeAttribute('data-model');else document.documentElement.setAttribute('data-model',m);
+    btns.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.model===m)});
+    try{localStorage.setItem('adec-model',m)}catch(e){}
+  }
+  var saved='a';try{saved=localStorage.getItem('adec-model')||'a'}catch(e){}
+  apply(saved);
+  btns.forEach(function(b){b.addEventListener('click',function(){apply(b.dataset.model)})});
+})();
+</script>
+</body>
+</html>
