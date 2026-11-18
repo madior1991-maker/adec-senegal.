@@ -11,10 +11,10 @@
 <meta name="description" content="ADEC-Sénégal, Association pour la Défense de l'Environnement et des Consommateurs. Association agréée par le ministère du Commerce. Information, éducation et défense des consommateurs depuis 1990.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;700;800&family=Archivo:wdth,wght@75..100,500..900&family=Source+Sans+3:wght@400;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  /* Modèle A « Institutionnel lisible » (par défaut) : vert profond, vert feuille et bleu du logo,
+  /* Thème institutionnel : vert profond, vert feuille et bleu du logo,
      une seule famille très lisible (Atkinson Hyperlegible Next), rayons sobres. */
   --bg:#ffffff;
   --alt:#f2f5f2;
@@ -53,32 +53,6 @@
   --footer-bg:#0a2f21;
   --wrap:1200px;
   color-scheme:light;
-}
-/* Modèle B « Campagne » : bleu nuit et jaune, titres condensés en capitales façon affiche, angles vifs. */
-:root[data-model="b"]{
-  --bg:#ffffff;--alt:#f1f4f9;--ink:#0f1b2d;--muted:#475467;--line:#d6deea;
-  --green:#12355b;--green-2:#1b4b80;--gold:#f2b705;--on-gold:#13202f;--gold-hover:#dca603;--blue:#2f8526;
-  --display:"Archivo","Arial Narrow",system-ui,sans-serif;
-  --body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
-  --h-weight:800;--h-tracking:0;--h-transform:uppercase;
-  --h1-size:clamp(36px,4.8vw,62px);--h2-size:clamp(28px,3.2vw,42px);--h-color:#12355b;
-  --kicker-transform:uppercase;--kicker-tracking:.12em;--kicker-size:13px;--kicker-color:#2f8526;--kicker-line:block;
-  --r-sm:2px;--r-btn:2px;--r-lg:2px;
-  --hero-bg:#12355b;--hero-ink:#fff;--hero-muted:rgba(255,255,255,.85);--hero-kicker:#f2b705;--hero-ghost:#fff;
-  --footer-bg:#0b2440;
-}
-/* Modèle C « Moderne et doux » : fonds menthe, formes arrondies, boutons pilules, une famille géométrique (Manrope). */
-:root[data-model="c"]{
-  --bg:#ffffff;--alt:#eef6f1;--ink:#1c2b24;--muted:#56675f;--line:#dbe8e0;
-  --green:#1f6b45;--green-2:#26875a;--gold:#1f7a4c;--on-gold:#fff;--gold-hover:#186139;--blue:#2f6fbf;
-  --display:"Manrope","Segoe UI",system-ui,sans-serif;
-  --body:"Manrope","Segoe UI",system-ui,sans-serif;
-  --h-weight:800;--h-tracking:-0.025em;--h-transform:none;
-  --h1-size:clamp(34px,4.4vw,56px);--h2-size:clamp(28px,3vw,40px);--h-color:#17402b;
-  --kicker-transform:none;--kicker-tracking:0;--kicker-size:14px;--kicker-color:#1f6b45;--kicker-line:none;--kicker-bg:#dff0e6;--kicker-pad:5px 12px;
-  --r-sm:10px;--r-btn:999px;--r-lg:18px;
-  --hero-bg:#eef6f1;--hero-ink:#17402b;--hero-muted:#3f5348;--hero-kicker:#1f6b45;--hero-ghost:#1f6b45;
-  --footer-bg:#123a26;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -146,14 +120,12 @@ nav.menu a:hover{color:var(--green);border-bottom-color:var(--gold)}
 .hero .txt{padding:clamp(56px,7vw,104px) clamp(20px,5vw,72px) clamp(56px,7vw,104px) max(clamp(16px,4vw,32px),calc((100vw - var(--wrap))/2 + 32px))}
 .hero .ph{min-height:420px}
 .hero .kicker{color:var(--hero-kicker)}
-:root[data-model="c"] .hero .kicker{background:#d3eadc}
-:root[data-model="c"] .hero .ph{margin:28px 28px 28px 0;border-radius:var(--r-lg);overflow:hidden}
-@media (max-width:900px){:root[data-model="c"] .hero .ph{margin:16px}}
 .hero h1{font-size:var(--h1-size);max-width:17ch;line-height:1.08}
 .hero p{max-width:52ch;margin-top:20px;font-size:18px;color:var(--hero-muted)}
 .hero .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
 .hero .cap{position:absolute;left:16px;bottom:14px;background:rgba(10,40,25,.78);color:#fff;font-size:13px;padding:6px 10px;border-radius:var(--r-sm)}
-@media (max-width:900px){.hero .grid{grid-template-columns:1fr}.hero .ph{min-height:300px;order:-1}}
+@media (max-width:1100px){.hero .txt{padding:48px 32px 48px max(20px,calc((100vw - var(--wrap))/2 + 20px))}.hero h1{font-size:clamp(28px,3.6vw,44px)}.hero p{font-size:16.5px}}
+@media (max-width:640px){.hero .grid{grid-template-columns:1fr}.hero .ph{min-height:260px}}
 
 /* Repères */
 .marks{border-bottom:1px solid var(--line)}
@@ -334,14 +306,6 @@ dialog::backdrop{background:rgba(10,30,20,.45)}
 .feature .ph,.mini .ph{border-radius:0}
 .domain .ic{width:40px;height:40px;color:var(--blue)}
 
-/* Sélecteur de modèle (aperçu) */
-.model-switch{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:50;display:flex;gap:6px;align-items:center;background:#111c17;color:#fff;padding:8px 8px 8px 16px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.3);font:600 14px "Segoe UI",system-ui,sans-serif;max-width:calc(100vw - 24px);flex-wrap:wrap;justify-content:center}
-.model-switch span{opacity:.75;margin-right:4px}
-.model-switch button{font:600 14px "Segoe UI",system-ui,sans-serif;border:0;border-radius:999px;padding:8px 14px;background:rgba(255,255,255,.12);color:#fff;cursor:pointer}
-.model-switch button[aria-pressed="true"]{background:#fff;color:#111c17}
-.model-switch button:focus-visible{outline:3px solid #f2b705;outline-offset:2px}
-@media (max-width:900px){.model-switch{flex-wrap:nowrap;gap:4px;padding:5px;bottom:10px;left:auto;right:10px;transform:none;max-width:calc(100vw - 20px)}.model-switch span{display:none}.model-switch button{padding:7px 10px;font-size:12.5px}}
-
 .skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--green);color:#fff;padding:10px 16px;border-radius:var(--r-btn);font-weight:700;text-decoration:none}
 .skip:focus{top:12px}
 .partners{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
@@ -352,6 +316,11 @@ dialog::backdrop{background:rgba(10,30,20,.45)}
 .partners span{font-size:14px;color:var(--muted);line-height:1.45}
 footer .fcontact li{color:rgba(255,255,255,.85)}
 .totop{font-weight:700}
+.gbtn{padding:0;border:0;cursor:zoom-in;display:block;width:100%;height:100%;position:relative;font:inherit;text-align:left}
+.gcap{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 12px;background:linear-gradient(transparent,rgba(5,20,12,.78));color:#fff;font-size:14px;line-height:1.35;opacity:0;transition:opacity .25s}
+.gbtn:hover .gcap,.gbtn:focus-visible .gcap{opacity:1}
+@media (hover:none){.gcap{opacity:1;font-size:12.5px;padding:20px 10px 8px}}
+.lb-cap{margin:0;padding:12px 16px 0;font-size:15px;color:rgba(255,255,255,.9)}
 /* ===== Pages ===== */
 .view[hidden]{display:none!important}
 .menu a[aria-current="page"]{color:var(--green);border-bottom-color:var(--gold)}
@@ -390,6 +359,55 @@ footer .fcontact li{color:rgba(255,255,255,.85)}
 .news-tools{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:28px}
 .badge-new{display:inline-block;align-self:flex-start;font-size:12.5px;font-weight:700;color:var(--on-gold);background:var(--gold);padding:3px 10px;border-radius:999px}
 
+/* Actualités : pastille date, accueil à la une */
+.ncard .ph{position:relative}
+.dbadge{position:absolute;top:14px;left:14px;display:grid;justify-items:center;min-width:62px;padding:8px 10px 7px;background:var(--bg);color:var(--ink);border-radius:var(--r-sm);box-shadow:0 4px 14px rgba(0,0,0,.18);line-height:1.1;text-align:center}
+.dbadge b{font-family:var(--display);font-size:24px;color:var(--green);font-weight:800}
+.dbadge span{font-size:11.5px;font-weight:700;color:var(--muted);white-space:nowrap}
+.news-home{display:grid;grid-template-columns:1.35fr 1fr;gap:28px;align-items:stretch}
+@media (max-width:900px){.news-home{grid-template-columns:1fr}}
+.nhome{display:flex;flex-direction:column}
+.nhome .ph{aspect-ratio:16/10}
+.nhome .body{padding:24px 26px 28px}
+.nhome h3{font-size:clamp(21px,2vw,26px)}
+.nhome p{-webkit-line-clamp:4;font-size:16px}
+.news-side{display:grid;gap:16px;grid-auto-rows:1fr}
+@media (max-width:900px){.news-side{grid-auto-rows:auto}}
+.nmini{display:grid;grid-template-columns:150px 1fr;gap:0;background:var(--bg);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;text-decoration:none;color:var(--ink);transition:border-color .2s,box-shadow .2s}
+.nmini:hover{border-color:var(--green);box-shadow:0 8px 22px rgba(15,40,28,.09)}
+.nmini .ph{min-height:120px;height:100%}
+.nmini .body{padding:14px 16px;display:flex;flex-direction:column;gap:6px}
+.nmini .nmeta{font-size:13px}
+.nmini h3{font-size:16.5px;line-height:1.3;color:var(--h-color);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.nmini .more{margin-top:auto;font-weight:700;font-size:14px;color:var(--green)}
+.nmini:hover .more{text-decoration:underline;text-underline-offset:4px}
+@media (max-width:420px){.nmini{grid-template-columns:112px 1fr}}
+
+/* Cadrage des photos : on garde les visages dans le cadre */
+img[src$="atelier-cuisine.jpg"]{object-position:50% 22%}
+img[src$="remise-attestation.jpg"]{object-position:50% 14%}
+img[src$="formation-savon-thies.jpg"]{object-position:50% 28%}
+img[src$="reunion-communautaire.jpg"]{object-position:50% 38%}
+img[src$="fabrication-savon.jpg"]{object-position:40% 30%}
+img[src$="savon-liquide.jpg"]{object-position:50% 35%}
+img[src$="atelier-jeunes.jpg"]{object-position:50% 25%}
+img[src$="formation-merci.jpg"]{object-position:50% 35%}
+img[src$="hero-plantation.jpg"]{object-position:42% 55%}
+img[src$="jmdc-2026.jpg"]{object-position:0% 50%}
+
+/* Visionneuse PDF */
+#pdfDlg{width:min(1000px,calc(100vw - 16px));height:calc(100vh - 32px);max-height:none;background:#e9eeeb;display:none;flex-direction:column}
+#pdfDlg[open]{display:flex}
+.pdf-h{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 16px;background:var(--bg);border-bottom:1px solid var(--line)}
+.pdf-h h3{flex:1 1 240px;font-size:16px;line-height:1.3;min-width:0}
+.pdf-count{font-size:13.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.pdf-body{flex:1;overflow:auto;padding:16px;display:grid;gap:14px;justify-items:center;align-content:start}
+.pdf-page{width:100%;max-width:880px;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.12);position:relative}
+.pdf-page canvas{width:100%;height:auto;display:block}
+.pdf-msg{padding:40px 20px;text-align:center;color:var(--muted);max-width:520px}
+.pdf-msg a{font-weight:700}
+@media (max-width:600px){#pdfDlg{width:100vw;height:100vh;max-width:100vw;border-radius:0;margin:0}.pdf-body{padding:8px}.pdf-h .btn{padding:8px 12px}}
+
 /* Article */
 .art-head h1{max-width:26ch}
 .art-meta{display:flex;gap:6px 18px;flex-wrap:wrap;color:var(--hero-muted);font-size:16px}
@@ -401,6 +419,9 @@ footer .fcontact li{color:rgba(255,255,255,.85)}
 .art-body p:first-child{font-size:20px;line-height:1.6;color:var(--ink)}
 .art-doc{display:flex;gap:16px;align-items:center;margin-top:32px;padding:18px 20px;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--alt);text-decoration:none;color:var(--ink)}
 .art-doc:hover{border-color:var(--green)}
+.ph img[src$="logo-embleme.png"],.art-cover img[src$="logo-embleme.png"]{object-fit:contain!important;padding:20% 28%;background:var(--alt)}
+.art-doc+.art-doc{margin-top:12px}
+.ficon.fb{background:#1877f2;color:#fff;font:800 24px/1 system-ui,sans-serif;place-items:center;padding:0;border-radius:10px;height:40px}.ficon.fb::before,.ficon.fb::after{display:none}
 .art-doc b{display:block;font-size:16px}
 .art-doc span{color:var(--muted);font-size:14.5px}
 .art-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:40px}
@@ -631,12 +652,12 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
       </div>
       <a class="more" href="https://www.facebook.com/ADECSenegal">Plus de photos sur Facebook</a>
     </div>
-    <div class="gallery">
-      <div class="ph"><img src="img/fabrication-savon.jpg" alt="Fabrication de savon par des femmes"></div>
-      <div class="ph"><img src="img/savon-liquide.jpg" alt="Préparation de savon liquide"></div>
-      <div class="ph"><img src="img/savons.jpg" alt="Savons fabriqués pendant la formation"></div>
-      <div class="ph"><img src="img/hero-plantation.jpg" alt="Plantation d'arbres"></div>
-      <div class="ph"><img src="img/reunion-communautaire.jpg" alt="Réunion communautaire"></div>
+    <div class="gallery" id="homeGallery">
+      <button type="button" class="ph gbtn" data-src="img/fabrication-savon.jpg" data-cap="Fabrication de savon par les femmes de l'Entente des femmes pour le Progrès, Thiès" aria-label="Agrandir : Fabrication de savon par les femmes de l'Entente des femmes pour le Progrès, Thiès"><img loading="lazy" decoding="async" src="img/fabrication-savon.jpg" alt="Fabrication de savon par les femmes de l'Entente des femmes pour le Progrès, Thiès"><span class="gcap">Fabrication de savon par les femmes de l'Entente des femmes pour le Progrès, Thiès</span></button>
+      <button type="button" class="ph gbtn" data-src="img/savon-liquide.jpg" data-cap="Préparation de savon liquide pendant la formation" aria-label="Agrandir : Préparation de savon liquide pendant la formation"><img loading="lazy" decoding="async" src="img/savon-liquide.jpg" alt="Préparation de savon liquide pendant la formation"><span class="gcap">Préparation de savon liquide pendant la formation</span></button>
+      <button type="button" class="ph gbtn" data-src="img/savons.jpg" data-cap="Pains de savon fabriqués pendant la formation" aria-label="Agrandir : Pains de savon fabriqués pendant la formation"><img loading="lazy" decoding="async" src="img/savons.jpg" alt="Pains de savon fabriqués pendant la formation"><span class="gcap">Pains de savon fabriqués pendant la formation</span></button>
+      <button type="button" class="ph gbtn" data-src="img/hero-plantation.jpg" data-cap="Plantation d'arbres avec des élèves" aria-label="Agrandir : Plantation d'arbres avec des élèves"><img loading="lazy" decoding="async" src="img/hero-plantation.jpg" alt="Plantation d'arbres avec des élèves"><span class="gcap">Plantation d'arbres avec des élèves</span></button>
+      <button type="button" class="ph gbtn" data-src="img/reunion-communautaire.jpg" data-cap="Réunion communautaire avec les participantes" aria-label="Agrandir : Réunion communautaire avec les participantes"><img loading="lazy" decoding="async" src="img/reunion-communautaire.jpg" alt="Réunion communautaire avec les participantes"><span class="gcap">Réunion communautaire avec les participantes</span></button>
     </div>
   </div>
 </section>
@@ -887,12 +908,16 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
   </div>
 </footer>
 
-<div class="model-switch" role="group" aria-label="Choisir un modèle de design">
-  <span>Modèle :</span>
-  <button type="button" data-model="a" aria-pressed="true">Institutionnel</button>
-  <button type="button" data-model="b" aria-pressed="false">Campagne</button>
-  <button type="button" data-model="c" aria-pressed="false">Moderne</button>
-</div>
+
+<dialog id="pdfDlg" aria-labelledby="pdfTitle">
+  <div class="pdf-h">
+    <h3 id="pdfTitle"></h3>
+    <span class="pdf-count" id="pdfCount"></span>
+    <a class="btn btn-outline btn-sm" id="pdfOpen" href="#" target="_blank" rel="noopener">Ouvrir dans un nouvel onglet</a>
+    <button type="button" class="btn btn-green btn-sm" data-close>Fermer</button>
+  </div>
+  <div class="pdf-body" id="pdfBody"></div>
+</dialog>
 
 <dialog id="newsDlg" aria-labelledby="newsDlgT">
   <form id="newsForm" method="dialog" novalidate>
@@ -915,6 +940,7 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
 
 <dialog id="lightbox" aria-label="Photo agrandie">
   <img id="lbImg" alt="">
+  <p class="lb-cap" id="lbCap"></p>
   <div class="lb-bar"><button type="button" id="lbPrev">Précédente</button><span id="lbCount"></span><button type="button" id="lbNext">Suivante</button><button type="button" data-close>Fermer</button></div>
 </dialog>
 
@@ -969,13 +995,20 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
   var f=document.getElementById('form'),msg=document.getElementById('msg');
   f.addEventListener('submit',function(e){
     e.preventDefault();
-    var ok=f.nom.value.trim()&&f.message.value.trim();
+    var g=function(id){var x=document.getElementById(id);return x?x.value.trim():''};
+    var ok=g('nom')&&g('message');
     msg.className='msg show'+(ok?'':' err');
-    msg.textContent=ok?'Version de démonstration : une fois le site en ligne, ce message sera transmis à l\'ADEC-Sénégal.':'Merci d\'indiquer votre nom et votre message.';
+    if(!ok){msg.textContent='Merci d\'indiquer votre nom et votre message.';return}
+    var sel=document.getElementById('objet');var obj=sel&&sel.selectedIndex>=0?sel.options[sel.selectedIndex].text:'Message';
+    var body='Nom : '+g('nom')+'\nE-mail : '+g('mail')+'\nTéléphone : '+g('tel')+'\n\n'+g('message');
+    location.href='mailto:adec_cons@yahoo.fr?subject='+encodeURIComponent('[Site web] '+obj)+'&body='+encodeURIComponent(body);
+    msg.textContent='Votre messagerie s\'ouvre avec le message prêt à envoyer. Si rien ne s\'ouvre, écrivez-nous à adec_cons@yahoo.fr.';
   });
 })();
 </script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js"></script>
 <script>
 (function(){
   var $=function(q){return document.querySelector(q)};
@@ -1013,10 +1046,10 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
   function renderPubs(){
     var g=$('#pubGrid');if(!st.ready&&!st.docs.length)return;g.textContent='';
     var pubs=st.docs.filter(function(d){return d.categoryId==='adec'}).sort(function(a,b){return String(b.date||'').localeCompare(String(a.date||''))});
-    $('#pubAll').textContent='Voir les '+pubs.length+' publications';
+    $('#pubAll').textContent=pubs.length>1?'Voir les '+pubs.length+' publications':'Voir la publication';
     if(!pubs.length){g.appendChild(el('p','pubs-empty','Les publications de l\'ADEC apparaîtront ici.'));return}
     pubs.slice(0,4).forEach(function(d){
-      var a=el(d.url?'a':'div','pub');if(d.url){a.href=d.url;a.target='_blank';a.rel='noopener'}
+      var a=el(d.url?'a':'div','pub');if(d.url){a.href=d.url;a.target='_blank';a.rel='noopener';if(isLocal(d.url))a.dataset.pdf=d.title||'Document'}
       var c=el('div','cover');
       if(d.thumbUrl){var im=el('img');im.src=d.thumbUrl;im.alt='';im.loading='lazy';c.appendChild(im)}
       else{var k=kind(d);c.appendChild(el('span','ficon '+k[0],k[1]))}
@@ -1061,7 +1094,7 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
       var meta=el('div','rc-meta');meta.appendChild(el('span','cat',catName(d.categoryId)));if(d.date)meta.appendChild(el('span',null,fmtDate(d.date)));if(d.sizeBytes)meta.appendChild(el('span',null,fmtSize(d.sizeBytes)));(d.themes||[]).forEach(function(t){var n=themeName(t);if(n)meta.appendChild(el('span','tagm',n))});
       mid.appendChild(meta);r.appendChild(mid);
       var act=el('div','rc-actions');
-      if(d.url){var a=el('a','rc-open','Consulter');a.href=d.url;a.target='_blank';a.rel='noopener';a.setAttribute('aria-label','Consulter : '+(d.title||'document'));act.appendChild(a)}
+      if(d.url){var ext=!isLocal(d.url);var a=el('a','rc-open',ext?'Site officiel':'Consulter');a.href=d.url;a.target='_blank';a.rel='noopener';if(!ext)a.dataset.pdf=d.title||'Document';a.setAttribute('aria-label',(ext?'Ouvrir sur le site officiel : ':'Consulter : ')+(d.title||'document'));act.appendChild(a)}
       else act.appendChild(el('span','rc-soon','Fichier à venir'));
       if(st.canEdit){
         var e=el('button','icon-btn');e.type='button';e.innerHTML=SVG_EDIT;e.title='Modifier';e.setAttribute('aria-label','Modifier '+(d.title||''));e.addEventListener('click',function(){openDoc(d)});act.appendChild(e);
@@ -1151,24 +1184,31 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
 
 
   // ===== Actualités et navigation =====
-  st.news=[];st.newsReady=false;st.year='all';st.editingNews=null;
+  st.news=[];st.dbNews=[];st.fileNews=[];st.newsReady=false;
+  function mergeNews(){var m={};st.fileNews.forEach(function(n){if(!n.override)m[n.id]=n});st.dbNews.forEach(function(n){m[n.id]=n});st.fileNews.forEach(function(n){if(n.override&&m[n.id])m[n.id]=Object.assign({},m[n.id],n)});st.news=Object.keys(m).map(function(k){return m[k]});
+    renderHomeNews();var h=decodeURIComponent(location.hash.slice(1));if(h==='actualites')renderNewsPage();else if(h.indexOf('actualite-')===0)renderArticle(h.slice(10))}
+  fetch('data/actualites.json').then(function(r){return r.ok?r.json():[]}).then(function(a){st.fileNews=Array.isArray(a)?a:[];if(!st.dbNews.length)st.newsReady=true;mergeNews()}).catch(function(){});
+  st.year='all';st.editingNews=null;
   var PIN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>';
   var CAL='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>';
   function newsSorted(){return st.news.slice().sort(function(a,b){return String(b.date||'').localeCompare(String(a.date||''))})}
-  function photo(url,alt){var f=el('div','ph');if(url){var im=el('img');im.src=url;im.alt=alt||'';im.loading='lazy';im.addEventListener('error',function(){f.classList.add('missing')});f.appendChild(im)}else f.classList.add('missing');return f}
+  function photo(url,alt,pos){var f=el('div','ph');if(url){var im=el('img');im.src=url;im.alt=alt||'';if(pos)im.style.objectPosition=pos;im.loading='lazy';im.addEventListener('error',function(){f.classList.add('missing')});f.appendChild(im)}else f.classList.add('missing');return f}
   function meta(n){var m=el('div','nmeta');if(n.date){var a=el('span');a.innerHTML=CAL;a.appendChild(document.createTextNode(fmtDate(n.date)));m.appendChild(a)}
     if(n.place){var b=el('span');b.innerHTML=PIN;b.appendChild(document.createTextNode(n.place));m.appendChild(b)}return m}
   function isRecent(n){if(!n.date||String(n.date).length<10)return false;return (Date.now()-new Date(n.date+'T00:00:00').getTime())<1000*60*60*24*45}
+  var MOIS=['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
+  function dateBadge(d){if(!d||String(d).length<10)return null;var p=String(d).split('-');var b=el('span','dbadge');b.appendChild(el('b',null,String(+p[2])));b.appendChild(el('span',null,MOIS[+p[1]-1]+' '+p[0]));return b}
+  function miniCard(n){var a=el('a','nmini');a.href='#actualite-'+n.id;var f=photo(n.cover,'',n.coverPos);a.appendChild(f);var b=el('div','body');b.appendChild(meta(n));b.appendChild(el('h3',null,n.title||''));b.appendChild(el('span','more','Lire la suite'));a.appendChild(b);return a}
   function card(n,feat){
-    var a=el('a','ncard'+(feat?' nfeat':''));a.href='#actualite-'+n.id;
-    a.appendChild(photo(n.cover,''));var b=el('div','body');
-    if(feat&&isRecent(n))b.appendChild(el('span','badge-new','Nouveau'));
+    var a=el('a','ncard'+(feat?' nfeat':'')+(feat==='home'?' nhome':''));a.href='#actualite-'+n.id;
+    var ph=photo(n.cover,'',n.coverPos);var db=n.coverGraphic?null:dateBadge(n.date);if(db)ph.appendChild(db);a.appendChild(ph);var b=el('div','body');
+    if(feat&&isRecent(n))b.appendChild(el('span','badge-new','À la une'));
     b.appendChild(meta(n));b.appendChild(el('h3',null,n.title||'Sans titre'));
     if(n.summary)b.appendChild(el('p',null,n.summary));
     b.appendChild(el('span','more','Lire la suite'));a.appendChild(b);return a}
   function renderHomeNews(){var g=$('#homeNews');var list=newsSorted();if(!st.newsReady&&!list.length)return;g.textContent='';
     if(!list.length){g.appendChild(el('p','pubs-empty','Les actualités de l\'ADEC apparaîtront ici.'));return}
-    list.slice(0,3).forEach(function(n){g.appendChild(card(n))})}
+    g.className='news-home';g.appendChild(card(list[0],'home'));var side=el('div','news-side');list.slice(1,4).forEach(function(n){side.appendChild(miniCard(n))});g.appendChild(side)}
   function renderNewsPage(){
     var list=newsSorted();var years={};list.forEach(function(n){var y=String(n.date||'').slice(0,4);if(y)years[y]=(years[y]||0)+1});
     var yb=$('#newsYears');yb.textContent='';var ys=Object.keys(years).sort().reverse();
@@ -1179,7 +1219,8 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
     if(list.length){f.appendChild(card(list[0],true));list.slice(1).forEach(function(n){g.appendChild(card(n))})}
   }
   var gallery=[],gi=0;
-  function openLb(i){gi=i;$('#lbImg').src=gallery[gi];$('#lbCount').textContent=(gi+1)+' / '+gallery.length;if(!$('#lightbox').open)$('#lightbox').showModal()}
+  var galleryCaps=[];
+  function openLb(i){gi=i;$('#lbImg').src=gallery[gi];$('#lbCap').textContent=galleryCaps[gi]||'';$('#lbImg').alt=galleryCaps[gi]||'';$('#lbCount').textContent=(gi+1)+' / '+gallery.length;if(!$('#lightbox').open)$('#lightbox').showModal()}
   $('#lbPrev').addEventListener('click',function(){openLb((gi-1+gallery.length)%gallery.length)});
   $('#lbNext').addEventListener('click',function(){openLb((gi+1)%gallery.length)});
   $('#lightbox').addEventListener('keydown',function(e){if(e.key==='ArrowLeft')$('#lbPrev').click();if(e.key==='ArrowRight')$('#lbNext').click()});
@@ -1188,15 +1229,17 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
     if(!n){$('#artTitle').textContent=st.newsReady?'Actualité introuvable':'Chargement…';$('#artMeta').textContent='';$('#artBody').textContent='';$('#artCover').textContent='';$('#artGallery').textContent='';$('#artDoc').textContent='';$('#artAdmin').hidden=true;return}
     document.title=(n.title||'Actualité')+' | ADEC Sénégal';
     $('#artTitle').textContent=n.title||'';var m=$('#artMeta');m.textContent='';var mm=meta(n);while(mm.firstChild)m.appendChild(mm.firstChild);
-    var c=$('#artCover');c.textContent='';c.classList.remove('missing');if(n.cover){var im=el('img');im.src=n.cover;im.alt='';c.appendChild(im)}else c.classList.add('missing');
+    var c=$('#artCover');c.textContent='';c.classList.remove('missing');if(n.cover){var im=el('img');im.src=n.cover;im.alt='';if(n.coverPos)im.style.objectPosition=n.coverPos;c.appendChild(im)}else c.classList.add('missing');
     var body=$('#artBody');body.textContent='';String(n.body||n.summary||'').split(/\n\s*\n/).forEach(function(p){p=p.trim();if(p)body.appendChild(el('p',null,p))});
-    var d=$('#artDoc');d.textContent='';if(n.docUrl){var a=el('a','art-doc');a.href=n.docUrl;a.target='_blank';a.rel='noopener';var ic=el('span','ficon pdf','PDF');a.appendChild(ic);var t=el('div');t.appendChild(el('b',null,n.docTitle||'Lire le document'));t.appendChild(el('span',null,'Document PDF, s\'ouvre dans un nouvel onglet'));a.appendChild(t);d.appendChild(a)}
-    gallery=(n.photos||[]).slice();var g=$('#artGallery');g.textContent='';
+    var d=$('#artDoc');d.textContent='';if(n.docUrl){var a=el('a','art-doc');a.href=n.docUrl;a.target='_blank';a.rel='noopener';if(isLocal(n.docUrl))a.dataset.pdf=n.docTitle||n.title||'Document';var ic=el('span','ficon pdf','PDF');a.appendChild(ic);var t=el('div');t.appendChild(el('b',null,n.docTitle||'Lire le document'));t.appendChild(el('span',null,'Document PDF, s\'ouvre dans un nouvel onglet'));a.appendChild(t);d.appendChild(a)}
+    if(n.sourceUrl){var sa=el('a','art-doc art-src');sa.href=n.sourceUrl;sa.target='_blank';sa.rel='noopener';sa.appendChild(el('span','ficon fb','f'));var st2=el('div');st2.appendChild(el('b',null,'Voir la publication sur Facebook'));st2.appendChild(el('span',null,'Page officielle ADEC Sénégal, s\'ouvre dans un nouvel onglet'));sa.appendChild(st2);d.appendChild(sa)}
+    gallery=(n.photos||[]).slice();galleryCaps=gallery.map(function(_,i){return (n.captions&&n.captions[i])||((n.title||'')+' : photo '+(i+1))});var g=$('#artGallery');g.textContent='';
     gallery.forEach(function(u,i){var b=el('button');b.type='button';b.setAttribute('aria-label','Agrandir la photo '+(i+1));var im=el('img');im.src=u;im.alt='';im.loading='lazy';b.appendChild(im);b.addEventListener('click',function(){openLb(i)});g.appendChild(b)});
     var more=$('#artMore');more.textContent='';newsSorted().filter(function(x){return x.id!==id}).slice(0,3).forEach(function(x){more.appendChild(card(x))});
     var u=location.href;$('#artWa').href='https://wa.me/?text='+encodeURIComponent((n.title||'')+' '+u);$('#artFb').href='https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u);
     $('#artAdmin').hidden=!st.canEdit;st.current=n;
   }
+  document.querySelectorAll('#homeGallery .gbtn').forEach(function(btn,i,all){btn.addEventListener('click',function(){gallery=Array.prototype.map.call(all,function(x){return x.dataset.src});galleryCaps=Array.prototype.map.call(all,function(x){return x.dataset.cap});openLb(i)})});
   $('#artShare').addEventListener('click',async function(){var msg=$('#artShareMsg');try{await navigator.clipboard.writeText(location.href);msg.textContent='Lien copié.'}catch(e){msg.textContent='Copiez le lien depuis la barre d\'adresse.'}});
 
   // formulaire actualité
@@ -1243,12 +1286,47 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
   document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-objet]');if(a){st.objet=a.dataset.objet}});
   window.addEventListener('hashchange',function(){route();if(location.hash==='#contact'&&st.objet){var o=document.getElementById('objet');if(o){o.value=st.objet}st.objet=null}});route();
 
+  // ---- visionneuse PDF intégrée
+  var pdfTask=null,pdfObs=null;
+  function openPdf(url,title){
+    var dlg=$('#pdfDlg'),body=$('#pdfBody');body.textContent='';$('#pdfTitle').textContent=title||'Document';$('#pdfCount').textContent='';$('#pdfOpen').href=url;
+    if(!dlg.open)dlg.showModal();
+    var lib=window.pdfjsLib;
+    if(!lib){var m=el('div','pdf-msg');m.textContent='La visionneuse ne s\'est pas chargée. ';var a=el('a',null,'Ouvrir le document');a.href=url;a.target='_blank';a.rel='noopener';m.appendChild(a);body.appendChild(m);return}
+    try{lib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js'}catch(e){}
+    var wait=el('div','pdf-msg','Chargement du document…');body.appendChild(wait);
+    if(pdfTask){try{pdfTask.destroy()}catch(e){}}if(pdfObs){pdfObs.disconnect()}
+    pdfTask=lib.getDocument({url:url});
+    pdfTask.promise.then(async function(pdf){
+      wait.remove();$('#pdfCount').textContent=pdf.numPages+' page'+(pdf.numPages>1?'s':'');
+      var p1=await pdf.getPage(1);var vp=p1.getViewport({scale:1});var ratio=vp.height/vp.width;
+      pdfObs=new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting&&!en.target.dataset.done){en.target.dataset.done='1';renderPage(pdf,+en.target.dataset.n,en.target)}})},{root:body,rootMargin:'600px 0px'});
+      for(var i=1;i<=pdf.numPages;i++){var d=el('div','pdf-page');d.dataset.n=i;d.style.aspectRatio=(1/ratio).toFixed(4);d.setAttribute('aria-label','Page '+i);body.appendChild(d);pdfObs.observe(d)}
+    }).catch(function(){wait.textContent='Ce document ne peut pas être affiché ici. ';var a=el('a',null,'Ouvrir dans un nouvel onglet');a.href=url;a.target='_blank';a.rel='noopener';wait.appendChild(a)});
+  }
+  async function renderPage(pdf,n,box){
+    try{var page=await pdf.getPage(n);var w=box.clientWidth||800;var vp1=page.getViewport({scale:1});var scale=Math.min(2.5,(w*Math.min(window.devicePixelRatio||1,2))/vp1.width);
+      var vp=page.getViewport({scale:scale});var c=document.createElement('canvas');c.width=Math.floor(vp.width);c.height=Math.floor(vp.height);box.style.aspectRatio=(vp.width/vp.height).toFixed(4);
+      box.appendChild(c);await page.render({canvasContext:c.getContext('2d'),viewport:vp}).promise}catch(e){box.appendChild(el('div','pdf-msg','Page '+n+' illisible.'))}
+  }
+  $('#pdfDlg').addEventListener('close',function(){if(pdfObs)pdfObs.disconnect();if(pdfTask){try{pdfTask.destroy()}catch(e){}pdfTask=null}$('#pdfBody').textContent=''});
+  function isLocal(u){return u&&u.indexOf('http')!==0}
+  // intercepte les liens « Consulter », la vitrine et les documents d'article
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[data-pdf]');if(!a||e.ctrlKey||e.metaKey||e.shiftKey)return;
+    var u=a.getAttribute('href');if(!isLocal(u))return;e.preventDefault();openPdf(u,a.dataset.pdf)});
+
   // ---- démarrage
   render();
-  if(!window.claude||!window.claude.use){setStatus('Les documents seront consultables sur le site en ligne.');$('#pubGrid').textContent='';$('#homeNews').textContent='';$('#newsStatus').textContent='';return}
+  function loadStatic(){
+    Promise.all(['categories','documents'].map(function(n){return fetch('data/'+n+'.json').then(function(r){if(!r.ok)throw 0;return r.json()})})).then(function(r){
+      st.cats=r[0].slice().sort(function(a,b){return (a.order||0)-(b.order||0)});st.docs=r[1];st.ready=true;setStatus('');render()
+    }).catch(function(){setStatus('Les documents ne peuvent pas être chargés pour le moment.')});
+    st.newsReady=true;mergeNews()}
+  if(!window.claude||!window.claude.use){loadStatic();return}
   (async function(){
     var db=null;try{db=await window.claude.use('db')}catch(_){}
-    if(!db){setStatus('Connectez-vous à Claude pour consulter les documents de cette maquette.');$('#pubGrid').textContent='';$('#homeNews').textContent='';$('#newsStatus').textContent='';return}
+    if(!db){loadStatic();return}
     st.db=db;
     var user=null;try{user=await window.claude.use('user')}catch(_){}
     try{st.canEdit=!!(user&&(await user.canEdit()))}catch(_){}
@@ -1261,26 +1339,12 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
       st.cats=s.docs.map(function(d){var o=Object.assign({},d.data());o.id=d.id;return o});
       if(!s.metadata.fromCache)got.c=true;check();render();if($('#catDlg').open)renderCats()},fail);
     db.collection('news').onSnapshot(function(s){
-      st.news=s.docs.map(function(d){var o=Object.assign({},d.data());o.id=d.id;return o});
-      if(!s.metadata.fromCache)st.newsReady=true;renderHomeNews();
-      var h=decodeURIComponent(location.hash.slice(1));if(h==='actualites')renderNewsPage();else if(h.indexOf('actualite-')===0)renderArticle(h.slice(10))},function(){st.newsReady=true;renderHomeNews()});
+      st.dbNews=s.docs.map(function(d){var o=Object.assign({},d.data());o.id=d.id;return o});
+      if(!s.metadata.fromCache)st.newsReady=true;mergeNews()},function(){st.newsReady=true;mergeNews()});
     db.collection('documents').onSnapshot(function(s){
       st.docs=s.docs.map(function(d){var o=Object.assign({},d.data());o.id=d.id;return o});
       if(!s.metadata.fromCache)got.d=true;check();render();if($('#catDlg').open)renderCats()},fail);
   })();
-})();
-</script>
-<script>
-(function(){
-  var btns=document.querySelectorAll('.model-switch button');
-  function apply(m){
-    if(m==='a')document.documentElement.removeAttribute('data-model');else document.documentElement.setAttribute('data-model',m);
-    btns.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.model===m)});
-    try{localStorage.setItem('adec-model',m)}catch(e){}
-  }
-  var saved='a';try{saved=localStorage.getItem('adec-model')||'a'}catch(e){}
-  apply(saved);
-  btns.forEach(function(b){b.addEventListener('click',function(){apply(b.dataset.model)})});
 })();
 </script>
 </body>

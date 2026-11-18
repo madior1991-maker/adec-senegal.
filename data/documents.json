@@ -1,0 +1,1218 @@
+[
+ {
+  "id": "accord-cotonou",
+  "categoryId": "conventions",
+  "date": "2000-06-23",
+  "title": "Accord de Cotonou (version révisée 2010)",
+  "description": "Accord de partenariat ACP-UE signé à Cotonou, révisé à Luxembourg (2005) et à Ouagadougou (2010).",
+  "fileName": "accord-de-cotonou-2010.pdf",
+  "sizeBytes": 610422,
+  "themes": [
+   "eco"
+  ],
+  "url": "docs/accord-de-cotonou-2010.pdf"
+ },
+ {
+  "id": "apd-declaration-paris",
+  "categoryId": "etudes",
+  "date": "2007-12-13",
+  "title": "Nouvelles tendances de l'aide publique au développement : Déclaration de Paris et appui budgétaire",
+  "description": "Compte rendu de la journée d'échanges avec les parties prenantes, Villa Ebert, Dakar.",
+  "fileName": "compte-rendu-apd.pdf",
+  "sizeBytes": 135034,
+  "themes": [
+   "eco"
+  ],
+  "url": "docs/compte-rendu-apd.pdf"
+ },
+ {
+  "id": "associations-ong-feminines",
+  "categoryId": "etudes",
+  "date": "1999",
+  "title": "Associations et ONG féminines au Sénégal",
+  "description": "Répertoire des associations féminines par région et des ONG. Ministère de la Famille, de l'Action sociale et de la Solidarité nationale, Fondation Friedrich Ebert, 1999.",
+  "fileName": "associations-ong-feminines-senegal.pdf",
+  "sizeBytes": 3769948,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/associations-ong-feminines-senegal.pdf"
+ },
+ {
+  "id": "audit-reseaux-parlementaires",
+  "categoryId": "etudes",
+  "date": "2007-05",
+  "title": "Audit du fonctionnement des réseaux parlementaires",
+  "description": "Assemblée nationale du Sénégal. Étude de Mbaye Sidy Mbaye.",
+  "fileName": "audit-reseaux-parlementaires.pdf",
+  "sizeBytes": 297059,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/audit-reseaux-parlementaires.pdf"
+ },
+ {
+  "id": "axes-adec-alimentation",
+  "categoryId": "adec",
+  "date": "",
+  "title": "Les axes d'intervention de l'ADEC-Sénégal dans le secteur de l'alimentation",
+  "description": "Présentation de Maguette Fall, Président de l'ADEC-Sénégal.",
+  "fileName": "axes-adec-alimentation.pdf",
+  "sizeBytes": 2086786,
+  "themes": [
+   "alim",
+   "sante",
+   "conso"
+  ],
+  "url": "docs/axes-adec-alimentation.pdf",
+  "thumbUrl": "docs/vignettes/axes-adec-alimentation.jpg"
+ },
+ {
+  "id": "bp-biodiversite",
+  "categoryId": "etudes",
+  "date": "",
+  "title": "Bonnes pratiques pour une gestion durable de la biodiversité dans l'agriculture en Afrique de l'Ouest",
+  "description": "Ibrahima Coulibaly, Idrissa Ouedraogo, Laurent Doumboué, Namory Koné. ROPPA, financé par l'Union européenne.",
+  "fileName": "bonnes-pratiques-biodiversite.pdf",
+  "sizeBytes": 9358247,
+  "themes": [
+   "alim",
+   "env"
+  ],
+  "url": "docs/bonnes-pratiques-biodiversite.pdf"
+ },
+ {
+  "id": "brochure-adec",
+  "categoryId": "adec",
+  "date": "",
+  "title": "Aide-mémoire sur la protection du consommateur",
+  "description": "Brochure de l'ADEC-Sénégal, projet de renforcement de la protection du consommateur en Afrique de l'Ouest (partenariat OSIWA – Consumers International).",
+  "fileName": "brochure-adec.pdf",
+  "sizeBytes": 1007862,
+  "themes": [
+   "conso"
+  ],
+  "url": "docs/brochure-adec.pdf",
+  "thumbUrl": "docs/vignettes/brochure-adec.jpg"
+ },
+ {
+  "id": "cacao-cote-ivoire",
+  "categoryId": "etudes",
+  "date": "2021",
+  "title": "Analyse prospective de la filière cacao en Côte d'Ivoire 2020-2030",
+  "description": "Vers une politique commune de marché du cacao en Afrique de l'Ouest. FAO, Accra.",
+  "fileName": "filiere-cacao-cote-ivoire.pdf",
+  "sizeBytes": 1218675,
+  "themes": [
+   "alim",
+   "eco"
+  ],
+  "url": "docs/filiere-cacao-cote-ivoire.pdf"
+ },
+ {
+  "id": "charte-adhp",
+  "categoryId": "chartes",
+  "date": "1981-06-27",
+  "title": "Charte africaine des droits de l'homme et des peuples",
+  "description": "Union africaine.",
+  "fileName": "charte-africaine-droits-homme-peuples.pdf",
+  "sizeBytes": 5230043,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/charte-africaine-droits-homme-peuples.pdf"
+ },
+ {
+  "id": "charte-culturelle",
+  "categoryId": "chartes",
+  "date": "1976-07-05",
+  "title": "Charte culturelle de l'Afrique",
+  "description": "Union africaine.",
+  "fileName": "charte-culturelle-afrique.pdf",
+  "sizeBytes": 3856551,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/charte-culturelle-afrique.pdf"
+ },
+ {
+  "id": "charte-decentralisation",
+  "categoryId": "chartes",
+  "date": "2014-06-27",
+  "title": "Charte africaine des valeurs et des principes de la décentralisation, de la gouvernance locale et du développement local",
+  "description": "Union africaine.",
+  "fileName": "charte-decentralisation.pdf",
+  "sizeBytes": 6402673,
+  "themes": [
+   "gouv",
+   "terr"
+  ],
+  "url": "docs/charte-decentralisation.pdf"
+ },
+ {
+  "id": "charte-democratie",
+  "categoryId": "chartes",
+  "date": "2007-01-30",
+  "title": "Charte africaine de la démocratie, des élections et de la gouvernance",
+  "description": "Union africaine.",
+  "fileName": "charte-democratie-elections-gouvernance.pdf",
+  "sizeBytes": 5558924,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/charte-democratie-elections-gouvernance.pdf"
+ },
+ {
+  "id": "charte-enfant",
+  "categoryId": "chartes",
+  "date": "1990-07-11",
+  "title": "Charte africaine des droits et du bien-être de l'enfant",
+  "description": "Union africaine.",
+  "fileName": "charte-africaine-droits-enfant.pdf",
+  "sizeBytes": 8733314,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/charte-africaine-droits-enfant.pdf"
+ },
+ {
+  "id": "charte-grandes-entreprises",
+  "categoryId": "chartes",
+  "date": "",
+  "title": "La Charte de consommateurs pour les grandes entreprises",
+  "description": "Rédigée par Consumers International.",
+  "fileName": "charte-consommateurs-grandes-entreprises.pdf",
+  "sizeBytes": 25876,
+  "themes": [
+   "conso"
+  ],
+  "url": "docs/charte-consommateurs-grandes-entreprises.pdf"
+ },
+ {
+  "id": "charte-jeunesse",
+  "categoryId": "chartes",
+  "date": "2006-07-02",
+  "title": "Charte africaine de la jeunesse",
+  "description": "Union africaine.",
+  "fileName": "charte-africaine-jeunesse.pdf",
+  "sizeBytes": 7921378,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/charte-africaine-jeunesse.pdf"
+ },
+ {
+  "id": "charte-malade-wolof",
+  "categoryId": "chartes",
+  "date": "2001-07-17",
+  "title": "Charte du malade dans les établissements publics de santé au Sénégal (version wolof)",
+  "description": "Arrêté n°005776/MSP/DES du 17 juillet 2001, texte en wolof.",
+  "fileName": "charte-malade-wolof.pdf",
+  "sizeBytes": 40068,
+  "themes": [
+   "sante"
+  ],
+  "url": "docs/charte-malade-wolof.pdf"
+ },
+ {
+  "id": "charte-ong",
+  "categoryId": "chartes",
+  "date": "2006-06-30",
+  "title": "Charte de responsabilité des ONG internationales",
+  "description": "Engagements de transparence et de redevabilité.",
+  "fileName": "charte-responsabilite-ong.pdf",
+  "sizeBytes": 113577,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/charte-responsabilite-ong.pdf"
+ },
+ {
+  "id": "charte-renaissance-culturelle",
+  "categoryId": "chartes",
+  "date": "2006-01-24",
+  "title": "Charte de la renaissance culturelle africaine",
+  "description": "Union africaine. Texte bilingue français-anglais.",
+  "fileName": "charte-renaissance-culturelle.pdf",
+  "sizeBytes": 1356039,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/charte-renaissance-culturelle.pdf"
+ },
+ {
+  "id": "charte-service-public",
+  "categoryId": "chartes",
+  "date": "2011-01-31",
+  "title": "Charte africaine sur les valeurs et les principes du service public et de l'administration",
+  "description": "Union africaine. Texte bilingue français-anglais.",
+  "fileName": "charte-service-public.pdf",
+  "sizeBytes": 366449,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/charte-service-public.pdf"
+ },
+ {
+  "id": "charte-transport-maritime",
+  "categoryId": "chartes",
+  "date": "2010-07-26",
+  "title": "Charte africaine du transport maritime (révisée)",
+  "description": "Union africaine.",
+  "fileName": "charte-transport-maritime.pdf",
+  "sizeBytes": 8423896,
+  "themes": [
+   "eco"
+  ],
+  "url": "docs/charte-transport-maritime.pdf"
+ },
+ {
+  "id": "chine-senegal",
+  "categoryId": "etudes",
+  "date": "2006-12",
+  "title": "L'engagement de la Chine au Sénégal : bilan et perspectives",
+  "description": "Un an après la reprise des relations diplomatiques. Eilert Stamm, Fondation Friedrich Ebert.",
+  "fileName": "chine-senegal.pdf",
+  "sizeBytes": 531276,
+  "themes": [
+   "eco"
+  ],
+  "url": "docs/chine-senegal.pdf"
+ },
+ {
+  "id": "code-conduite-ci",
+  "categoryId": "statuts",
+  "date": "2010-07",
+  "title": "Code de conduite de Consumers International et des organisations membres",
+  "description": "Consumers International.",
+  "fileName": "code-conduite-consumers-international.pdf",
+  "sizeBytes": 192079,
+  "themes": [
+   "conso"
+  ],
+  "url": "docs/code-conduite-consumers-international.pdf"
+ },
+ {
+  "id": "codex-enquete-2023",
+  "categoryId": "etudes",
+  "date": "2025-01",
+  "title": "Utilisation et effets des textes du Codex : rapport de l'enquête 2023",
+  "description": "Normes alimentaires internationales. Programme mixte FAO/OMS.",
+  "fileName": "textes-codex-enquete-2023.pdf",
+  "sizeBytes": 6814191,
+  "themes": [
+   "alim",
+   "conso",
+   "sante"
+  ],
+  "url": "docs/textes-codex-enquete-2023.pdf"
+ },
+ {
+  "id": "cogestion-peches",
+  "categoryId": "guides",
+  "date": "",
+  "title": "Guide d'évaluation de l'efficacité de la cogestion des pêches : mode de fonctionnement",
+  "description": "Synthèse du guide de la FAO.",
+  "fileName": "guide-cogestion-peches.pdf",
+  "sizeBytes": 2447392,
+  "themes": [
+   "alim"
+  ],
+  "url": "docs/guide-cogestion-peches.pdf"
+ },
+ {
+  "id": "constitution-quoi-de-neuf",
+  "categoryId": "etudes",
+  "date": "2000",
+  "title": "La Constitution : quoi de neuf ?",
+  "description": "Demba Sy, Madior Fall, Moussa Samb. Fondation Friedrich Ebert et CREDILA (UCAD).",
+  "fileName": "constitution-quoi-de-neuf.pdf",
+  "sizeBytes": 368516,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/constitution-quoi-de-neuf.pdf"
+ },
+ {
+  "id": "consumer-protection-senegal",
+  "categoryId": "adec",
+  "date": "2013-10",
+  "title": "Consumer Protection in Senegal: A Review of Consumer Protection in the Public Health Sector",
+  "description": "Rapport de recherche de l'ADEC-Sénégal sur la protection du consommateur dans le secteur de la santé publique (en anglais).",
+  "fileName": "consumer-protection-senegal.pdf",
+  "sizeBytes": 1480222,
+  "themes": [
+   "conso",
+   "sante"
+  ],
+  "url": "docs/consumer-protection-senegal.pdf",
+  "thumbUrl": "docs/vignettes/consumer-protection-senegal.jpg"
+ },
+ {
+  "id": "convention-bale",
+  "categoryId": "conventions",
+  "date": "1989-03-22",
+  "title": "Convention de Bâle sur le contrôle des mouvements transfrontières de déchets dangereux et de leur élimination",
+  "description": "Texte de la Convention, protocoles et annexes (édition 2014 du Secrétariat de la Convention de Bâle).",
+  "fileName": "convention-bale.pdf",
+  "sizeBytes": 6017884,
+  "themes": [
+   "env"
+  ],
+  "url": "docs/convention-bale.pdf"
+ },
+ {
+  "id": "convention-bamako",
+  "categoryId": "conventions",
+  "date": "1991-01-30",
+  "title": "Convention de Bamako sur l'interdiction d'importer en Afrique des déchets dangereux",
+  "description": "Et sur le contrôle des mouvements transfrontières et la gestion des déchets dangereux produits en Afrique.",
+  "fileName": "convention-de-bamako.pdf",
+  "sizeBytes": 17453424,
+  "themes": [
+   "env"
+  ],
+  "url": "docs/convention-de-bamako.pdf"
+ },
+ {
+  "id": "convention-minamata",
+  "categoryId": "conventions",
+  "date": "2013-10-10",
+  "title": "Convention de Minamata sur le mercure",
+  "description": "Texte et annexes.",
+  "fileName": "convention-minamata.pdf",
+  "sizeBytes": 534956,
+  "themes": [
+   "env",
+   "sante"
+  ],
+  "url": "docs/convention-minamata.pdf"
+ },
+ {
+  "id": "convention-nature",
+  "categoryId": "conventions",
+  "date": "1968-09-15",
+  "title": "Convention africaine pour la conservation de la nature et des ressources naturelles",
+  "description": "Organisation de l'Unité africaine, Alger.",
+  "fileName": "convention-conservation-nature.pdf",
+  "sizeBytes": 488441,
+  "themes": [
+   "env"
+  ],
+  "url": "docs/convention-conservation-nature.pdf"
+ },
+ {
+  "id": "convention-phytosanitaire",
+  "categoryId": "conventions",
+  "date": "1967-09-13",
+  "title": "Convention phytosanitaire pour l'Afrique",
+  "description": "Organisation de l'Unité africaine, Kinshasa.",
+  "fileName": "convention-phytosanitaire-afrique.pdf",
+  "sizeBytes": 1470935,
+  "themes": [
+   "alim",
+   "env"
+  ],
+  "url": "docs/convention-phytosanitaire-afrique.pdf"
+ },
+ {
+  "id": "convention-stockholm-pop",
+  "categoryId": "conventions",
+  "date": "2001-05-22",
+  "title": "Convention de Stockholm sur les polluants organiques persistants (POP)",
+  "description": "Texte intégral de la Convention.",
+  "fileName": "convention-stockholm-pop.pdf",
+  "sizeBytes": 187694,
+  "themes": [
+   "env"
+  ],
+  "url": "docs/convention-stockholm-pop.pdf"
+ },
+ {
+  "id": "convention-ua-corruption",
+  "categoryId": "conventions",
+  "date": "2003-07-11",
+  "title": "Convention de l'Union africaine sur la prévention et la lutte contre la corruption",
+  "description": "Union africaine, Maputo.",
+  "fileName": "convention-ua-corruption.pdf",
+  "sizeBytes": 7620577,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/convention-ua-corruption.pdf"
+ },
+ {
+  "id": "couverture-sanitaire",
+  "categoryId": "etudes",
+  "date": "2022-01",
+  "title": "Vers une couverture sanitaire universelle",
+  "description": "Les cas du Bénin, de la Côte d'Ivoire, de l'Éthiopie, du Kenya, du Sénégal et de la Zambie. Jürgen Schwettmann, FES.",
+  "fileName": "couverture-sanitaire-universelle.pdf",
+  "sizeBytes": 335442,
+  "themes": [
+   "sante"
+  ],
+  "url": "docs/couverture-sanitaire-universelle.pdf"
+ },
+ {
+  "id": "dechets-thies",
+  "categoryId": "adec",
+  "date": "2006-04",
+  "title": "La problématique de la gestion des déchets au Sénégal : l'exemple de la ville de Thiès",
+  "description": "Étude de l'ADEC-Sénégal avec esquisse de solutions à l'incinération des déchets. Projet international pour l'élimination des POP (IPEP).",
+  "fileName": "gestion-dechets-thies.pdf",
+  "sizeBytes": 783345,
+  "themes": [
+   "env",
+   "sante"
+  ],
+  "url": "docs/gestion-dechets-thies.pdf",
+  "thumbUrl": "docs/vignettes/gestion-dechets-thies.jpg"
+ },
+ {
+  "id": "declaration-jmdc-2026",
+  "categoryId": "adec",
+  "date": "2026-03-15",
+  "title": "Déclaration de l'ADEC-Sénégal à l'occasion de la Journée mondiale des droits des consommateurs 2026",
+  "description": "Thème : « Des produits sûrs, des consommateurs confiants » (15 mars 2026).",
+  "fileName": "declaration-adec-jmdc-2026.pdf",
+  "sizeBytes": 557223,
+  "themes": [
+   "conso"
+  ],
+  "url": "docs/declaration-adec-jmdc-2026.pdf",
+  "thumbUrl": "docs/vignettes/declaration-adec-jmdc-2026.jpg"
+ },
+ {
+  "id": "declarations-stockholm-rio",
+  "categoryId": "etudes",
+  "date": "",
+  "title": "Environnement : les Déclarations de Stockholm (1972) et de Rio (1992)",
+  "description": "Note introductive de Günther Handl, Médiathèque de droit international des Nations Unies.",
+  "fileName": "declarations-stockholm-rio.pdf",
+  "sizeBytes": 80846,
+  "themes": [
+   "env"
+  ],
+  "url": "docs/declarations-stockholm-rio.pdf"
+ },
+ {
+  "id": "decret-politique-qualite",
+  "categoryId": "textes",
+  "date": "",
+  "title": "Décret portant adoption de la Politique nationale qualité",
+  "description": "Rapport de présentation. Ministère de l'Industrie et des Mines, République du Sénégal.",
+  "fileName": "decret-politique-nationale-qualite.pdf",
+  "sizeBytes": 1548882,
+  "themes": [
+   "conso",
+   "eco"
+  ],
+  "url": "docs/decret-politique-nationale-qualite.pdf"
+ },
+ {
+  "id": "devoirs-consommateur-wolof",
+  "categoryId": "guides",
+  "date": "",
+  "title": "Les devoirs du consommateur (version wolof)",
+  "description": "Warugari way-jëfandiku bi, selon Consumers International.",
+  "fileName": "devoirs-consommateur-wolof.pdf",
+  "sizeBytes": 37970,
+  "themes": [
+   "conso"
+  ],
+  "url": "docs/devoirs-consommateur-wolof.pdf"
+ },
+ {
+  "id": "directives-fao",
+  "categoryId": "guides",
+  "date": "2024-11",
+  "title": "Directives éditoriales de la FAO : français",
+  "description": "Édition révisée. FAO, Rome.",
+  "fileName": "directives-editoriales-fao.pdf",
+  "sizeBytes": 1969478,
+  "themes": [],
+  "url": "docs/directives-editoriales-fao.pdf"
+ },
+ {
+  "id": "droits-communautaires",
+  "categoryId": "etudes",
+  "date": "2006-05-05",
+  "title": "Les droits communautaires africains : quelle rationalisation ?",
+  "description": "Karen Ziemek. Fondation Friedrich Ebert, bureau Sénégal.",
+  "fileName": "droits-communautaires-africains.pdf",
+  "sizeBytes": 106575,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/droits-communautaires-africains.pdf"
+ },
+ {
+  "id": "droits-consommateur",
+  "categoryId": "guides",
+  "date": "",
+  "title": "Les droits du consommateur",
+  "description": "Tels qu'énoncés par les Principes directeurs des Nations Unies pour la protection du consommateur.",
+  "fileName": "droits-consommateur.pdf",
+  "sizeBytes": 33408,
+  "themes": [
+   "conso"
+  ],
+  "url": "docs/droits-consommateur.pdf"
+ },
+ {
+  "id": "droits-consommateur-wolof",
+  "categoryId": "guides",
+  "date": "",
+  "title": "Les droits du consommateur (version wolof)",
+  "description": "Sañ-sañi way-jëfandiku bi, selon les Principes directeurs des Nations Unies.",
+  "fileName": "droits-consommateur-wolof.pdf",
+  "sizeBytes": 43731,
+  "themes": [
+   "conso"
+  ],
+  "url": "docs/droits-consommateur-wolof.pdf"
+ },
+ {
+  "id": "education-rapport",
+  "categoryId": "etudes",
+  "date": "2023-12",
+  "title": "Rapport de l'étude sur la privatisation et la marchandisation de l'éducation et de la formation au Sénégal",
+  "description": "Rapport complet. USEQ et Internationale de l'Éducation.",
+  "fileName": "privatisation-education-rapport.pdf",
+  "sizeBytes": 1170658,
+  "themes": [
+   "gouv",
+   "eco"
+  ],
+  "url": "docs/privatisation-education-rapport.pdf"
+ },
+ {
+  "id": "education-synthese",
+  "categoryId": "etudes",
+  "date": "2023-12",
+  "title": "Privatisation et marchandisation de l'éducation au Sénégal : état des lieux (synthèse)",
+  "description": "USEQ et Internationale de l'Éducation.",
+  "fileName": "privatisation-education-synthese.pdf",
+  "sizeBytes": 794770,
+  "themes": [
+   "gouv",
+   "eco"
+  ],
+  "url": "docs/privatisation-education-synthese.pdf"
+ },
+ {
+  "id": "enquete-sante-dakar",
+  "categoryId": "adec",
+  "date": "2014-02",
+  "title": "Enquête sur la perception des consommateurs sur le service public de santé et l'approvisionnement pharmaceutique à Dakar",
+  "description": "Rapport d'enquête de l'ADEC-Sénégal, étude sur le renforcement de la protection du consommateur.",
+  "fileName": "enquete-perception-sante-dakar.pdf",
+  "sizeBytes": 285598,
+  "themes": [
+   "sante",
+   "conso"
+  ],
+  "url": "docs/enquete-perception-sante-dakar.pdf",
+  "thumbUrl": "docs/vignettes/enquete-perception-sante-dakar.jpg"
+ },
+ {
+  "id": "evaluation-juridique-peches",
+  "categoryId": "etudes",
+  "date": "2023",
+  "title": "Évaluation juridique des réglementations et politiques nationales des pêches au Cabo Verde, en Côte d'Ivoire et au Sénégal",
+  "description": "Note de synthèse des résultats. FAO et PNUE, IPC-AO.",
+  "fileName": "evaluation-juridique-peches.pdf",
+  "sizeBytes": 17826591,
+  "themes": [
+   "alim",
+   "gouv"
+  ],
+  "url": "docs/evaluation-juridique-peches.pdf"
+ },
+ {
+  "id": "fao-alimentation",
+  "categoryId": "etudes",
+  "date": "2022",
+  "title": "Les organisations de consommateurs et le droit à une alimentation adéquate : établir le lien",
+  "description": "Organisation des Nations Unies pour l'alimentation et l'agriculture (FAO), Rome.",
+  "fileName": "organisations-consommateurs-alimentation-fao.pdf",
+  "sizeBytes": 9703372,
+  "themes": [
+   "alim",
+   "conso"
+  ],
+  "url": "docs/organisations-consommateurs-alimentation-fao.pdf"
+ },
+ {
+  "id": "femmes-peche",
+  "categoryId": "etudes",
+  "date": "",
+  "title": "Autonomiser les femmes dans les chaînes de valeur de la pêche",
+  "description": "Bonnes pratiques de Cabo Verde, Côte d'Ivoire et Sénégal. Initiative Pêches côtières Afrique de l'Ouest (IPC-AO).",
+  "fileName": "femmes-chaines-valeur-peche.pdf",
+  "sizeBytes": 6748175,
+  "themes": [
+   "alim"
+  ],
+  "url": "docs/femmes-chaines-valeur-peche.pdf"
+ },
+ {
+  "id": "gardiens-mer",
+  "categoryId": "guides",
+  "date": "",
+  "title": "Les gardiens de la mer : lutter contre les engins de pêche fantômes",
+  "description": "Brochure de sensibilisation sur les engins de pêche abandonnés, perdus ou rejetés.",
+  "fileName": "gardiens-de-la-mer.pdf",
+  "sizeBytes": 10984193,
+  "themes": [
+   "env",
+   "alim"
+  ],
+  "url": "docs/gardiens-de-la-mer.pdf"
+ },
+ {
+  "id": "guide-dud",
+  "categoryId": "guides",
+  "date": "2021",
+  "title": "Guide du développement urbain durable (DUD) au Sénégal",
+  "description": "Dr Djibril Diop. Fondation Heinrich Böll, Dakar.",
+  "fileName": "guide-dud-senegal.pdf",
+  "sizeBytes": 4180526,
+  "themes": [
+   "terr",
+   "env"
+  ],
+  "url": "docs/guide-dud-senegal.pdf"
+ },
+ {
+  "id": "guide-velo",
+  "categoryId": "guides",
+  "date": "",
+  "title": "Guide du vélo à Dakar",
+  "description": "Efficace, économique, écologique.",
+  "fileName": "guide-velo-dakar.pdf",
+  "sizeBytes": 1398053,
+  "themes": [
+   "terr",
+   "env"
+  ],
+  "url": "docs/guide-velo-dakar.pdf"
+ },
+ {
+  "id": "ipen-plastique",
+  "categoryId": "etudes",
+  "date": "2021-12",
+  "title": "Widespread chemical contamination of recycled plastic pellets globally",
+  "description": "Contamination chimique des granulés de plastique recyclé. IPEN (en anglais).",
+  "fileName": "ipen-plastique-recycle.pdf",
+  "sizeBytes": 4339363,
+  "themes": [
+   "env",
+   "sante"
+  ],
+  "url": "docs/ipen-plastique-recycle.pdf"
+ },
+ {
+  "id": "jetp-senegal",
+  "categoryId": "etudes",
+  "date": "2023-08",
+  "title": "Pour une transition énergétique équitable : le partenariat JETP au Sénégal",
+  "description": "Note politique de Mahamadi Gaba. Fondation Heinrich Böll.",
+  "fileName": "note-politique-jetp.pdf",
+  "sizeBytes": 4666289,
+  "themes": [
+   "env",
+   "eco"
+  ],
+  "url": "docs/note-politique-jetp.pdf"
+ },
+ {
+  "id": "jeunes-femmes-partis",
+  "categoryId": "etudes",
+  "date": "2026-09",
+  "title": "Quelle place pour les (jeunes) femmes dans les partis politiques ?",
+  "description": "Note politique : constats, enjeux et leviers d'action. Dr Halima Diallo, Tikam Liese Sall, FES.",
+  "fileName": "jeunes-femmes-partis-politiques.pdf",
+  "sizeBytes": 271418,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/jeunes-femmes-partis-politiques.pdf"
+ },
+ {
+  "id": "lagos-banque-mondiale",
+  "categoryId": "etudes",
+  "date": "",
+  "title": "Le Plan d'action de Lagos et la Banque mondiale : étude comparative sur l'alimentation et l'agriculture en Afrique",
+  "description": "Thandika Mkandawire.",
+  "fileName": "lagos-banque-mondiale.pdf",
+  "sizeBytes": 385443,
+  "themes": [
+   "alim",
+   "eco"
+  ],
+  "url": "docs/lagos-banque-mondiale.pdf"
+ },
+ {
+  "id": "manuel-cnuced",
+  "categoryId": "guides",
+  "date": "2017",
+  "title": "Manuel sur la protection du consommateur",
+  "description": "Conférence des Nations Unies sur le commerce et le développement (CNUCED).",
+  "fileName": "manuel-protection-consommateur-cnuced.pdf",
+  "sizeBytes": 2067933,
+  "themes": [
+   "conso"
+  ],
+  "url": "docs/manuel-protection-consommateur-cnuced.pdf"
+ },
+ {
+  "id": "manuel-travailleur",
+  "categoryId": "textes",
+  "date": "",
+  "title": "Le Manuel du travailleur. Droit du travail au Sénégal",
+  "description": "Recueil des textes législatifs, réglementaires et conventionnels, 2e édition. Fondation Friedrich Ebert.",
+  "fileName": "manuel-du-travailleur.pdf",
+  "sizeBytes": 5251437,
+  "themes": [
+   "eco",
+   "gouv"
+  ],
+  "url": "docs/manuel-du-travailleur.pdf"
+ },
+ {
+  "id": "nepad-atelier",
+  "categoryId": "etudes",
+  "date": "2006-10-20",
+  "title": "Atelier national de recentrage du NEPAD : rapport général",
+  "description": "Par Mamadou Kassé. Fondation Friedrich Ebert, bureau Sénégal.",
+  "fileName": "atelier-nepad.pdf",
+  "sizeBytes": 76841,
+  "themes": [
+   "eco"
+  ],
+  "url": "docs/atelier-nepad.pdf"
+ },
+ {
+  "id": "peches-2022",
+  "categoryId": "etudes",
+  "date": "2022",
+  "title": "La situation mondiale des pêches et de l'aquaculture 2022",
+  "description": "Vers une transformation bleue. FAO (version allégée pour le web).",
+  "fileName": "situation-peches-aquaculture-2022.pdf",
+  "sizeBytes": 16219292,
+  "themes": [
+   "alim"
+  ],
+  "url": "docs/situation-peches-aquaculture-2022.pdf"
+ },
+ {
+  "id": "peches-2024-p1",
+  "categoryId": "etudes",
+  "date": "2024",
+  "title": "La situation mondiale des pêches et de l'aquaculture 2024 (partie 1/2)",
+  "description": "La transformation bleue en action. FAO. Pages 1 à 125.",
+  "fileName": "situation-peches-aquaculture-2024-partie1.pdf",
+  "sizeBytes": 20559122,
+  "themes": [
+   "alim"
+  ],
+  "url": "docs/situation-peches-aquaculture-2024-partie1.pdf"
+ },
+ {
+  "id": "peches-2024-p2",
+  "categoryId": "etudes",
+  "date": "2024",
+  "title": "La situation mondiale des pêches et de l'aquaculture 2024 (partie 2/2)",
+  "description": "La transformation bleue en action. FAO. Pages 126 à 282.",
+  "fileName": "situation-peches-aquaculture-2024-partie2.pdf",
+  "sizeBytes": 18539699,
+  "themes": [
+   "alim"
+  ],
+  "url": "docs/situation-peches-aquaculture-2024-partie2.pdf"
+ },
+ {
+  "id": "pidcp",
+  "categoryId": "conventions",
+  "date": "1966-12-16",
+  "title": "Pacte international relatif aux droits civils et politiques",
+  "description": "Nations Unies, New York.",
+  "fileName": "pacte-droits-civils-politiques.pdf",
+  "sizeBytes": 219666,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/pacte-droits-civils-politiques.pdf"
+ },
+ {
+  "id": "plan-lagos",
+  "categoryId": "textes",
+  "date": "1980-04-29",
+  "title": "Plan d'action de Lagos pour le développement économique de l'Afrique, 1980-2000",
+  "description": "Organisation de l'Unité africaine (OUA). Édition de 1981.",
+  "fileName": "plan-action-lagos.pdf",
+  "sizeBytes": 774472,
+  "themes": [
+   "eco"
+  ],
+  "url": "docs/plan-action-lagos.pdf"
+ },
+ {
+  "id": "presentation-brs",
+  "categoryId": "guides",
+  "date": "2010-04",
+  "title": "Les Conventions de Bâle, de Rotterdam et de Stockholm",
+  "description": "Présentation de synthèse sur les synergies entre les trois conventions (Pékin, avril 2010).",
+  "fileName": "conventions-bale-rotterdam-stockholm.pdf",
+  "sizeBytes": 671786,
+  "themes": [
+   "env"
+  ],
+  "url": "docs/conventions-bale-rotterdam-stockholm.pdf"
+ },
+ {
+  "id": "projet-iec-charte-malade",
+  "categoryId": "adec",
+  "date": "",
+  "title": "Projet d'IEC pour la vulgarisation de la Charte du malade au Sénégal",
+  "description": "Projet d'information, d'éducation et de communication sur les droits des patients.",
+  "fileName": "projet-iec-charte-malade.pdf",
+  "sizeBytes": 400036,
+  "themes": [
+   "sante",
+   "conso"
+  ],
+  "url": "docs/projet-iec-charte-malade.pdf",
+  "thumbUrl": "docs/vignettes/projet-iec-charte-malade.jpg"
+ },
+ {
+  "id": "protestations-urbaines",
+  "categoryId": "etudes",
+  "date": "2026-07",
+  "title": "Quand les citoyens se mobilisent : protestations urbaines dans les démocraties africaines",
+  "description": "Les cas du Sénégal et du Kenya. Melissa Li, Friedrich-Ebert-Stiftung.",
+  "fileName": "protestations-urbaines.pdf",
+  "sizeBytes": 1016926,
+  "themes": [
+   "gouv",
+   "terr"
+  ],
+  "url": "docs/protestations-urbaines.pdf"
+ },
+ {
+  "id": "protocole-cedeao-gouvernance",
+  "categoryId": "conventions",
+  "date": "2001-12-21",
+  "title": "Protocole A/SP1/12/01 de la CEDEAO sur la démocratie et la bonne gouvernance",
+  "description": "Additionnel au Protocole relatif au mécanisme de prévention, de gestion et de règlement des conflits.",
+  "fileName": "protocole-cedeao-bonne-gouvernance.pdf",
+  "sizeBytes": 66331,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/protocole-cedeao-bonne-gouvernance.pdf"
+ },
+ {
+  "id": "protocole-cour-africaine-dhp",
+  "categoryId": "conventions",
+  "date": "1998-06-10",
+  "title": "Protocole portant création d'une Cour africaine des droits de l'homme et des peuples",
+  "description": "Protocole relatif à la Charte africaine des droits de l'homme et des peuples.",
+  "fileName": "protocole-cour-africaine-dhp.pdf",
+  "sizeBytes": 3485636,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/protocole-cour-africaine-dhp.pdf"
+ },
+ {
+  "id": "protocole-cour-justice-ua",
+  "categoryId": "conventions",
+  "date": "2003-07-11",
+  "title": "Protocole de la Cour de justice de l'Union africaine",
+  "description": "Union africaine.",
+  "fileName": "protocole-cour-justice-ua.pdf",
+  "sizeBytes": 6047509,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/protocole-cour-justice-ua.pdf"
+ },
+ {
+  "id": "protocole-parlement-panafricain",
+  "categoryId": "conventions",
+  "date": "2001-03-02",
+  "title": "Protocole au Traité instituant la Communauté économique africaine relatif au Parlement panafricain",
+  "description": "Organisation de l'Unité africaine.",
+  "fileName": "protocole-parlement-panafricain.pdf",
+  "sizeBytes": 4178440,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/protocole-parlement-panafricain.pdf"
+ },
+ {
+  "id": "reformer-nepad",
+  "categoryId": "etudes",
+  "date": "2006-03-29",
+  "title": "Réformer la mise en œuvre du NEPAD : voir les choses autrement",
+  "description": "Kalidou Seydou Sy et Klaus-Peter Treydte. Fondation Friedrich Ebert, bureau Sénégal.",
+  "fileName": "reformer-nepad.pdf",
+  "sizeBytes": 304968,
+  "themes": [
+   "eco"
+  ],
+  "url": "docs/reformer-nepad.pdf"
+ },
+ {
+  "id": "securite-sahel",
+  "categoryId": "etudes",
+  "date": "",
+  "title": "Les défis et enjeux sécuritaires dans l'espace sahélo-saharien : la perspective du Sénégal",
+  "description": "Wore Ndiaye.",
+  "fileName": "enjeux-securitaires-sahel.pdf",
+  "sizeBytes": 1117225,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/enjeux-securitaires-sahel.pdf"
+ },
+ {
+  "id": "sofi-2025",
+  "categoryId": "etudes",
+  "date": "2025",
+  "title": "L'État de la sécurité alimentaire et de la nutrition dans le monde 2025",
+  "description": "Lutter contre la forte inflation des prix alimentaires. FAO, FIDA, OMS, PAM, UNICEF.",
+  "fileName": "securite-alimentaire-nutrition-2025.pdf",
+  "sizeBytes": 11793329,
+  "themes": [
+   "alim"
+  ],
+  "url": "docs/securite-alimentaire-nutrition-2025.pdf"
+ },
+ {
+  "id": "statut-cudi",
+  "categoryId": "textes",
+  "date": "2009",
+  "title": "Statut de la Commission de l'Union africaine sur le droit international",
+  "description": "Adopté lors de la 14e session ordinaire du Conseil exécutif, Addis-Abeba.",
+  "fileName": "statut-commission-ua-droit-international.pdf",
+  "sizeBytes": 66113,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/statut-commission-ua-droit-international.pdf"
+ },
+ {
+  "id": "territorialisation-politiques",
+  "categoryId": "etudes",
+  "date": "",
+  "title": "Territorialisation des politiques publiques : Pôles-territoires sénégalais",
+  "description": "Ministère de l'Urbanisme, des Collectivités territoriales et de l'Aménagement des territoires (MUCTAT).",
+  "fileName": "territorialisation-politiques-publiques.pdf",
+  "sizeBytes": 1776737,
+  "themes": [
+   "terr",
+   "gouv"
+  ],
+  "url": "docs/territorialisation-politiques-publiques.pdf"
+ },
+ {
+  "id": "textes-portee-generale",
+  "categoryId": "textes",
+  "date": "",
+  "title": "Textes à portée générale sur la protection du consommateur",
+  "description": "Liste des textes de référence : Constitution, Principes directeurs des Nations Unies, règlements de l'UEMOA, etc.",
+  "fileName": "textes-portee-generale.pdf",
+  "sizeBytes": 46510,
+  "themes": [
+   "conso"
+  ],
+  "url": "docs/textes-portee-generale.pdf"
+ },
+ {
+  "id": "travailleuses-migrantes",
+  "categoryId": "etudes",
+  "date": "2020-12",
+  "title": "Voix des travailleuses migrantes du Sénégal",
+  "description": "Témoignages recueillis par Fambaye Ndoye. Fondation Friedrich Ebert.",
+  "fileName": "voix-travailleuses-migrantes.pdf",
+  "sizeBytes": 1362101,
+  "themes": [
+   "eco",
+   "gouv"
+  ],
+  "url": "docs/voix-travailleuses-migrantes.pdf"
+ },
+ {
+  "id": "uemoa-reglement-3-2002",
+  "categoryId": "textes",
+  "date": "2002-05-23",
+  "title": "Règlement n°3/2002/CM/UEMOA relatif aux procédures applicables aux ententes et abus de position dominante",
+  "description": "Union économique et monétaire ouest-africaine (UEMOA).",
+  "fileName": "reglement-3-2002-uemoa.pdf",
+  "sizeBytes": 403101,
+  "themes": [
+   "conso",
+   "eco"
+  ],
+  "url": "docs/reglement-3-2002-uemoa.pdf"
+ },
+ {
+  "id": "uemoa-reglement-5-2014",
+  "categoryId": "textes",
+  "date": "2014-09-25",
+  "title": "Règlement n°05/2014/CM/UEMOA relatif à l'harmonisation des règles régissant la profession d'avocat",
+  "description": "Union économique et monétaire ouest-africaine (UEMOA).",
+  "fileName": "reglement-5-2014-uemoa.pdf",
+  "sizeBytes": 4996704,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/reglement-5-2014-uemoa.pdf"
+ },
+ {
+  "id": "uemoa-reglement-7-2007",
+  "categoryId": "textes",
+  "date": "2007",
+  "title": "Règlement n°007/2007/CM/UEMOA relatif à la sécurité sanitaire des végétaux, des animaux et des aliments",
+  "description": "Union économique et monétaire ouest-africaine (UEMOA).",
+  "fileName": "reglement-7-2007-uemoa.pdf",
+  "sizeBytes": 176332,
+  "themes": [
+   "alim",
+   "sante",
+   "conso"
+  ],
+  "url": "docs/reglement-7-2007-uemoa.pdf"
+ },
+ {
+  "id": "uemoa-reglement-9-2003",
+  "categoryId": "textes",
+  "date": "2003",
+  "title": "Règlement n°09/2003/CM/UEMOA portant Code communautaire antidumping",
+  "description": "Union économique et monétaire ouest-africaine (UEMOA).",
+  "fileName": "reglement-9-2003-uemoa.pdf",
+  "sizeBytes": 433978,
+  "themes": [
+   "eco"
+  ],
+  "url": "docs/reglement-9-2003-uemoa.pdf"
+ },
+ {
+  "id": "urbanisation-dakar",
+  "categoryId": "etudes",
+  "date": "",
+  "title": "Les défis de l'urbanisation à Dakar",
+  "description": "Dr Oumar Cissé. Planification territoriale, assainissement, transport public et logement social.",
+  "fileName": "defis-urbanisation-dakar.pdf",
+  "sizeBytes": 12201289,
+  "themes": [
+   "terr"
+  ],
+  "url": "docs/defis-urbanisation-dakar.pdf"
+ },
+ {
+  "id": "vbg-afrique-ouest",
+  "categoryId": "etudes",
+  "date": "",
+  "title": "Violences basées sur le genre en Afrique de l'Ouest",
+  "description": "Cas du Sénégal, du Mali, du Burkina Faso et du Niger. Ndèye Amy Ndiaye, FES.",
+  "fileName": "violences-basees-genre-afrique-ouest.pdf",
+  "sizeBytes": 1181299,
+  "themes": [
+   "gouv"
+  ],
+  "url": "docs/violences-basees-genre-afrique-ouest.pdf"
+ },
+ {
+  "id": "vision-syndicale",
+  "categoryId": "etudes",
+  "date": "2007-08",
+  "title": "Vision syndicale sur l'économie sénégalaise : rapport général",
+  "description": "Atelier de Saly, 25-28 août 2007, avec la CNTS, la CSA et l'UNSAS. Fondation Friedrich Ebert.",
+  "fileName": "vision-syndicale-economie.pdf",
+  "sizeBytes": 1789280,
+  "themes": [
+   "eco"
+  ],
+  "url": "docs/vision-syndicale-economie.pdf"
+ },
+ {
+  "id": "zones-socio-rurales",
+  "categoryId": "etudes",
+  "date": "",
+  "title": "Cartographie des zones socio-rurales : un outil d'aide à la planification pour la gestion de l'eau en agriculture (Burkina Faso)",
+  "description": "Youssouf Dembele, projet AgWater Solutions, avec la FAO.",
+  "fileName": "cartographie-zones-socio-rurales.pdf",
+  "sizeBytes": 2243603,
+  "themes": [
+   "alim",
+   "terr"
+  ],
+  "url": "docs/cartographie-zones-socio-rurales.pdf"
+ },
+ {
+  "id": "pdpc-1985",
+  "categoryId": "textes",
+  "date": "1985-04-16",
+  "title": "Principes directeurs des Nations Unies pour la protection du consommateur (1985)",
+  "description": "Résolution 39/248 de l'Assemblée générale des Nations Unies. Texte officiel sur la Bibliothèque numérique de l'ONU.",
+  "fileName": "",
+  "themes": [
+   "conso"
+  ],
+  "url": "https://digitallibrary.un.org/record/80337?ln=fr"
+ },
+ {
+  "id": "pdpc-1999",
+  "categoryId": "textes",
+  "date": "1999-07-26",
+  "title": "Principes directeurs des Nations Unies pour la protection du consommateur, révision de 1999",
+  "description": "Principes directeurs tels qu'étendus en 1999 (consommation durable). Édition de l'ONU, 2003.",
+  "fileName": "consumption_fr.pdf",
+  "themes": [
+   "conso",
+   "env"
+  ],
+  "url": "https://www.un.org/esa/sustdev/publications/consumption_fr.pdf"
+ },
+ {
+  "id": "pdpc-2015",
+  "categoryId": "textes",
+  "date": "2015-12-22",
+  "title": "Principes directeurs des Nations Unies pour la protection du consommateur, révision de 2015",
+  "description": "Texte révisé de 2015 (commerce électronique, services financiers, règlement des litiges). Publication officielle de la CNUCED, 2016.",
+  "fileName": "ditccplpmisc2016d1_fr.pdf",
+  "themes": [
+   "conso"
+  ],
+  "url": "https://ls-fts.unog.ch/sites/default/files/2019-05/ditccplpmisc2016d1_fr.pdf"
+ },
+ {
+  "id": "resolution-70-186",
+  "categoryId": "textes",
+  "date": "2015-12-22",
+  "title": "Résolution 70/186 sur la protection du consommateur",
+  "description": "Résolution adoptée par l'Assemblée générale le 22 décembre 2015. Texte officiel en français.",
+  "fileName": "A_RES_70_186-FR.pdf",
+  "themes": [
+   "conso"
+  ],
+  "url": "https://digitallibrary.un.org/record/820876/files/A_RES_70_186-FR.pdf"
+ },
+ {
+  "id": "statuts-ci",
+  "categoryId": "statuts",
+  "date": "2015-09",
+  "title": "Statuts de Consumers International",
+  "description": "Septembre 2015, traduction française.",
+  "fileName": "",
+  "themes": [
+   "conso"
+  ],
+  "url": ""
+ }
+]
