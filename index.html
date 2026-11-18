@@ -322,7 +322,7 @@ footer .fcontact li{color:rgba(255,255,255,.85)}
 @media (hover:none){.gcap{opacity:1;font-size:12.5px;padding:20px 10px 8px}}
 .lb-cap{margin:0;padding:12px 16px 0;font-size:15px;color:rgba(255,255,255,.9)}
 /* ===== Pages ===== */
-.view[hidden]{display:none!important}
+[hidden]{display:none!important}
 .menu a[aria-current="page"]{color:var(--green);border-bottom-color:var(--gold)}
 .page-head{background:var(--hero-bg);color:var(--hero-ink);padding:clamp(40px,6vw,72px) 0 clamp(36px,5vw,56px)}
 .page-head h1{font-size:clamp(32px,4vw,50px);line-height:1.1;max-width:22ch;color:inherit}
@@ -784,7 +784,7 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
   <div class="wrap">
     <nav class="crumbs" aria-label="Fil d'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><span>Centre de ressources</span></nav>
     <h1>Centre de ressources</h1>
-    <p>Chartes, conventions, textes juridiques, études et publications de l'ADEC-Sénégal, classés par catégorie et par thème.</p>
+    <p>Chartes, conventions, textes juridiques, études et publications de l'ADEC-Sénégal, classés par catégorie.</p>
   </div>
 </header>
 <section aria-labelledby="t-res" style="padding-top:40px">
@@ -801,7 +801,6 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
         <button class="btn btn-outline btn-sm" type="button" id="rcCatsBtn">Gérer les catégories</button>
       </div>
     </div>
-    <div class="rc-themes" id="rcThemes" role="group" aria-label="Filtrer par thème"></div>
     <div class="rc-status" id="rcStatus" role="status" aria-live="polite">Chargement des documents…</div>
     <div class="rc">
       <nav class="rc-cats" id="rcCats" aria-label="Catégories de documents"><h3>Catégories</h3></nav>
@@ -953,7 +952,7 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
         <div class="f"><label for="dCat">Catégorie</label><select id="dCat"></select></div>
         <div class="f"><label for="dDate">Date du document</label><input id="dDate" placeholder="Ex. 2013, 2013-10 ou 2013-10-15" maxlength="10"></div>
       </div>
-      <fieldset class="themes-box" id="dThemes"><legend>Thèmes</legend></fieldset>
+      <fieldset class="themes-box" id="dThemes" hidden><legend>Thèmes</legend></fieldset>
       <div class="f"><label for="dDesc">Description (facultatif)</label><textarea id="dDesc" maxlength="600" style="min-height:80px" placeholder="Une phrase pour dire de quoi il s'agit"></textarea></div>
       <div class="f"><label for="dFile">Fichier</label><input id="dFile" type="file" accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.odt,.ods,.txt,.csv,.jpg,.jpeg,.png"><span class="hint" id="dFileHint">PDF, Word, Excel, PowerPoint ou image, 20 Mo maximum.</span></div>
       <div class="err-line" id="dErr" role="alert"></div>
@@ -1034,7 +1033,7 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
   function catName(id){for(var i=0;i<st.cats.length;i++)if(st.cats[i].id===id)return st.cats[i].name||'Sans nom';return 'Non classé'}
   function setStatus(t){$('#rcStatus').textContent=t||''}
 
-  function renderThemes(){
+  function renderThemes(){return;
     var box=$('#rcThemes');box.textContent='';
     var counts={};st.docs.forEach(function(d){(d.themes||[]).forEach(function(t){counts[t]=(counts[t]||0)+1})});
     [['all','Tous les thèmes']].concat(THEMES).forEach(function(t){
@@ -1091,7 +1090,7 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
     list.forEach(function(d){
       var r=el('div','rc-row');var k=kind(d);var ic=el('span','ficon '+k[0],k[1]);ic.setAttribute('aria-hidden','true');r.appendChild(ic);
       var mid=el('div');mid.appendChild(el('h4',null,d.title||'Sans titre'));if(d.description)mid.appendChild(el('p',null,d.description));
-      var meta=el('div','rc-meta');meta.appendChild(el('span','cat',catName(d.categoryId)));if(d.date)meta.appendChild(el('span',null,fmtDate(d.date)));if(d.sizeBytes)meta.appendChild(el('span',null,fmtSize(d.sizeBytes)));(d.themes||[]).forEach(function(t){var n=themeName(t);if(n)meta.appendChild(el('span','tagm',n))});
+      var meta=el('div','rc-meta');meta.appendChild(el('span','cat',catName(d.categoryId)));if(d.date)meta.appendChild(el('span',null,fmtDate(d.date)));if(d.sizeBytes)meta.appendChild(el('span',null,fmtSize(d.sizeBytes)));
       mid.appendChild(meta);r.appendChild(mid);
       var act=el('div','rc-actions');
       if(d.url){var ext=!isLocal(d.url);var a=el('a','rc-open',ext?'Site officiel':'Consulter');a.href=d.url;a.target='_blank';a.rel='noopener';if(!ext)a.dataset.pdf=d.title||'Document';a.setAttribute('aria-label',(ext?'Ouvrir sur le site officiel : ':'Consulter : ')+(d.title||'document'));act.appendChild(a)}
