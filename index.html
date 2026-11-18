@@ -9,6 +9,21 @@
 <meta property="og:locale" content="fr_SN">
 <meta name="theme-color" content="#0f4a2c">
 <meta name="description" content="ADEC-Sénégal, Association pour la Défense de l'Environnement et des Consommateurs. Association agréée par le ministère du Commerce. Information, éducation et défense des consommateurs depuis 1990.">
+<link rel="canonical" href="https://adecsenegal.org/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0f4d2c">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ADEC-Sénégal">
+<meta property="og:locale" content="fr_SN">
+<meta property="og:url" content="https://adecsenegal.org/">
+<meta property="og:title" content="ADEC-Sénégal : défense des consommateurs et de l'environnement">
+<meta property="og:description" content="Association agréée depuis 2011, l'ADEC-Sénégal informe, éduque et défend les consommateurs sénégalais. Actualités, centre de ressources et contact.">
+<meta property="og:image" content="https://adecsenegal.org/img/og-adec.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NGO","name":"ADEC-Sénégal","alternateName":"Association pour la Défense de l'Environnement et des Consommateurs","url":"https://adecsenegal.org/","logo":"https://adecsenegal.org/img/logo-adec.png","foundingDate":"1990","email":"adec_cons@yahoo.fr","telephone":"+221775516171","address":{"@type":"PostalAddress","streetAddress":"Sacré-Cœur 3 VDN","addressLocality":"Dakar","addressCountry":"SN"},"sameAs":["https://www.facebook.com/ADECSenegal"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -1006,8 +1021,6 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
 })();
 </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js"></script>
 <script>
 (function(){
   var $=function(q){return document.querySelector(q)};
@@ -1290,6 +1303,11 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
   function openPdf(url,title){
     var dlg=$('#pdfDlg'),body=$('#pdfBody');body.textContent='';$('#pdfTitle').textContent=title||'Document';$('#pdfCount').textContent='';$('#pdfOpen').href=url;
     if(!dlg.open)dlg.showModal();
+    if(!window.pdfjsLib&&!openPdf.loading){openPdf.loading=true;var wt=el('div','pdf-msg','Chargement de la visionneuse…');body.appendChild(wt);
+      var base='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/';var s1=document.createElement('script');s1.src=base+'pdf.min.js';
+      s1.onload=function(){var s2=document.createElement('script');s2.src=base+'pdf.worker.min.js';s2.onload=s2.onerror=function(){openPdf.loading=false;openPdf(url,title)};document.head.appendChild(s2)};
+      s1.onerror=function(){openPdf.loading=false;openPdf.failed=true;openPdf(url,title)};document.head.appendChild(s1);return}
+    if(openPdf.loading)return;
     var lib=window.pdfjsLib;
     if(!lib){var m=el('div','pdf-msg');m.textContent='La visionneuse ne s\'est pas chargée. ';var a=el('a',null,'Ouvrir le document');a.href=url;a.target='_blank';a.rel='noopener';m.appendChild(a);body.appendChild(m);return}
     try{lib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js'}catch(e){}

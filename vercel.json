@@ -1,8 +1,21 @@
 {
   "cleanUrls": true,
+  "redirects": [
+    { "source": "/blog", "destination": "/#actualites", "permanent": true },
+    { "source": "/blog/:path*", "destination": "/#actualites", "permanent": true },
+    { "source": "/post/:slug*", "destination": "/#actualites", "permanent": true },
+    { "source": "/centre-de-ressources", "destination": "/#ressources", "permanent": true },
+    { "source": "/contact", "destination": "/#contact", "permanent": true },
+    { "source": "/contact-2", "destination": "/#contact", "permanent": true },
+    { "source": "/a-propos", "destination": "/#presentation", "permanent": true }
+  ],
   "headers": [
     { "source": "/docs/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }] },
     { "source": "/img/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }] },
-    { "source": "/data/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=300" }] }
+    { "source": "/data/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=300" }] },
+    { "source": "/(.*)", "headers": [
+      { "key": "X-Content-Type-Options", "value": "nosniff" },
+      { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+    ] }
   ]
 }
