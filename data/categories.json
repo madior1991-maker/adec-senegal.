@@ -5,38 +5,43 @@
   "order": 0
  },
  {
+  "id": "cadre",
+  "name": "Cadre juridique de la consommation",
+  "order": 1
+ },
+ {
   "id": "chartes",
   "name": "Chartes",
-  "order": 1
+  "order": 2
  },
  {
   "id": "conventions",
   "name": "Conventions, traités et protocoles",
-  "order": 2
+  "order": 3
  },
  {
   "id": "textes",
   "name": "Textes juridiques et internationaux",
-  "order": 3
+  "order": 4
  },
  {
   "id": "statuts",
   "name": "Statuts et gouvernance",
-  "order": 4
+  "order": 5
  },
  {
   "id": "rapports",
   "name": "Rapports d'activité",
-  "order": 5
+  "order": 6
  },
  {
   "id": "etudes",
   "name": "Études et publications",
-  "order": 6
+  "order": 7
  },
  {
   "id": "guides",
   "name": "Guides et supports de formation",
-  "order": 7
+  "order": 8
  }
 ]

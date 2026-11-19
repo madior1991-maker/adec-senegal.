@@ -258,11 +258,19 @@ button:disabled{opacity:.35;cursor:not-allowed}
 .rc-row:last-child{border-bottom:0}
 .ficon{width:40px;height:48px;border-radius:var(--r-sm);display:grid;place-items:end center;padding-bottom:6px;font-size:10.5px;font-weight:800;letter-spacing:.04em;color:#fff;background:#7a8a82;position:relative}
 .ficon::before{content:"";position:absolute;top:0;right:0;border-style:solid;border-width:0 12px 12px 0;border-color:transparent #fff transparent transparent;opacity:.6}
-.ficon.pdf{background:#b3261e}.ficon.doc{background:#2463ad}.ficon.xls{background:#1d7a3e}.ficon.ppt{background:#c4572c}.ficon.img{background:#6b4fa3}.ficon.none{background:#c9d3cd;color:#55625c}
+.ficon.pdf{background:#b3261e}.ficon.doc{background:#2463ad}.ficon.xls{background:#1d7a3e}.ficon.ppt{background:#c4572c}.ficon.img{background:#6b4fa3}.ficon.none{background:#c9d3cd;color:#55625c}.ficon.web{background:var(--green)}
 .rc-row h4{margin:0;font-size:16px;font-weight:700;line-height:1.35}
 .rc-row p{color:var(--muted);font-size:14.5px;margin-top:2px}
 .rc-meta{display:flex;gap:6px 14px;align-items:center;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-top:6px;font-variant-numeric:tabular-nums}
 .rc-meta .cat{color:var(--green);font-weight:600}
+.rc-meta .sect{background:var(--alt);color:var(--ink);padding:2px 9px;border-radius:999px;font-size:12.5px}
+.rc-sect{display:flex;flex-wrap:wrap;gap:8px;padding:14px 20px;border-bottom:1px solid var(--line);background:#fbfaf6}
+.rc-sect .lbl{width:100%;font-size:13px;color:var(--muted);margin-bottom:2px}
+.rc-sect button{font:inherit;font-size:13.5px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);cursor:pointer;line-height:1.3}
+.rc-sect button span{color:var(--muted);margin-left:6px;font-variant-numeric:tabular-nums}
+.rc-sect button:hover{background:var(--alt)}
+.rc-sect button[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
+.rc-sect button[aria-pressed="true"] span{color:rgba(255,255,255,.8)}
 .rc-actions{display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
 .rc-open{font-weight:700;font-size:14.5px;color:var(--green);text-decoration:none;padding:8px 12px;border:1px solid var(--line);border-radius:var(--r-sm);white-space:nowrap}
 .rc-open:hover{border-color:var(--green)}
@@ -799,7 +807,7 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
   <div class="wrap">
     <nav class="crumbs" aria-label="Fil d'Ariane"><a href="#accueil">Accueil</a><span aria-hidden="true">/</span><span>Centre de ressources</span></nav>
     <h1>Centre de ressources</h1>
-    <p>Chartes, conventions, textes juridiques, études et publications de l'ADEC-Sénégal, classés par catégorie.</p>
+    <p>Chartes, conventions, textes juridiques, études et publications de l'ADEC-Sénégal, classés par catégorie et, pour les textes juridiques, par secteur.</p>
   </div>
 </header>
 <section aria-labelledby="t-res" style="padding-top:40px">
@@ -821,6 +829,7 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
       <nav class="rc-cats" id="rcCats" aria-label="Catégories de documents"><h3>Catégories</h3></nav>
       <div class="rc-list">
         <div class="rc-head"><b id="rcTitle">Tous les documents</b><span id="rcCount"></span></div>
+        <div class="rc-sect" id="rcSect" role="group" aria-label="Filtrer par secteur" hidden></div>
         <div id="rcRows"></div>
       </div>
     </div>
@@ -1026,7 +1035,7 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
   var $=function(q){return document.querySelector(q)};
   var THEMES=[['conso','Consommation'],['env','Environnement et déchets'],['alim','Alimentation, agriculture et pêche'],['sante','Santé'],['gouv','Gouvernance et droits'],['eco','Économie et développement'],['terr','Ville et territoires']];
   function themeName(id){for(var i=0;i<THEMES.length;i++)if(THEMES[i][0]===id)return THEMES[i][1];return ''}
-  var st={theme:'all',limit:20,cats:[],docs:[],cat:'all',q:'',sort:'recent',canEdit:false,db:null,assets:null,editing:null,deleting:null,ready:false};
+  var st={sect:'all',theme:'all',limit:20,cats:[],docs:[],cat:'all',q:'',sort:'recent',canEdit:false,db:null,assets:null,editing:null,deleting:null,ready:false};
   var MONTHS=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
   var SVG_EDIT='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h4L19 9l-4-4L4 16v4z"/></svg>';
   var SVG_DEL='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 7h14M10 7V4h4v3M7 7l1 13h8l1-13"/></svg>';
@@ -1037,12 +1046,15 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
   function fmtSize(n){if(!n)return '';if(n<1024*1024)return Math.max(1,Math.round(n/1024))+' Ko';return (n/1048576).toFixed(1).replace('.',',')+' Mo'}
   function kind(d){var n=norm(d.fileName||''),t=d.contentType||'';
     if(!d.url)return['none','—'];
+    if(!isLocal(d.url)&&!n)return['web','WEB'];
     if(/\.pdf$/.test(n)||t.indexOf('pdf')>-1)return['pdf','PDF'];
     if(/\.(docx?|odt)$/.test(n)||t.indexOf('word')>-1)return['doc','DOC'];
     if(/\.(xlsx?|ods|csv)$/.test(n)||t.indexOf('sheet')>-1||t.indexOf('excel')>-1)return['xls','XLS'];
     if(/\.(pptx?)$/.test(n)||t.indexOf('presentation')>-1)return['ppt','PPT'];
     if(/^image\//.test(t)||/\.(jpe?g|png)$/.test(n))return['img','IMG'];
     return['', (n.split('.').pop()||'FIC').slice(0,4).toUpperCase()]}
+  var SECTS=[['general','Textes à portée générale'],['eau','Eau et assainissement'],['telecom','Poste, télécoms et société de l\'information'],['electricite','Électricité'],['transport','Transport'],['sante','Santé, hygiène et pharmacie'],['environnement','Environnement'],['finance','Services financiers'],['alimentation','Alimentation et sécurité sanitaire'],['urbanisme','Urbanisme, habitat et foncier']];
+  function sectName(id){for(var i=0;i<SECTS.length;i++)if(SECTS[i][0]===id)return SECTS[i][1];return ''}
   function catName(id){for(var i=0;i<st.cats.length;i++)if(st.cats[i].id===id)return st.cats[i].name||'Sans nom';return 'Non classé'}
   function setStatus(t){$('#rcStatus').textContent=t||''}
 
@@ -1084,19 +1096,22 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
     if(st.cat!=='all'&&!items.some(function(i){return i.id===st.cat}))st.cat='all';
     items.forEach(function(it){var b=el('button','rc-cat');b.type='button';b.setAttribute('aria-pressed',st.cat===it.id);
       b.appendChild(el('span',null,it.name));b.appendChild(el('span',null,String(it.n)));
-      b.addEventListener('click',function(){st.cat=it.id;st.limit=20;render()});nav.appendChild(b)});
+      b.addEventListener('click',function(){st.cat=it.id;st.sect='all';st.limit=20;render()});nav.appendChild(b)});
+    renderSects();
     // liste
     var q=norm(st.q);
     var list=st.docs.filter(function(d){
       if(st.cat==='none'){if(st.cats.some(function(c){return c.id===d.categoryId}))return false}
       else if(st.cat!=='all'&&d.categoryId!==st.cat)return false;
       if(st.theme!=='all'&&!((d.themes||[]).indexOf(st.theme)>-1))return false;
+      if(st.cat==='cadre'&&st.sect!=='all'&&d.secteur!==st.sect)return false;
       if(q&&norm([d.title,d.description,d.fileName,catName(d.categoryId),(d.themes||[]).map(themeName).join(' ')].join(' ')).indexOf(q)<0)return false;return true});
     list.sort(function(a,b){
       if(st.sort==='az')return norm(a.title).localeCompare(norm(b.title));
       var ka=(a.date||'')+'|'+(a.createdAt||''),kb=(b.date||'')+'|'+(b.createdAt||'');
       return st.sort==='old'?ka.localeCompare(kb):kb.localeCompare(ka)});
     $('#rcTitle').textContent=st.cat==='all'?'Tous les documents':(st.cat==='none'?'Non classé':catName(st.cat));if(st.theme!=='all')$('#rcTitle').textContent=(st.cat==='all'?'Thème : ':$('#rcTitle').textContent+', thème : ')+themeName(st.theme);
+    if(st.cat==='cadre'&&st.sect!=='all')$('#rcTitle').textContent+=' : '+sectName(st.sect);
     $('#rcCount').textContent=list.length+' document'+(list.length>1?'s':'');
     var rows=$('#rcRows');rows.textContent='';
     if(!list.length){var em=el('div','rc-empty',st.ready?(st.docs.length?'Aucun document ne correspond à votre recherche.':'Aucun document pour le moment.'):'');rows.appendChild(em);return}
@@ -1104,7 +1119,7 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
     list.forEach(function(d){
       var r=el('div','rc-row');var k=kind(d);var ic=el('span','ficon '+k[0],k[1]);ic.setAttribute('aria-hidden','true');r.appendChild(ic);
       var mid=el('div');mid.appendChild(el('h4',null,d.title||'Sans titre'));if(d.description)mid.appendChild(el('p',null,d.description));
-      var meta=el('div','rc-meta');meta.appendChild(el('span','cat',catName(d.categoryId)));if(d.date)meta.appendChild(el('span',null,fmtDate(d.date)));if(d.sizeBytes)meta.appendChild(el('span',null,fmtSize(d.sizeBytes)));
+      var meta=el('div','rc-meta');meta.appendChild(el('span','cat',catName(d.categoryId)));if(d.secteur&&sectName(d.secteur))meta.appendChild(el('span','sect',sectName(d.secteur)));if(d.date)meta.appendChild(el('span',null,fmtDate(d.date)));if(d.sizeBytes)meta.appendChild(el('span',null,fmtSize(d.sizeBytes)));
       mid.appendChild(meta);r.appendChild(mid);
       var act=el('div','rc-actions');
       if(d.url){var ext=!isLocal(d.url);var a=el('a','rc-open',ext?'Site officiel':'Consulter');a.href=d.url;a.target='_blank';a.rel='noopener';if(!ext)a.dataset.pdf=d.title||'Document';a.setAttribute('aria-label',(ext?'Ouvrir sur le site officiel : ':'Consulter : ')+(d.title||'document'));act.appendChild(a)}
@@ -1116,6 +1131,16 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);paddin
     if(total>list.length){var m=el('div','rc-more');var mb=el('button','btn btn-outline btn-sm','Afficher plus ('+(total-list.length)+' restants)');mb.type='button';mb.addEventListener('click',function(){st.limit+=20;render()});m.appendChild(mb);rows.appendChild(m)}
   }
 
+  function renderSects(){
+    var box=$('#rcSect');box.textContent='';
+    if(st.cat!=='cadre'){box.hidden=true;return}
+    var inCat=st.docs.filter(function(d){return d.categoryId==='cadre'});
+    var counts={};inCat.forEach(function(d){if(d.secteur)counts[d.secteur]=(counts[d.secteur]||0)+1});
+    box.appendChild(el('span','lbl','Secteur'));
+    [['all','Tous les secteurs',inCat.length]].concat(SECTS.filter(function(s){return counts[s[0]]}).map(function(s){return[s[0],s[1],counts[s[0]]]})).forEach(function(s){
+      var b=el('button',null,s[1]);b.type='button';b.setAttribute('aria-pressed',st.sect===s[0]);b.appendChild(el('span',null,String(s[2])));
+      b.addEventListener('click',function(){st.sect=s[0];st.limit=20;render()});box.appendChild(b)});
+    box.hidden=false}
   $('#rcQ').addEventListener('input',function(e){st.q=e.target.value;st.limit=20;render()});
   $('#rcSort').addEventListener('change',function(e){st.sort=e.target.value;render()});
   document.querySelectorAll('dialog [data-close]').forEach(function(b){b.addEventListener('click',function(){b.closest('dialog').close()})});

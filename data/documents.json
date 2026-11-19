@@ -1075,7 +1075,7 @@
  },
  {
   "id": "uemoa-reglement-7-2007",
-  "categoryId": "textes",
+  "categoryId": "cadre",
   "date": "2007",
   "title": "Règlement n°007/2007/CM/UEMOA relatif à la sécurité sanitaire des végétaux, des animaux et des aliments",
   "description": "Union économique et monétaire ouest-africaine (UEMOA).",
@@ -1086,11 +1086,12 @@
    "sante",
    "conso"
   ],
-  "url": "docs/reglement-7-2007-uemoa.pdf"
+  "url": "docs/reglement-7-2007-uemoa.pdf",
+  "secteur": "alimentation"
  },
  {
   "id": "uemoa-reglement-9-2003",
-  "categoryId": "textes",
+  "categoryId": "cadre",
   "date": "2003",
   "title": "Règlement n°09/2003/CM/UEMOA portant Code communautaire antidumping",
   "description": "Union économique et monétaire ouest-africaine (UEMOA).",
@@ -1099,7 +1100,8 @@
   "themes": [
    "eco"
   ],
-  "url": "docs/reglement-9-2003-uemoa.pdf"
+  "url": "docs/reglement-9-2003-uemoa.pdf",
+  "secteur": "general"
  },
  {
   "id": "urbanisation-dakar",
@@ -1156,7 +1158,7 @@
  },
  {
   "id": "pdpc-1985",
-  "categoryId": "textes",
+  "categoryId": "cadre",
   "date": "1985-04-16",
   "title": "Principes directeurs des Nations Unies pour la protection du consommateur (1985)",
   "description": "Résolution 39/248 de l'Assemblée générale des Nations Unies. Texte officiel sur la Bibliothèque numérique de l'ONU.",
@@ -1164,11 +1166,12 @@
   "themes": [
    "conso"
   ],
-  "url": "https://digitallibrary.un.org/record/80337?ln=fr"
+  "url": "https://digitallibrary.un.org/record/80337?ln=fr",
+  "secteur": "general"
  },
  {
   "id": "pdpc-1999",
-  "categoryId": "textes",
+  "categoryId": "cadre",
   "date": "1999-07-26",
   "title": "Principes directeurs des Nations Unies pour la protection du consommateur, révision de 1999",
   "description": "Principes directeurs tels qu'étendus en 1999 (consommation durable). Édition de l'ONU, 2003.",
@@ -1177,7 +1180,8 @@
    "conso",
    "env"
   ],
-  "url": "https://www.un.org/esa/sustdev/publications/consumption_fr.pdf"
+  "url": "https://www.un.org/esa/sustdev/publications/consumption_fr.pdf",
+  "secteur": "general"
  },
  {
   "id": "pdpc-2015",
@@ -1202,5 +1206,401 @@
    "conso"
   ],
   "url": "https://digitallibrary.un.org/record/820876/files/A_RES_70_186-FR.pdf"
+ },
+ {
+  "id": "constitution-2001",
+  "categoryId": "cadre",
+  "secteur": "general",
+  "date": "2001-01-22",
+  "title": "Constitution de la République du Sénégal du 22 janvier 2001",
+  "description": "Version consolidée (mise à jour 2021). Source : CNRA.",
+  "fileName": "",
+  "themes": [],
+  "url": "https://cnra.sn/wp-content/uploads/2024/03/Constitution-du-22-janvier-2001-mise-a-jour-2021-22.pdf"
+ },
+ {
+  "id": "uemoa-reglement-2-2002",
+  "categoryId": "cadre",
+  "secteur": "general",
+  "date": "2002-05-23",
+  "title": "Règlement n°02/2002/CM/UEMOA relatif aux pratiques commerciales anticoncurrentielles",
+  "description": "Union économique et monétaire ouest-africaine (UEMOA). Source : OSIRIS.",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.osiris.sn/reglement-no2-cm-uemoa-du-23-mai-2002-sur-les-pratiques-anticoncurrentielles.html"
+ },
+ {
+  "id": "cocc",
+  "categoryId": "cadre",
+  "secteur": "general",
+  "date": "1963-07-10",
+  "title": "Code des obligations civiles et commerciales (COCC)",
+  "description": "Source : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/445"
+ },
+ {
+  "id": "loi-94-63",
+  "categoryId": "cadre",
+  "secteur": "general",
+  "date": "1994-08-22",
+  "title": "Loi n°94-63 du 22 août 1994 sur les prix, la concurrence et le contentieux économique",
+  "description": "Source : FAOLEX (FAO).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://faolex.fao.org/docs/pdf/sen201145.pdf"
+ },
+ {
+  "id": "loi-2002-23",
+  "categoryId": "cadre",
+  "secteur": "general",
+  "date": "2002-09-04",
+  "title": "Loi n°2002-23 du 4 septembre 2002 portant cadre de régulation pour les entreprises concessionnaires de services publics",
+  "description": "Source : OSIRIS.",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.osiris.sn/loi-no-2002-23-du-4-septembre-2002-portant-cadre-de-regulation-pour-les.html"
+ },
+ {
+  "id": "maroc-loi-31-08",
+  "categoryId": "cadre",
+  "secteur": "general",
+  "date": "2011-02-18",
+  "title": "Maroc : loi n°31-08 édictant des mesures de protection du consommateur (Dahir n°1-11-03 du 18 février 2011)",
+  "description": "Texte de référence étranger. Source : portail Adala, ministère de la Justice du Maroc.",
+  "fileName": "",
+  "themes": [],
+  "url": "https://adala.justice.gov.ma/api/uploads/2024/03/01/protection%20de%20consommateur-1709283839988.pdf"
+ },
+ {
+  "id": "cameroun-loi-2011-012",
+  "categoryId": "cadre",
+  "secteur": "general",
+  "date": "2011-05-06",
+  "title": "Cameroun : loi-cadre n°2011/012 du 6 mai 2011 portant protection du consommateur",
+  "description": "Texte de référence étranger. Source : Agence de régulation des télécommunications du Cameroun.",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.art.cm/sites/default/files/documents/loi_cadre_2011_012_06052011_protect_conso.pdf"
+ },
+ {
+  "id": "loi-81-13",
+  "categoryId": "cadre",
+  "secteur": "eau",
+  "date": "1981-03-04",
+  "title": "Loi n°81-13 du 4 mars 1981 portant Code de l'eau",
+  "description": "Source : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/6783"
+ },
+ {
+  "id": "loi-2009-24",
+  "categoryId": "cadre",
+  "secteur": "eau",
+  "date": "2009-07-08",
+  "title": "Loi n°2009-24 du 8 juillet 2009 portant Code de l'assainissement",
+  "description": "Source : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/6947"
+ },
+ {
+  "id": "loi-2001-15",
+  "categoryId": "cadre",
+  "secteur": "telecom",
+  "date": "2001-12-27",
+  "title": "Loi n°2001-15 du 27 décembre 2001 portant Code des télécommunications",
+  "description": "Abrogée par la loi n°2011-01. Source : OSIRIS.",
+  "fileName": "",
+  "themes": [],
+  "url": "https://osiris.sn/loi-no-2001-15-du-27-decembre-2001-portant-code-des-telecommunications.html"
+ },
+ {
+  "id": "loi-2006-01",
+  "categoryId": "cadre",
+  "secteur": "telecom",
+  "date": "2006-01-04",
+  "title": "Loi n°2006-01 du 4 janvier 2006 portant Code des postes",
+  "description": "Source : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/7953"
+ },
+ {
+  "id": "loi-2008-08",
+  "categoryId": "cadre",
+  "secteur": "telecom",
+  "date": "2008-01-25",
+  "title": "Loi n°2008-08 du 25 janvier 2008 sur les transactions électroniques",
+  "description": "Source : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/8429"
+ },
+ {
+  "id": "loi-2008-10",
+  "categoryId": "cadre",
+  "secteur": "telecom",
+  "date": "2008-01-25",
+  "title": "Loi n°2008-10 du 25 janvier 2008 portant loi d'orientation sur la société de l'information",
+  "description": "Source : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/8428"
+ },
+ {
+  "id": "loi-2008-11",
+  "categoryId": "cadre",
+  "secteur": "telecom",
+  "date": "2008-01-25",
+  "title": "Loi n°2008-11 du 25 janvier 2008 portant sur la cybercriminalité",
+  "description": "Source : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/8826"
+ },
+ {
+  "id": "loi-2011-01",
+  "categoryId": "cadre",
+  "secteur": "telecom",
+  "date": "2011-02-24",
+  "title": "Loi n°2011-01 du 24 février 2011 portant Code des télécommunications",
+  "description": "Source : OSIRIS.",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.osiris.sn/loi-no-2011-01-du-14-fevrier-2011-portant-code-des-telecommunications.html"
+ },
+ {
+  "id": "decret-2003-63",
+  "categoryId": "cadre",
+  "secteur": "telecom",
+  "date": "2003-02-17",
+  "title": "Décret n°2003-63 du 17 février 2003 fixant les règles d'organisation et de fonctionnement de l'Agence de régulation des télécommunications",
+  "description": "Source : OSIRIS.",
+  "fileName": "",
+  "themes": [],
+  "url": "https://osiris.sn/Decret-no-2003-63-du-17-fevrier.html"
+ },
+ {
+  "id": "loi-98-29",
+  "categoryId": "cadre",
+  "secteur": "electricite",
+  "date": "1998-04-14",
+  "title": "Loi n°98-29 du 14 avril 1998 relative au secteur de l'électricité",
+  "description": "Texte publié au Journal officiel n°5797 du 24 avril 1998. Lien : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/2844"
+ },
+ {
+  "id": "loi-2002-01",
+  "categoryId": "cadre",
+  "secteur": "electricite",
+  "date": "2002-01-10",
+  "title": "Loi n°2002-01 du 10 janvier 2002 modifiant la loi n°98-29 relative au secteur de l'électricité",
+  "description": "Texte publié au Journal officiel n°6032 du 23 février 2002. Lien : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/2545"
+ },
+ {
+  "id": "loi-2003-04",
+  "categoryId": "cadre",
+  "secteur": "transport",
+  "date": "2003-05-27",
+  "title": "Loi n°2003-04 du 27 mai 2003 portant orientation et organisation des transports terrestres",
+  "description": "Texte publié au Journal officiel n°6105 du 7 juin 2003. Lien : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/2524"
+ },
+ {
+  "id": "loi-83-71",
+  "categoryId": "cadre",
+  "secteur": "sante",
+  "date": "1983-07-05",
+  "title": "Loi n°83-71 du 5 juillet 1983 portant Code de l'hygiène",
+  "description": "Source : Ordre des avocats du Sénégal.",
+  "fileName": "",
+  "themes": [],
+  "url": "https://ordredesavocats.sn/telechargement/9288"
+ },
+ {
+  "id": "loi-84-14",
+  "categoryId": "cadre",
+  "secteur": "sante",
+  "date": "1984-02-02",
+  "title": "Loi n°84-14 du 2 février 1984 relative au contrôle des spécialités agropharmaceutiques et des spécialités assimilées",
+  "description": "Source : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/7463"
+ },
+ {
+  "id": "loi-86-04",
+  "categoryId": "cadre",
+  "secteur": "environnement",
+  "date": "1986-01-24",
+  "title": "Loi n°86-04 du 24 janvier 1986 portant Code de la chasse et de la protection de la faune",
+  "description": "Texte publié au Journal officiel n°5102 du 25 janvier 1986. Lien : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/3502"
+ },
+ {
+  "id": "loi-98-03",
+  "categoryId": "cadre",
+  "secteur": "environnement",
+  "date": "1998-01-08",
+  "title": "Loi n°98-03 du 8 janvier 1998 portant Code forestier",
+  "description": "Avec le décret n°98-164. Source : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/10998"
+ },
+ {
+  "id": "loi-2001-01",
+  "categoryId": "cadre",
+  "secteur": "environnement",
+  "date": "2001-01-15",
+  "title": "Loi n°2001-01 du 15 janvier 2001 portant Code de l'environnement",
+  "description": "Remplacée par la loi n°2023-15 du 2 août 2023. Source : Secrétariat général du Gouvernement.",
+  "fileName": "",
+  "themes": [],
+  "url": "https://ditp.sec.gouv.sn/download/file/fid/49"
+ },
+ {
+  "id": "loi-2003-36",
+  "categoryId": "cadre",
+  "secteur": "environnement",
+  "date": "2003-11-24",
+  "title": "Loi n°2003-36 du 24 novembre 2003 portant Code minier",
+  "description": "Source : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/11417"
+ },
+ {
+  "id": "code-cima",
+  "categoryId": "cadre",
+  "secteur": "finance",
+  "date": "1992-07-10",
+  "title": "Code des assurances des États membres de la CIMA",
+  "description": "Conférence interafricaine des marchés d'assurances, édition 2019. Source : CIMA.",
+  "fileName": "",
+  "themes": [],
+  "url": "https://cima-afrique.org/wp-content/uploads/2023/06/CODE-CIMA-2019.pdf"
+ },
+ {
+  "id": "loi-2008-26",
+  "categoryId": "cadre",
+  "secteur": "finance",
+  "date": "2008-07-28",
+  "title": "Loi n°2008-26 du 28 juillet 2008 portant réglementation bancaire",
+  "description": "Remplacée par la loi n°2025-03. Texte publié au Journal officiel n°6437 du 8 novembre 2008. Lien : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/2133"
+ },
+ {
+  "id": "loi-2012-31",
+  "categoryId": "cadre",
+  "secteur": "finance",
+  "date": "2012-12-31",
+  "title": "Loi n°2012-31 du 31 décembre 2012 portant Code général des impôts",
+  "description": "Source : Ordre des avocats du Sénégal.",
+  "fileName": "",
+  "themes": [],
+  "url": "https://ordredesavocats.sn/telechargement/9309"
+ },
+ {
+  "id": "loi-98-32",
+  "categoryId": "cadre",
+  "secteur": "alimentation",
+  "date": "1998-04-14",
+  "title": "Loi n°98-32 du 14 avril 1998 portant Code de la pêche maritime",
+  "description": "Remplacée par la loi n°2015-18. Texte publié au Journal officiel n°5797 du 24 avril 1998. Lien : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/2844"
+ },
+ {
+  "id": "loi-66-48",
+  "categoryId": "cadre",
+  "secteur": "alimentation",
+  "date": "1966-05-27",
+  "title": "Loi n°66-48 du 27 mai 1966 relative au contrôle des produits alimentaires et à la répression des fraudes",
+  "description": "Source : Secrétariat général du Gouvernement.",
+  "fileName": "",
+  "themes": [],
+  "url": "https://ditp.sec.gouv.sn/download/file/fid/50"
+ },
+ {
+  "id": "decret-68-507",
+  "categoryId": "cadre",
+  "secteur": "alimentation",
+  "date": "1968-05-07",
+  "title": "Décret n°68-507 du 7 mai 1968 réglementant le contrôle des produits destinés à l'alimentation humaine ou animale",
+  "description": "Source : Secrétariat général du Gouvernement.",
+  "fileName": "",
+  "themes": [],
+  "url": "https://ditp.sec.gouv.sn/download/file/fid/69"
+ },
+ {
+  "id": "loi-64-46",
+  "categoryId": "cadre",
+  "secteur": "urbanisme",
+  "date": "1964-06-17",
+  "title": "Loi n°64-46 du 17 juin 1964 relative au domaine national",
+  "description": "Texte publié au Journal officiel n°3692 du 11 juillet 1964. Lien : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/4904"
+ },
+ {
+  "id": "loi-2008-43",
+  "categoryId": "cadre",
+  "secteur": "urbanisme",
+  "date": "2008-08-20",
+  "title": "Loi n°2008-43 du 20 août 2008 portant Code de l'urbanisme",
+  "description": "Source : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/7944"
+ },
+ {
+  "id": "loi-2009-26",
+  "categoryId": "cadre",
+  "secteur": "urbanisme",
+  "date": "2009-07-08",
+  "title": "Loi n°2009-26 du 8 juillet 2009 modifiant l'article 68 du Code de l'urbanisme",
+  "description": "Source : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/7162"
+ },
+ {
+  "id": "loi-2009-23",
+  "categoryId": "cadre",
+  "secteur": "urbanisme",
+  "date": "2009-07-08",
+  "title": "Loi n°2009-23 du 8 juillet 2009 portant Code de la construction (partie législative)",
+  "description": "Source : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/7955"
+ },
+ {
+  "id": "decret-2010-99",
+  "categoryId": "cadre",
+  "secteur": "urbanisme",
+  "date": "2010-01-27",
+  "title": "Décret n°2010-99 du 27 janvier 2010 portant Code de la construction (partie réglementaire)",
+  "description": "Source : vie-publique.sn (portail officiel).",
+  "fileName": "",
+  "themes": [],
+  "url": "https://www.vie-publique.sn/documents/7956"
  }
 ]
